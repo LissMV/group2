@@ -18,7 +18,6 @@ return new class extends Migration
             $table->boolean('is_available');
             $table->string('price');
             $table->text('description');
-            $table->
             $table->foreignIdFor(categories::class)->constrained();
             $table->foreignIdFor(Store::class)->constrained();
             $table->timestamps();

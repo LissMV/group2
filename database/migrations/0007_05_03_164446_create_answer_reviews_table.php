@@ -17,6 +17,7 @@ return new class extends Migration
         Schema::create('answer_reviews', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('comment');
             $table->foreignIdFor(User::class)->constrained();
             $table->foreignIdFor(Review::class)->constrained();
         });

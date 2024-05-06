@@ -3,8 +3,8 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-Use App\Models\Store;
-Use App\Models\categories;
+use App\Models\Store;
+use App\Models\Categories;
 
 return new class extends Migration
 {
@@ -15,10 +15,9 @@ return new class extends Migration
     {
         Schema::create('category_stores', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
             $table->foreignIdFor(Store::class)->constrained();
-            $table->foreignIdFor(categories::class)->constrained();
-
+            $table->foreignIdFor(Categories::class)->constrained();
+            $table->timestamps();
         });
     }
 

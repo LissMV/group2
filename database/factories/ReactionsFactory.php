@@ -17,7 +17,9 @@ class ReactionsFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+
+            'name' => fake()->randomElement(['Me interesa', 'Excelente', 'si voy a ir'])
+
         ];
     }
 }
