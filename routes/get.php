@@ -10,3 +10,10 @@ Route::get('/login', function () {
     return view('signin');
 });
 
+Route::get('/register', function () {
+    return view('signup');
+});
+
+Route::get('/layout', function () {
+    return view('layout');
+});
