@@ -1,3 +1,7 @@
+@props(['titulo', 'tipo', 'nose'])
 <div>
-    <input type="text">
+    <input name={{ $nose }} type={{ $tipo }}  placeholder={{ $titulo }}>
+    @error($nose)
+    <p>{{$message}}</p>
+    @enderror
 </div>

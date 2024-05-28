@@ -21,7 +21,7 @@ class StoreFactory extends Factory
         return [
             'name' =>fake()->company(),
             'email' =>fake()->companyEmail(),
-            'phone number' =>fake()->phoneNumber(),
+            'phone_number' =>fake()->phoneNumber(),
             'location' =>fake()->address(),
             'description' =>fake()->text(),
         ];

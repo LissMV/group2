@@ -15,7 +15,7 @@ return new class extends Migration
         Schema::create('events', function (Blueprint $table) {
             $table->id();
             $table->foreignIdFor(User::class)->constrained();
-            $table->string('date');
+            $table->dateTime('date');
             $table->string('location');
             $table->string('modalidad');
             $table->timestamps();
