@@ -1,7 +1,7 @@
-@props(['titulo', 'tipo', 'nose'])
 <div>
-    <input name={{ $nose }} type={{ $tipo }}  placeholder={{ $titulo }}>
-    @error($nose)
+    <label>{{ $slot }}</label>
+    <input {{$attributes}}>
+    @error($attributes['name'])
     <p>{{$message}}</p>
     @enderror
 </div>
