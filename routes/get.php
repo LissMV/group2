@@ -7,11 +7,11 @@ Route::get('/', function () {
 });
 
 Route::get('/login', function () {
-    return view('users.signin');
+    return view('Users.signin');
 });
 
 Route::get('/register', function () {
-    return view('users.signup');
+    return view('signup');
 });
 
 Route::get('/layout', function () {
