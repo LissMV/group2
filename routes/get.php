@@ -7,7 +7,7 @@ Route::get('/', function () {
 });
 
 Route::get('/login', function () {
-    return view('Users.signin');
+    return view('signin');
 });
 
 Route::get('/register', function () {
