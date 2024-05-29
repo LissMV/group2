@@ -9,14 +9,16 @@ class UserController extends Controller
     public function create(Request $request)
     {
         $request->validate([
-        
+
         ]);
     }
 
-    public function login(Request $request)
-    {
-    //
-    //
+    public function Register(Request $request) {
+        $credentials = $request->validate([
+            'email'
+            'name'
+            'password'
+        ]);
     }
 
 }
