@@ -6,12 +6,12 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
-    public function Login(Request $request) {
-        $credentials = $request->validate([
-            'email' => 'required|email|exists:users,email',
-            'password' => 'required|min:8',
+    public function create(Request $request)
+    {
+        $request->validate([
+
         ]);
-       }
+    }
 
     public function Register(Request $request) {
         $credentials = $request->validate([
@@ -20,4 +20,5 @@ class UserController extends Controller
             'password'
         ]);
     }
+
 }
