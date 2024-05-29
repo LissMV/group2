@@ -16,6 +16,8 @@ class UserController extends Controller
     public function Register(Request $request) {
         $credentials = $request->validate([
             'email'
+            'name'
+            'password'
         ]);
     }
 }
