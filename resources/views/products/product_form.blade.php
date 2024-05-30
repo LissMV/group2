@@ -10,7 +10,7 @@
         <label for=""></label>
     </div>
     <div>
-        <x-input name="password" type="text">Password</x-input>
+        <x-input name="password" type="password">Password</x-input>
         <label for=""></label>
     </div>
     </form>
