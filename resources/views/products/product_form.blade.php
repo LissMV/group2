@@ -2,15 +2,15 @@
     <Form action="/Register" method="POST">
         @csrf
     <div>
-        <x-input name="user" type="text">Username</x-input>
+        <x-input name="price" type="string">Disponible</x-input>
         <label for=""></label>
     </div>
     <div>
-        <x-input name="email" type="text">Email</x-input>
+        <x-input name="email" type="text">Precio</x-input>
         <label for=""></label>
     </div>
     <div>
-        <x-input name="password" type="password">Password</x-input>
+        <x-input name="password" type="password">Descripción</x-input>
         <label for=""></label>
     </div>
     </form>
