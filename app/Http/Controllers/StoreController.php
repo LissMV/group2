@@ -10,6 +10,7 @@ class StoreController extends Controller
         $credentials = $request->validate([
             'email' => 'required|email|exists:users,email',
             'password' => 'required|min:8',
+            'store name' => 'required',
         ]);
        }
 
