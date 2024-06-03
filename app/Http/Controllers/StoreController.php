@@ -11,7 +11,13 @@ class StoreController extends Controller
     }
 
     public function create() {
-
+        $store = $request->validate([
+            'name' => 'required',
+            'phone' => 'required',
+            'email'=> 'required|email|unique',
+            'address' => 'required',
+            'description' => 'required',
+        ]);
     }
 
     public function store() {
@@ -23,21 +29,37 @@ class StoreController extends Controller
     }
 
     public function edit() {
+        $store = $request->validate([
+            'name' => 'required',
+            'phone' => 'required',
+            'address' => 'required',
+            'description' => 'required',
+        ]);
 
     }
 
     public function update() {
+        $store = $request->validate([
+            'name' => 'required',
+            'phone' => 'required',
+            'address' => 'required',
+            'description' => 'required',
+        ]);
 
     }
 
     public function destroy() {
-
-    }
-
-    public function Register(Request $request) {
-        $credentials = $request->validate([
-            'email'
+        $store = $request->validate([
+            'name' => 'required',
+            'phone' => 'required',
+            'email'=> 'required|email|unique',
+            'address' => 'required',
+            'description' => 'required',
         ]);
+
     }
-}
+    }
+
+
+
 
