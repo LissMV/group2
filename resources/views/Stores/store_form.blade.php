@@ -7,27 +7,32 @@
 <div class="flex">
             <div>
                 <img height="300px" width="300px"
-                    src="https://cdn.icon-icons.com/icons2/3298/PNG/512/ui_user_profile_avatar_person_icon_208734.png"
+                    src="https://png.pngtree.com/png-vector/20191017/ourmid/pngtree-shop-icon-png-image_1820095.jpg"
                     alt="">
             </div>
             <div>
                 <div class="h-14">
-                    <x-input name="user" type="text" style="background: #BDBBBA " class="border-neutral-950 border solid-xl px-4 py-1.5">Nombre de tienda</x-input>
+                    <x-input name="user" type="text" >Nombre de tienda</x-input>
                 </div>
                 <div class="h-14">
-                    <x-input name="phone" type="tel" style="background: #BDBBBA " class="border-double border-neutral-950 border solid-xl px-4 py-1.5">Teléfono</x-input>
+                    <x-input name="phone" type="tel" >Teléfono</x-input>
                 </div>
                 <div class="h-14">
-                    <x-input name="email" type="email" style="background: #BDBBBA " class="border-double border-neutral-950 border solid-xl px-4 py-1.5">Email</x-input>
+                    <x-input name="email" type="email">Email</x-input>
                 </div>
                 <div class="h-14">
-                    <x-input name="name" type="text" style="background: #BDBBBA " class="border-neutral-950 border solid-xl px-4 py-1.5">Dirección</x-input>
+                    <x-input name="name" type="text" >Dirección</x-input>
                 </div>
                 <div class="h-14">
-                    <x-input name="name" type="text" style="background: #BDBBBA " class="border-neutral-950 border solid-xl px-4 py-1.5">Descripción de tienda</x-input>
+                    <x-input name="name" type="text">Descripción de tienda</x-input>
+                </div>
+                <div>
+                    <img height="300px" width="300px"
+                        src="{{  asset('img/image.png') }}"
+                        alt="">
                 </div>
                 <button class=" border-double border-neutral-950 border rounded-xl px-4 py-1.5  hover:bg-red-500"
-                    type="submit" >Llenar formulario para venta de productos</button>
+                    type="submit" >Formulario para venta de productos</button>
                 </div>
             </div>
         </form>
