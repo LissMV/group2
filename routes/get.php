@@ -23,3 +23,17 @@ Route::get('/layout', function () {
 Route::get('/home', function () {
     return view('components.home');
 });
+
+Route::get('/storeForm', function () {
+    return view('stores.store_form');
+});
+
+Route::get('/productForm', function () {
+    return view('products.product_form');
+});
+
+Route::get('/store', function () {
+    return view('stores.store');
+});
+
+
