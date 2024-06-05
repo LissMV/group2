@@ -36,4 +36,16 @@ Route::get('/store', function () {
     return view('stores.store');
 });
 
+Route::get('/community', function () {
+    return view('components.community');
+});
+
+Route::get('/learning', function () {
+    return view('components.learning');
+});
+
+Route::get('/shoppingCart', function () {
+    return view('components.shopping-cart');
+});
+
 
