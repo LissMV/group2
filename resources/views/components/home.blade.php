@@ -1,3 +1,3 @@
 <div>
-    <h1>Welcome to the begin of our proyect :C</h1>
+    <h1>Welcome</h1>
 </div>

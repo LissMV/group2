@@ -8,7 +8,7 @@ use App\Models\User;
 
 class UserController extends Controller
 {
-    public function Login(Request $request)
+    public function login(Request $request)
     {
         $credentials = $request->validate([
             'email' => 'required|email|exists:users,email',
@@ -22,16 +22,19 @@ class UserController extends Controller
         return back()->withErrors(['email'=>'Wrong credentials', 'password'=> 'Wrong password']);
    }
 
-    public function Register(Request $request) {
+    public function register(Request $request) {
         $datosVerificados = $request->validate([
-            'user name' => 'required',
+            'name' => 'required',
             'email' => 'required|email|unique:users,email',
             'password' => 'required|min:10',
         ]);
 
-        if (User::Register($datosVerificados)) {
+        $user = User::create($datosVerificados);
+        if ($user) {
+            Auth::login($user);
             return redirect('/');
         }
+
         return back()->withErrors([
             'email'=> '',
             'password'=> '',
