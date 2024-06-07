@@ -6,7 +6,7 @@
     </div>
     <div>
         <div class="h-14">
-            <x-input name="user" type="text" >Nombre de tienda</x-input>
+            <x-input name="name" type="text" >Nombre de tienda</x-input>
         </div>
         <div class="h-14">
             <x-input name="phone" type="tel" >Teléfono</x-input>
@@ -15,10 +15,10 @@
             <x-input name="email" type="email">Email</x-input>
         </div>
         <div class="h-14">
-            <x-input name="name" type="text" >Dirección</x-input>
+            <x-input name="address" type="text" >Dirección</x-input>
         </div>
         <div class="h-14">
-            <x-input name="name" type="text">Descripción de tienda</x-input>
+            <x-input name="description" type="text">Descripción de tienda</x-input>
         </div>
         <div class="h-14">
             <x-input name="name" type="text">Redes sociales</x-input>

@@ -16,8 +16,11 @@ Route::get('/register', function () {
     return view('users.signup');
 });
 
-Route::get('/layout', function () {
-    return view('layout');
+Route::get('/users/edit', function () {
+    return view('users.edit', [
+        'user' => Auth::user(),
+        'store' => Auth::user()->stores()
+    ]);
 });
 
 Route::get('/home', function () {

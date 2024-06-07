@@ -32,7 +32,7 @@ class UserController extends Controller
         $user = User::create($datosVerificados);
         if ($user) {
             Auth::login($user);
-            return redirect('/');
+            return redirect('/home');
         }
 
         return back()->withErrors([
@@ -42,4 +42,14 @@ class UserController extends Controller
         ]);
     }
 
+    public function update(User $user) {
+        $request = request()->validate([
+
+        ]);
+
+        $user->update([
+            'name' => $request['name'],
+            'email' => $request['email']
+        ]);
+    }
 }

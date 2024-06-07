@@ -44,7 +44,7 @@ class User extends Authenticatable
         ];
     }
 
-    public function role(): HasOne {
-        return $this->hasOne(Role::class);
+    public function stores() {
+        return $this->hasMany(Store::class);
     }
 }
