@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 
 
-Route::get('welcome/', function () {
+Route::get('/', function () {
     return view('welcome');
 });
 
@@ -51,4 +51,7 @@ Route::get('/shoppingCart', function () {
     return view('components.shopping-cart');
 });
 
+Route::get('/seeProducts', function () {
+    return view('products.see_products');
+});
 
