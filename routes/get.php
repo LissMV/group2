@@ -17,7 +17,8 @@ Route::get('/register', function () {
 });
 
 Route::get('/users/edit', function () {
-    return view('users.edit', [
+    return view('users.edit',
+    [
         'user' => Auth::user(),
         'store' => Auth::user()->stores()
     ]);

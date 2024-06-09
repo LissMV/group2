@@ -1,6 +1,6 @@
-<div>
-    <label>{{ $slot }}</label>
-    <input style="background: #BDBBBA " class="border-neutral-950 border solid-xl px-4 py-1.5" {{$attributes}}>
+<div class="pb-4">
+    <label class="block text-base mb-2" >{{ $slot }}</label>
+    <input class="border-b w-full" {{$attributes}}>
 
     @error($attributes['name'])
         <p>{{$message}}</p>
