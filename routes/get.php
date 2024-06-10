@@ -25,7 +25,7 @@ Route::get('/users/edit', function () {
 });
 
 Route::get('/home', function () {
-    return view('components.home');
+    return view('body.home');
 });
 
 Route::get('/storeForm', function () {
@@ -41,15 +41,15 @@ Route::get('/store', function () {
 });
 
 Route::get('/community', function () {
-    return view('components.community');
+    return view('community.community');
 });
 
 Route::get('/learning', function () {
-    return view('components.learning');
+    return view('community.learning');
 });
 
 Route::get('/shoppingCart', function () {
-    return view('components.shopping-cart');
+    return view('body.shopping-cart');
 });
 
 Route::get('/seeProducts', function () {
