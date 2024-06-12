@@ -1,21 +1,22 @@
 <x-layout>
     <div class="grid grid-cols-3 h-screen place-content-center ">
         <div class="col-span-1">
+            <img class="h-screen" src="{{ asset('img/forms/image.png') }}" alt="">
 
         </div>
 
-        <div class="col-span-2">
-            <h1 class="font-bold text-4xl m-8 text-center">Log in</h1>
+        <div class="col-span-2 m-24">
+            <h1 class="font-bold text-4xl m-8 text-center pb-8">Log in</h1>
             <form class="flex justify-center items-center " action="/login" method="POST">
                 @csrf
                 <div class="w-96 p-6">
-                    <div>
+                    <div class="pb-8">
                         <x-input name="email" type="text">Email</x-input>
                     </div>
-                    <div>
+                    <div class="pb-6">
                         <x-input name="password" type="password">Password</x-input>
                     </div>
-                   
+
                     <x-button>Log in</x-button>
                 </div>
 
