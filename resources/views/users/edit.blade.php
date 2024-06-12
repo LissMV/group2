@@ -11,8 +11,7 @@
                 <x-input name="email" type="text">Email</x-input>
             </div>
 
-            <button class="m-8 border-double border-neutral-950 border rounded-xl px-4 py-1.5  hover:bg-indigo-500 "
-                type="submit">Crear cuenta</button>
+            <x-button>Actualizar</x-button>
         </div>
     </form>
 
@@ -20,6 +19,6 @@
         <div>
          espera por la verificacion
         </div>
-  
+
     @endif
 </x-layout>

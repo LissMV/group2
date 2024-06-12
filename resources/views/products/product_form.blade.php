@@ -31,8 +31,7 @@
                         <x-input name="name" type="text">Descripción</x-input>
                     </div>
                 </div>
-                <button class=" border-double border-neutral-950 border rounded-xl px-4 py-1.5  hover:bg-red-500"
-                    type="submit" >Subir producto</button>
+                <x-button>Subir productos</x-button>
                 </div>
             </div>
         </form>

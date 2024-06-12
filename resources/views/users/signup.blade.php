@@ -14,8 +14,7 @@
             <div>
                 <x-input name="password" type="password">Password</x-input>
             </div>
-            <button class="m-8 border-double border-neutral-950 border rounded-xl px-4 py-1.5  hover:bg-indigo-500 "
-                type="submit">Crear cuenta</button>
+            <x-button>Register</x-button>
         </div>
     </form>
     </div>
