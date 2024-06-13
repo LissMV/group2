@@ -20,7 +20,7 @@ Route::get('/users/edit', function () {
     return view('users.edit',
     [
         'user' => Auth::user(),
-        //'store' => Auth::user()->stores()
+        'store' => Auth::user()->stores()
     ]);
 });
 
