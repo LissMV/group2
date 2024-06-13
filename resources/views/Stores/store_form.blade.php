@@ -31,7 +31,7 @@
                         src="{{  asset('img/image.png') }}"
                         alt="">
                 </div>
-                <button class=" border-double border-neutral-950 border rounded-xl px-4 py-1.5  hover:bg-red-500"
+                <button class=" border-double border-neutral-950 border rounded-xl px-4 py-1.5"
                     type="submit" >Formulario para venta de productos</button>
                 </div>
             </div>
