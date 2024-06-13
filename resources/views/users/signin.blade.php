@@ -1,9 +1,12 @@
 <x-layout>
-    <div class="grid grid-cols-3 h-screen place-content-center ">
-        <div class="col-span-1">
-            <img class="h-screen" src="{{ asset('img/forms/image.png') }}" alt="">
-
-        </div>
+    <div class="grid grid-cols-4 h-screen place-content-center ">
+        <div class="col-span-2">
+            <img class="h-screen" src="{{ asset('img/forms/imagen.png') }}" alt="">
+            <div class="absolute top-32 text-white px-16 pt-32">
+                <h1 class="text-4xl">Crea una Cuenta!</h1>
+                <p class="text-2xl pt-5">Forma parte de esta comunidad</p>
+            </div>
+         </div>
 
         <div class="col-span-2 m-24">
             <h1 class="font-bold text-4xl m-8 text-center pb-8">Log in</h1>
