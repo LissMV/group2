@@ -11,8 +11,9 @@
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Adidas_Logo.svg/2560px-Adidas_Logo.svg.png" alt="Logo" width="100">
         </div>
         <form id="searchForm">
-            <input style="background-color: #EABFAA" style="padding: height:100px weight:20px"  type="text" id="searchInput" style="color:#000000" placeholder="Buscar" autocomplete="off" >
-            <button type="submit">Buscar</button>
+            <input style="background-color: #EABFAA" type="text" id="searchInput" style="color:#000000" placeholder="Buscar" autocomplete="off" >
+            <button type="submit"><img height="25px" width="25px"
+                src="https://static.vecteezy.com/system/resources/previews/009/589/567/non_2x/magnifying-icon-magnifying-clipart-transparent-free-png.png" alt=""></button>
         </form>
     </div>
         </div>
@@ -54,7 +55,7 @@
     </section>
 
         <div class="text-center">
-        <button class="border-double border-neutral-950 border rounded-xl px-4 py-1.5  style= color: #FFFFFF; color-background: bg-light-green";
+        <button class="border-double border-neutral-950 border rounded-xl px-4 py-1.5   type= text color: white color-background: bg-light-green style=;"
             type="submit">Registrarse</button>
         <button type="submit">Iniciar sesión</button>
         </div>
