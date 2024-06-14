@@ -22,6 +22,7 @@ class StoreController extends Controller
             'email'=> 'required|email',
             'address' => 'required',
             'description' => 'required',
+            'social_media'
         ]);
 
         dd($store);

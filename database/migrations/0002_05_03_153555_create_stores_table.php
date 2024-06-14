@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->string('address');
             $table->text('description');
+            $table->text('social_media');
             $table->boolean('is_verified')->default(false);
             $table->timestamps();
         });
