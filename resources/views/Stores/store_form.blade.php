@@ -26,11 +26,7 @@
                 <div class="h-14">
                     <x-input name="name" type="text">Descripción de tienda</x-input>
                 </div>
-                <div>
-                    <img height="300px" width="300px"
-                        src="{{  asset('img/image.png') }}"
-                        alt="">
-                </div>
+                <div class="h-20">
                 <button class=" border-double border-neutral-950 border rounded-xl px-4 py-1.5"
                     type="submit" >Formulario para venta de productos</button>
                 </div>
