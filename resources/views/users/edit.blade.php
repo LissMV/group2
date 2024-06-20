@@ -23,7 +23,7 @@
     </section>
 
     @if($user->is_seller)
-    <section class="text-center">
+    <section class="text-center mb-8">
         <h1 class="font-black">Esperando por la verificación</h1>
         <div>
             Por favor espera hasta que nosotros verifiquemos tu perfil y asi darte acceso para que puedas unirte como vendedor
@@ -33,30 +33,35 @@
 
     @endif
 
-    <form class="flex justify-center items-center m-8"  action="/stores/update/{{$store->id}}" method="POST">
+    <h1 class="text-center font-black text-5xl pb-10">Actualizar datos de tienda</h1>
+<section class="flex justify-center ">
+    <div class="h-72 w-72 pr-10">
+        <img class="mt-24" src="{{ asset('img/forms/logoo.png') }}" alt="">
+    </div>
+    <form class="flex justify-center items-center pl-10"  action="" method="">
         @csrf
-        @method('PATCH')
         <div class="w-96 p-6">
             <div>
-                <x-input name="name" type="text" value="{{$store->name}}">Nombre</x-input>
+                <x-input name="name" type="text">Nombre</x-input>
             </div>
             <div>
-                <x-input name="phone" type="text" value="{{$store->phone}}" >Phone</x-input>
+                <x-input name="phone" type="text">Phone</x-input>
             </div>
             <div>
-                <x-input name="email" type="text" value="{{$store->email}}">Email</x-input>
+                <x-input name="email" type="text">Email</x-input>
             </div>
             <div>
-                <x-input name="address" type="text" value="{{$store->address}}" >Dirección</x-input>
+                <x-input name="address" type="text">Dirección</x-input>
             </div>
             <div>
-                <x-input name="description" type="text" value="{{$store->description}}">Name</x-input>
+                <x-input name="description" type="text">Name</x-input>
             </div>
             <div>
-                <x-input name="social_media" type="text" value="{{$store->social_media}}">Name</x-input>
+                <x-input name="social_media" type="text">Redes sociales</x-input>
             </div>
 
             <x-button>Actualizar</x-button>
         </div>
     </form>
+</section>
 </x-layout>

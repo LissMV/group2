@@ -1,8 +1,20 @@
 <x-layout>
-    <div class="grid grid-cols-4 h-screen place-content-center ">
-        <div class="col-span-2">
-            <img class="h-screen" src="{{ asset('img/forms/imagen.png') }}" alt="">
-            <div class="absolute top-32 text-white px-16 pt-32">
+    <body>
+        <style>
+            body {
+            background-image: url('https://images7.alphacoders.com/378/thumb-1920-378185.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+             }
+        </style>
+    </body>
+
+    <section class="flex justify-center items-center h-screen">
+    <div class="flex h-screen place-content-center backdrop-blur-ms bg-white/35 ">
+        <div class="w-96">
+            <img class="h-screen" src="{{ asset('https://i.pinimg.com/564x/6c/40/c5/6c40c53bfebdffec1e7361846fefa46b.jpg') }}" alt="">
+            <div class="absolute top-32 text-white px-4 pt-32">
                 <h1 class="text-4xl">Crea una Cuenta!</h1>
                 <p class="text-2xl pt-5">Forma parte de esta comunidad</p>
             </div>
@@ -26,4 +38,5 @@
             </form>
         </div>
     </div>
+    </section>
 </x-layout>
