@@ -27,7 +27,7 @@
                     <x-input name="name" type="text">Descripción de tienda</x-input>
                 </div>
                 <div class="h-20">
-                <button class=" border-double border-neutral-950 border rounded-xl px-4 py-1.5"
+                <button class=" border-double border-neutral-950 border rounded-xl px-4 py-1.5 bg-light-brown"
                     type="submit" >Formulario para venta de productos</button>
                 </div>
             </div>
