@@ -1,18 +1,14 @@
 <x-layout>
     <section class="text-center">
-        <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buscador</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <div class="logo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Adidas_Logo.svg/2560px-Adidas_Logo.svg.png" alt="Logo" width="100">
-        </div>
-        <form id="searchForm">
-            <input style="background-color: #EABFAA" type="text" id="searchInput" style="color:#000000" placeholder="Buscar" autocomplete="off" >
-            <button type="submit"><img height="25px" width="25px"
+        <div class="flex justify-center mb-6 ">
+            <section>
+        </button>
+        </section>
+            <input class=" bg-light-brown w-4/5 h-7 placeholder-white text-2xl font-serif " type="text" placeholder="Buscar">
+            <section>
+
+    </button>
+            <button type="submit"><img height="50px" width="50px"
                 src="https://static.vecteezy.com/system/resources/previews/009/589/567/non_2x/magnifying-icon-magnifying-clipart-transparent-free-png.png" alt=""></button>
         </form>
     </div>
@@ -21,7 +17,7 @@
 
     <section class="grid grid-cols-2 content-center">
 
-        <div>
+        <div class="ml-[250px]">
             <img height="300px" width="300px"
                 src="https://i.pinimg.com/564x/d4/43/49/d4434992446bec96ddecb79f266b346c.jpg"
                 alt="">
@@ -31,7 +27,7 @@
                 src="https://acdn.mitiendanube.com/stores/001/129/542/products/cotonetes-meraki1-d353325a4ecb0c8ee116305266209283-1024-1024.jpg"
                 alt="">
         </div>
-        <div>
+        <div class="ml-[250px]">
             <img height="300px" width="300px"
                 src="https://www.cleanipedia.com/images/iohqr4whhl17/AaXnlgmOnQkBB5t6PrRXa/139eebae1f5ecb3db35c373661bc3df7/SG94YnlfQ2xlYW5pcGVkaWFfXzMyOV8uanBn/1200w/c%C3%B3mo-usar-los-productos-de-limpieza-ecol%C3%B3gicos-correctamente.jpg"
                 alt="">
@@ -41,7 +37,7 @@
                 src="https://www.trebolverde.es/wp-content/uploads/2021/11/limpiadormaderayparquet.jpg"
                 alt="">
         </div>
-        <div>
+        <div class="ml-[250px]">
             <img height="300px" width="300px"
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn3kDieGTKKkOZ87WCFEm9-79-vgSfegSxrQ&s"
                 alt="">
@@ -57,6 +53,9 @@
         <div class="text-center">
         <button class="border-double border-neutral-950 border rounded-xl px-4 py-1.5   type= text color: white color-background: bg-light-green style=;"
             type="submit">Registrarse</button>
+            <div>
+
+            </div>
         <button type="submit">Iniciar sesión</button>
         </div>
 
