@@ -2,6 +2,7 @@
     <section class="text-center">
         <div class="flex justify-center mb-6 ">
             <section>
+        <img height="50px" width="50px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Adidas_Logo.svg/2560px-Adidas_Logo.svg.png" alt="">
         </button>
         </section>
             <input class=" bg-light-brown w-4/5 h-7 placeholder-white text-2xl font-serif " type="text" placeholder="Buscar">
