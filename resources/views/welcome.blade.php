@@ -55,6 +55,9 @@
                 src="https://m.media-amazon.com/images/I/71MOlm7WtDL._AC_UF350,350_QL80_.jpg"
                 alt="">
         </div>
+        <div>
+            <img class="ml-[300px] height=700px" width="900px" src="{{ asset('img/forms/welcome n2.png') }}" alt="">
+        </div>
     </section>
 
     <div class="text-center">
