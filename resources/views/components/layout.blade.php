@@ -16,7 +16,10 @@
 </head>
 
 <body>
+    @auth
+        <x-navbar/>
+    @endauth
+
     {{ $slot }}
 </body>
-
 </html>

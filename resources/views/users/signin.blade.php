@@ -12,9 +12,10 @@
     <div class="flex h-screen place-content-center bg-white ">
         <div class="w-96">
             <img class="h-screen" src="{{ asset('https://i.pinimg.com/564x/6c/40/c5/6c40c53bfebdffec1e7361846fefa46b.jpg') }}" alt="">
-            <div class="absolute top-32 text-white px-4 pt-32">
+            <div class="absolute top-32 px-4 pt-32 text-center">
                 <h1 class="text-4xl">Crea una Cuenta!</h1>
-                <p class="text-2xl pt-5">Forma parte de esta comunidad</p>
+                <p class="text-2xl pt-5 mb-4">Forma parte de esta comunidad</p>
+                <a class=" bg-light-green border p-1 px-6 text-white border-light-green" href="{{ route('register') }}">Crear cuenta</a>
             </div>
          </div>
 

@@ -10,11 +10,11 @@ Route::get('/', function () {
 
 Route::get('/login', function () {
     return view('users.signin');
-});
+})->name('login');
 
 Route::get('/register', function () {
     return view('users.signup');
-});
+})->name('register');
 
 Route::get('/users/edit', function () {
     return view('users.edit',
@@ -22,7 +22,7 @@ Route::get('/users/edit', function () {
         'user' => Auth::user(),
         'store' => Auth::user()->stores()
     ]);
-});
+})->name('usersEdit');
 
 Route::get('/home', function () {
     return view('body.home');
