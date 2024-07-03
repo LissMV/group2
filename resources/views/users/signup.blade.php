@@ -19,7 +19,7 @@
         </div>
 
         <div class="col-span-2 m-24 ">
-            <h1 class="font-bold text-4xl m-8 text-center pb 8">Sign Up</h1>
+            <h1 class="font-bold text-4xl m-8 text-center pb 8 text-amber-950">Sign Up</h1>
             <form class=" flex justify-center items-center" action="/register" method="POST">
                 @csrf
 

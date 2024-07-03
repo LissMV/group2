@@ -2,16 +2,14 @@
     <body>
         <style>
             body {
-            background-image: url('https://images7.alphacoders.com/378/thumb-1920-378185.jpg');
-            background-size: cover;
-            background-attachment: fixed;
-            background-position: center;
+            background-image: url('https://media.istockphoto.com/id/1008739182/es/foto/tel%C3%B3n-de-fondo-de-pared-natural-de-hojas-verdes.jpg?s=1024x1024&w=is&k=20&c=SyIFXMnF_bDnsAVP6yu7tKQucBPXQFGBsFLjz9ZNm-0=');
+
              }
         </style>
     </body>
 
     <section class="flex justify-center items-center h-screen">
-    <div class="flex h-screen place-content-center backdrop-blur-ms bg-white/35 ">
+    <div class="flex h-screen place-content-center bg-white ">
         <div class="w-96">
             <img class="h-screen" src="{{ asset('https://i.pinimg.com/564x/6c/40/c5/6c40c53bfebdffec1e7361846fefa46b.jpg') }}" alt="">
             <div class="absolute top-32 text-white px-4 pt-32">

@@ -32,8 +32,8 @@ Route::get('/storeForm', function () {
     return view('stores.store_form');
 });
 
-Route::get('/productForm', function () {
-    return view('products.product_form');
+Route::get('/sellerHome', function () {
+    return view('products.seller_home');
 });
 
 Route::get('/store', function () {
