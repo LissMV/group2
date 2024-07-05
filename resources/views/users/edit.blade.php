@@ -21,6 +21,9 @@
     </form>
     </div>
     </section>
+    <a href="{{ route('store') }}">
+        <h1>¿Quieres iniciar como vendedor?</h1>
+    </a>
 
     @if($user->is_seller)
     <section class="text-center mb-8">
@@ -66,6 +69,6 @@
 </section>
 <div class="border rounded-lg drop-shadow-2xl p-6 mx-40 mb-10 bg-dark-green text-center">
     <h1 class="text-center text-2xl mb-4 text-white"> ¿Quieres agregar productos a la tienda?, presiona el siguiente botón</h1>
-    <a class=" bg-light-green border p-1 px-6 text-white border-light-green" href="http://127.0.0.1:8000/productForm">Agregar productos</a>
+    <a class=" bg-light-green border p-1 px-6 text-white border-light-green" href="http://127.0.0.1:8000/addProduct">Agregar productos</a>
 </div>
 </x-layout>

@@ -12,7 +12,7 @@ export default {
         colors: {
             'light-green': '#606c38',
             'dark-green': '#283618',
-            'white': '#FEFAE0',
+            'white2': '#FEFAE0',
             'light-brown': '#DDA15E',
             'brown': '#BC6C25',
         },

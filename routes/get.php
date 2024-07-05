@@ -28,17 +28,17 @@ Route::get('/home', function () {
     return view('body.home');
 });
 
-Route::get('/storeForm', function () {
-    return view('stores.store_form');
+Route::get('/sellerHome', function () {
+    return view('stores.seller_home');
 });
 
-Route::get('/sellerHome', function () {
-    return view('products.seller_home');
+Route::get('/addProduct', function () {
+    return view('products.add_product');
 });
 
 Route::get('/store', function () {
     return view('stores.store');
-});
+})->name('store');
 
 Route::get('/community', function () {
     return view('community.community');
@@ -50,7 +50,7 @@ Route::get('/learning', function () {
 
 Route::get('/shoppingCart', function () {
     return view('body.shopping-cart');
-});
+})->name('shoppingCart');
 
 Route::get('/seeProducts', function () {
     return view('products.see_products');
