@@ -61,6 +61,7 @@
     </section>
 
     <div class="text-center">
+        
         <button
             class="border-double border-neutral-950 border rounded-xl px-20 py-3  bg-light-green  text-white font-serif"
             type="submit">Registrarse</button>
