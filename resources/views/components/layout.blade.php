@@ -17,9 +17,19 @@
 
 <body>
     @auth
-        <x-navbar/>
+    <section class="grid relative grid-cols-4">
+        <x-navbar class="col-span-4"/>
+        <div>
+        <x-navertical class="fixed" />
+        </div>
+        <div class="col-span-4 overscroll-contain">
+            {{ $slot }}
+        </div>
+        </section>
     @endauth
 
-    {{ $slot }}
+    @guest
+        {{ $slot }}
+    @endguest
 </body>
 </html>
