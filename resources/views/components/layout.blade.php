@@ -18,11 +18,11 @@
 <body>
     @auth
     <section class="grid relative grid-cols-4">
-        <x-navbar class="col-span-4"/>
-        <div>
-        <x-navertical class="fixed" />
+        <x-navbar class="fixed w-full col-span-4"/>
+        <div class="col-span-1">
+        <x-navertical class="fixed h-full w-56" />
         </div>
-        <div class="col-span-4 overscroll-contain">
+        <div class="col-span-3 overscroll-contain">
             {{ $slot }}
         </div>
         </section>
@@ -31,5 +31,7 @@
     @guest
         {{ $slot }}
     @endguest
+    
+    <script src="//unpkg.com/alpinejs" defer></script>
 </body>
 </html>

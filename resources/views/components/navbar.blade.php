@@ -1,5 +1,5 @@
 <section {{ $attributes->merge(['class' => "bg-light-green py-4"])}}>
-    <nav class="mx-36 flex justify-center items-center space-x-8">
+    <nav class="mx-36 flex justify-center items-center space-x-8 ps-32">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
             class="size-9">
             <path stroke-linecap="round" stroke-linejoin="round"
