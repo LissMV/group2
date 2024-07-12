@@ -21,7 +21,7 @@
 
         <div class="col-span-2 m-24">
             <h1 class="font-bold text-4xl m-8 text-center pb-8">Log in</h1>
-            <form class="flex justify-center items-center " action="/login" method="POST">
+            <form class="flex justify-center items-center " action="login" method="POST">
                 @csrf
                 <div class="w-96 p-6">
                     <div class="pb-8">
