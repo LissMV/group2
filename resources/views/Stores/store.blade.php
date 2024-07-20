@@ -1,6 +1,6 @@
 <x-layout>
     <div>
-        <h1 class="font-bold text-4xl m-8 text-center">Formulario para solicitar acceso para vender</h1>
+        <h1 class="font-bold text-4xl m-8 text-center">Formulario de Solicitud de Acceso para Vender</h1>
     </div>
  <Form class=" flex justify-center items-center" action="/create" method="POST">
     @csrf
