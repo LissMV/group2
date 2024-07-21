@@ -1,5 +1,5 @@
 <x-layout>
-    <div style="'lora': [Lora, ...defaultTheme.fontFamily.sans],">
+    <div style="font-family: montserrat">
         <div
             style="background-color: #606c38; padding: 20px 20px; display: flex; justify-content: space-between; align-items: center; color: white;">
             <input
@@ -83,6 +83,29 @@
                 style="width: 150px; padding: 10px; margin: 10px 0;  cursor: pointer; color: #283618; background-color: white;">Iniciar
                 Sesión</button>
         </div>
+
+
+<footer style="background-color: #606c38">
+    <div class="w-full mx-auto max-w-screen-xl p-6 md:flex md:items-center md:justify-between">
+      <span style="color: #FEFAE0">© 2024 <a href="https://flowbite.com/" class="hover:underline">ECOMMUNITY</a>. TODOS LOS DERECHOS RESERVADOS
+    </span>
+    <ul style="color: #FEFAE0" class="flex flex-wrap items-center mt-3 text-sm font-medium;">
+        <li>
+            <a href="#" class="hover:underline me-4 md:me-6">SOBRE NOSOTROS</a>
+        </li>
+        <li>
+            <a href="#" class="hover:underline me-4 md:me-6">POLITÍCA</a>
+        </li>
+        <li>
+            <a href="#" class="hover:underline me-4 md:me-6">ECOMMUNITY</a>
+        </li>
+        <li>
+            <a href="#" class="hover:underline">CONTACTO</a>
+        </li>
+    </ul>
+    </div>
+</footer>
+
     </div>
     </section>
 </x-layout>
