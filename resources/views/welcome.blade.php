@@ -105,6 +105,10 @@
             style="width: 150px; padding: 10px; margin: 10px 0;  cursor: pointer; color: #283618; background-color: white;">Iniciar
             Sesión</button>
     </div>
+    <footer  style="background-color: #606c38; padding: 5px 5px; display: flex; justify-content: space-between; align-items: center; color: white;">
+        <p class="text-align: center">@COMMUNITY</p>
+        <p>SOBRE NOSOTROS</p>
+    </footer>
     </div>
 </section>
 </x-layout>
