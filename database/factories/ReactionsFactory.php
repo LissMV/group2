@@ -18,7 +18,7 @@ class ReactionsFactory extends Factory
     {
         return [
 
-            'name' => fake()->randomElement(['Me interesa', 'Excelente', 'si voy a ir'])
+            'name' => fake()->randomElement(['Me interesa', 'Aplausos', 'Si asistire', 'No asistire'])
 
         ];
     }
