@@ -56,3 +56,7 @@ Route::get('/seeProducts', function () {
     return view('products.see_products');
 });
 
+Route::get('/events', function () {
+    return view('community.event');
+});
+
