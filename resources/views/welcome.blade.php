@@ -1,38 +1,111 @@
 <x-layout>
-    <div style="background-color: #606c38; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center; color: white;">
-
+    <div style="font-family: montserrat">
+        <div
+            style="background-color: #606c38; padding: 20px 20px; display: flex; justify-content: space-between; align-items: center; color: white;">
             <input
-                class=" bg-white w-3/5 h-10 border-double border-neutral-950 border rounded-xl placeholder-black text-1.7xl font-serif"
+                class=" bg-white w-3/5 h-10 border-double border-neutral-950 border rounded-xl placeholder-black text-1.7xl font-serif ml-[230px]"
                 type="text" placeholder="Buscar">
-
 
             <button type="submit"><img height="25px" width="25px"
                     src="https://cdn-icons-png.flaticon.com/256/25/25313.png">
-                </button>
+            </button>
+        </div>
+        <div style="display: flex; align-items:center" class="h-15">
+            <img class="mx-[150px]" src="https://blog.oxfamintermon.org/wp-content/uploads/2016/06/bio.jpg"
+                style="width: 600px">
+            <div style="color: #283618" class="text-1.8xl">
+                <h1>BIODEGRADABLE</h1>
+                <p class="mr-[150px]">La biodegradabilidad es la capacidad de un material de ser biodegradado. Es un
+                    proceso natural en el que un material por acción biológica, cambia y en general pierde sus
+                    propiedades originales y a nivel químico las moléculas que lo conforma se convierten en formas más
+                    simples y estables.</p>
+                <button
+                    style="width: 150px; padding: 10px; margin: 10px 0;  cursor: pointer; color: #FEFAE0; background-color: #606c38;">Explorar
+                    más</button>
+            </div>
+        </div>
 
+        <section style="color: #283618">
+            <p class="ml-[150px] text-2xl m-8">Categoría de productos:</p>
+        </section>
+        <section class="display: flex justify-content: center ml-[60px]">
+            <div style="margin: 20px; border: 2px solid #BC6C25; border-radius: 8px; overflow: hidden; width: 200px; text-align: center;">
+                <img styel="width: 120%; height: 250px; object-fit: cover;"
+                    src="https://www.heraldo.mx/wp-content/uploads/2023/05/HeraldoAgs_Generate_a_close-up_photographic_image_of_homemade_c_ed67437a-a5a4-4a8c-bad5-2543080fcda3-696x696.png"
+                    alt="">
+                <h3 style="margin: 10px 0; font-size: 18px; color: #283618;">LIMPIEZA</h3>
+                <p style="margin: 0 10px 10px; font-size: 15px; color: #606c38";>hola buenos dias a todos es un placer estar aquí</p>
+                <button
+                    style="margin-bottom: 10px; padding: 10px 20px; border-radius: 5px; background-color: #BC6C25; color: #FEFAE0; transition: background-color 0.2s;">Leer Más</button>
+            </div>
+            <div style="margin: 20px; border: 2px solid #BC6C25; border-radius: 8px; overflow: hidden; width: 200px; text-align: center;">
+                <img styel="width: 120%; height: 250px; object-fit: cover;"
+                    src="https://thehealinghappymethod.com/cdn/shop/files/SkinCareKitsquare_17aa1fd1-b3ad-4d25-b806-6f432f88a723.png?v=1698716619"
+                    alt="">
+                <h3 style="margin: 10px 0; font-size: 18px; color: #283618;">CUIDADO DE LA PIEL</h3>
+                <p style="margin: 0 10px 10px; font-size: 15px; color: #606c38";>hola buenos dias a todos es un placer estar aquí</p>
+                <button
+                    style="margin-bottom: 10px; padding: 10px 20px; border-radius: 5px; background-color: #BC6C25; color: #FEFAE0; transition: background-color 0.2s;">Leer Más</button>
+            </div>
+            <div style="margin: 20px; border: 2px solid #BC6C25; border-radius: 8px; overflow: hidden; width: 200px; text-align: center;">
+                <img styel="width: 120%; height: 250px; object-fit: cover;"
+                    src="https://content.cuerpomente.com/medio/2019/07/03/agua-floral_22aedf65_900x900.jpg"
+                    alt="">
+                <h3 style="margin: 10px 0; font-size: 18px; color: #283618;">HIGIENE PERSONAL</h3>
+                <p style="margin: 0 10px 10px; font-size: 15px; color: #606c38";>hola buenos dias a todos es un placer estar aquí</p>
+                <button
+                    style="margin-bottom: 10px; padding: 10px 20px; border-radius: 5px; background-color: #BC6C25; color: #FEFAE0; transition: background-color 0.2s;">Leer Más</button>
+            </div>
+            <div style="margin: 20px; border: 2px solid #BC6C25; border-radius: 8px; overflow: hidden; width: 200px; text-align: center;">
+                <img styel="width: 120%; height: 250px; object-fit: cover;"
+                    src="https://www.vivirbiencolmedica.com/wp-content/uploads/2023/08/beneficios-alimentos-naturales.jpg"
+                    alt="">
+                <h3 style="margin: 10px 0; font-size: 18px; color: #283618;">ALIMENTOS</h3>
+                <p style="margin: 0 10px 10px; font-size: 15px; color: #606c38";>hola buenos dias a todos es un placer estar aquí</p>
+                <button
+                    style="margin-bottom: 10px; padding: 10px 20px; border-radius: 5px; background-color: #BC6C25; color: #FEFAE0; transition: background-color 0.2s;">Leer Más</button>
+            </div>
+            <div style="margin: 20px; border: 2px solid #BC6C25; border-radius: 8px; overflow: hidden; width: 200px; text-align: center;">
+                <img styel="width: 120%; height: 250px; object-fit: cover;"
+                    src="https://down-cl.img.susercontent.com/file/c2d78fc0a67986d2b13455290a72dd51"
+                    alt="">
+                <h3 style="margin: 10px 0; font-size: 18px; color: #283618;">MATERIALES ORGÁNICOS</h3>
+                <p style="margin: 0 10px 10px; font-size: 15px; color: #606c38";>hola buenos dias a todos es un placer estar aquí</p>
+                <button
+                    style="margin-bottom: 10px; padding: 10px 20px; border-radius: 5px; background-color: #BC6C25; color: #FEFAE0; transition: background-color 0.2s;">Leer Más</button>
+            </div>
 
-    </div>
-    <div style="display: flex; flex-direction: column; align-items: center">
-        <img src="https://www.ecowatch.com/wp-content/uploads/2021/09/176196750-img.jpg"  style="width: 500px;">
-
-        <section class="grid grid-cols-3 content-center">
-            <img height="100px" width="350px" src="https://inlovemag.es/wp-content/uploads/2020/02/recetas-de-limpieza-caseras-800x500.jpg" alt="">
-
-            <img height="100px" width="300px"src="https://blog.homedepot.com.mx/wp-content/uploads/2021/01/Co%CC%81mo-germinar-semillas-en-macetas-biodegradables.jpg" alt="">
-
-            <img height="200px" width="350px" src="https://integrishealth.org/-/media/blog/19-jan-feb/jars-with-skincare-products.ashx?revision=007004b7-92c9-4ffa-b02f-47f85cf25894" alt="">
-
-            <img height="100px" width="300px" src="https://m.media-amazon.com/images/I/71MOlm7WtDL._AC_UF350,350_QL80_.jpg" alt="">
-
-            <img height="100px" width="300px" src="https://ae01.alicdn.com/kf/S4c6d6e6c7a414c8aad3b1c193372358bH.jpg?width=1000&height=1000&hash=2000" alt="">
-
-            <img height="100px" width="300px" src="https://dcdn.mitiendanube.com/stores/001/942/058/products/dientes1-a7baf962af00febdca16734606296216-240-0.png" alt="">
         </section>
         <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
-            <button style="width: 150px; padding: 10px; margin: 10px 0;  cursor: pointer; color: white; background-color: #606c38;">Registrarse</button>
-            <button style="width: 150px;  margin: 10px 0;  cursor: pointer; color: black; background-color: white;">Iniciar Sesión</button>
+            <button
+                style="width: 150px; padding: 10px; margin: 10px 0;  cursor: pointer; color: #FEFAE0; background-color: #606c38;">Registrarse</button>
+            <button
+                style="width: 150px; padding: 10px; margin: 10px 0;  cursor: pointer; color: #283618; background-color: white;">Iniciar
+                Sesión</button>
         </div>
+
+
+<footer style="background-color: #606c38">
+    <div class="w-full mx-auto max-w-screen-xl p-6 md:flex md:items-center md:justify-between">
+      <span style="color: #FEFAE0">© 2024 <a href="https://flowbite.com/" class="hover:underline">ECOMMUNITY</a>. TODOS LOS DERECHOS RESERVADOS
+    </span>
+    <ul style="color: #FEFAE0" class="flex flex-wrap items-center mt-3 text-sm font-medium;">
+        <li>
+            <a href="#" class="hover:underline me-4 md:me-6">SOBRE NOSOTROS</a>
+        </li>
+        <li>
+            <a href="#" class="hover:underline me-4 md:me-6">POLITÍCA</a>
+        </li>
+        <li>
+            <a href="#" class="hover:underline me-4 md:me-6">ECOMMUNITY</a>
+        </li>
+        <li>
+            <a href="#" class="hover:underline">CONTACTO</a>
+        </li>
+    </ul>
     </div>
+</footer>
+
+    </div>
+    </section>
 </x-layout>
-
-
