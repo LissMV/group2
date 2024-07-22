@@ -38,15 +38,15 @@ class UserController extends Controller
         return back()->withErrors([
             'email'=> '',
             'password'=> '',
-            'user name'=> '',
+            'name'=> '',
         ]);
     }
 
-    public function update(User $user) {
+    public function update(User $user, $id) {
         $request = request()->validate([
-
+            'name' => 'required',
+            'email' => 'required|email|unique:users,email,' .$id,
         ]);
-
         $user->update([
             'name' => $request['name'],
             'email' => $request['email']
