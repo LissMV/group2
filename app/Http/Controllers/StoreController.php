@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Store;
 use Illuminate\Support\Facades\Auth;
 
+
 class StoreController extends Controller
 {
     public function index() {
@@ -22,7 +23,7 @@ class StoreController extends Controller
             'email'=> 'required|email',
             'address' => 'required',
             'description' => 'required',
-            'social_media'
+            'social_media' => 'required',
         ]);
 
         dd($store);
@@ -30,7 +31,8 @@ class StoreController extends Controller
         $newStore = Store::create($store);
 
         if($newStore) {
-            return redirect('/');
+            Auth::create($newStore);
+            return redirect('/users/edit');
         }
     }
 

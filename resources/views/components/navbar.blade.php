@@ -26,10 +26,10 @@
 
 
 
-        <a href="{{ route('usersEdit') }}">
-            <button class="w-12 h-12 bg-brown  text-white rounded-full flex items-center justify-center">
-            </button>
+        <a class="" href="{{ route('usersEdit') }}">
+           <img class="w-12 h-12 rounded-circle mr-1 flex items-center justify-center" src="{{ asset(Auth::user()->image) }}" alt="">
         </a>
+
 
     </nav>
 </section>

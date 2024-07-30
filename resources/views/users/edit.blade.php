@@ -4,12 +4,20 @@
         <img class="h-72 w-72" src="{{ asset('img/forms/perfil.png') }}">
     </div>
 
-    <div>
+    <div class="card profile-widget">
     <h1 class="font-bold text-6xl text-center m-8">Editar perfil</h1>
-    <form class="flex justify-center items-center" action="/users/update/{{$user->id}}" method="POST">
+    <form class="flex justify-center items-center needs-validation" action="{{route('users.edit.update')}}" method="POST" enctype="multipart/form-data">
         @csrf
-        @method('PATCH')
         <div class="w-96 p-6">
+            <div class="profile-widget-header">
+                <img alt="image" src="{{ asset(Auth::user()->image) }}"
+                class="rounded-circle profile-widget-picture">
+
+            </div>
+            <div class="form-group col-12">
+                <label>Foto de perfil</label>
+                <input type="File" name="image">
+            </div>
             <div>
                 <x-input name="name" type="text" value="{{$user->name}}">Nombre</x-input>
             </div>
@@ -17,7 +25,11 @@
                 <x-input name="email" type="text" value="{{$user->email}}" >Correo</x-input>
             </div>
 
-            <x-button>Actualizar</x-button>
+            <a href="">
+                <x-button>Actualizar</x-button>
+            </a>
+
+
         </div>
     </form>
     </div>

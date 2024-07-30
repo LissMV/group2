@@ -76,12 +76,13 @@
             </div>
 
         </section>
-        <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
-            <button
-                style="width: 150px; padding: 10px; margin: 10px 0;  cursor: pointer; color: #FEFAE0; background-color: #606c38;">Registrarse</button>
-            <button
-                style="width: 150px; padding: 10px; margin: 10px 0;  cursor: pointer; color: #283618; background-color: white;">Iniciar
-                Sesión</button>
+        <div>
+            <a href="{{ route('register') }}">
+                <x-button>Registrarse</x-button>
+            </a>
+            <a href="{{ route('login') }}">
+                <x-button>Iniciar sesion</x-button>
+            </a>
         </div>
 
 
