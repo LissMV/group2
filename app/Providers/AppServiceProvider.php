@@ -21,7 +21,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-       view()->share('categories', Category::all());
-       view()->share('stores', Store::all());
+        if(!$this->app->runningInConsole()) {
+            view()->share('categories', Category::all());
+            view()->share('stores', Store::all());
+        }
     }
 }
