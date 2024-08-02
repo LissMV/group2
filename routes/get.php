@@ -6,7 +6,7 @@ use App\Http\Controllers\UserController;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('welcome');
 
 Route::get('/login', function () {
     return view('users.signin');
@@ -26,7 +26,7 @@ Route::get('/users/edit', function () {
 
 Route::get('/home', function () {
     return view('body.home');
-});
+})->name('home');
 
 Route::get('/sellerHome', function () {
     return view('stores.seller_home');
@@ -46,7 +46,7 @@ Route::get('/community', function () {
 
 Route::get('/learning', function () {
     return view('community.learning');
-})->name('');
+})->name('learning');
 
 Route::get('/shoppingCart', function () {
     return view('body.shopping-cart');
@@ -59,4 +59,8 @@ Route::get('/seeProducts', function () {
 Route::get('/events', function () {
     return view('community.event');
 });
+
+Route::get('/about_us', function () {
+    return view('body.about_us');
+})->name('about_us');
 

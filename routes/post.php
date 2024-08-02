@@ -11,6 +11,8 @@ Route::post('/register', [UserController::class, 'register']);
 
 //Route::patch('/users/update/{id}', [UserController::class, 'update']);
 
-Route::post('/stores/create', [StoreController::class, 'create']);
+Route::post('/store', [StoreController::class, 'create']);
 
 Route::post('/users/edit/update', [UserProfileController::class, 'update'])->name('users.edit.update');
+
+Route::post('/logout', [UserController::class, 'logout']);

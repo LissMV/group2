@@ -1,17 +1,15 @@
 <x-layout>
     <section class="flex justify-center ml-9 mt-24 border-2 border-double border-brown mr-24">
-    <div>
-        <img class="h-72 w-72" src="{{ asset('img/forms/perfil.png') }}">
-    </div>
+
 
     <div class="card profile-widget">
-    <h1 class="font-bold text-6xl text-center m-8">Editar perfil</h1>
+    <h1 class="font-bold text-6xl text-center m-4">Editar perfil</h1>
     <form class="flex justify-center items-center needs-validation" action="{{route('users.edit.update')}}" method="POST" enctype="multipart/form-data">
         @csrf
         <div class="w-96 p-6">
-            <div class="profile-widget-header">
+            <div class="profile-widget-header flex items-center justify-center">
                 <img alt="image" src="{{ asset(Auth::user()->image) }}"
-                class="rounded-circle profile-widget-picture">
+                class="rounded-full profile-widget-picture h-56 w-56">
 
             </div>
             <div class="form-group col-12">
@@ -25,13 +23,19 @@
                 <x-input name="email" type="text" value="{{$user->email}}" >Correo</x-input>
             </div>
 
-            <a href="">
-                <x-button>Actualizar</x-button>
-            </a>
-
-
+            <div class="flex">
+                <a href="">
+                    <x-button>Actualizar</x-button>
+                </a>
         </div>
     </form>
+    <form action="/logout" method="POST">
+        @csrf
+        <a href="#" onclick="this.closest('form').submit()">
+            cerrar sessión
+        </a>
+    </form>
+    </div>
     </div>
     </section>
 
@@ -49,8 +53,6 @@
             ¡Gracias por confiar en nosotros!
         </div>
     </section>
-
-    @endif
 
     <h1 class="text-center text-5xl pb-10 mt-5 font-lora">Actualizar datos de tienda</h1>
 <section class="flex justify-center ">
@@ -73,7 +75,7 @@
                 <x-input name="address" type="text">Dirección</x-input>
             </div>
             <div>
-                <x-input name="description" type="text">Name</x-input>
+                <x-input name="description" type="text">Descripción</x-input>
             </div>
             <div>
                 <x-input name="social_media" type="text">Redes sociales</x-input>
@@ -87,4 +89,8 @@
     <h1 class="text-center text-2xl mb-4 text-white"> ¿Quieres agregar productos a la tienda?, presiona el siguiente botón</h1>
     <a class=" bg-light-green border p-1 px-6 text-white border-light-green" href="http://127.0.0.1:8000/addProduct">Agregar productos</a>
 </div>
+
+    @endif
+
+
 </x-layout>
