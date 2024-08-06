@@ -5,7 +5,7 @@ use App\Http\Controllers\UserController;
 
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('body.welcome');
 })->name('welcome');
 
 Route::get('/login', function () {
