@@ -6,7 +6,7 @@
     </div>
 
  <div class="flex justify-center">
-    <img class="h-96 w-full mr-12 ml-12" src="{{ asset('img/community/comunidad1.jpeg') }}" alt="">
+    <img class="h-150 w-250 mr-12 ml-12" src="{{ asset('img/community/comunidad1.jpeg') }}" alt="">
  </div>
 
 <section>
