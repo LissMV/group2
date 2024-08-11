@@ -1,12 +1,12 @@
 <x-layout>
-    <div class="flex justify-center my-8 mt-24">
+    <div class="flex justify-center my-8">
         <div class="background-color bg-brown px-32 py-2 rounded">
             <h1 class="text-white text-4xl font-lora font-black">Aprende más</h1>
         </div>
     </div>
 
  <div class="flex justify-center">
-    <img class="h-150 w-250 mr-12 ml-12" src="{{ asset('img/community/comunidad1.jpeg') }}" alt="">
+    <img class="h-96 w-full mr-12 ml-12" src="{{ asset('img/community/comunidad1.jpeg') }}" alt="">
  </div>
 
 <section>

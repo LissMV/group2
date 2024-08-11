@@ -1,5 +1,4 @@
 <x-layout>
-
     <!DOCTYPE html>
     <html>
 
