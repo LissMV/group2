@@ -4,7 +4,7 @@
     </div>
  <Form class=" flex justify-center items-center" action="/create" method="POST">
     @csrf
-    <div class="w-96 p-6">
+    <div class="border-solid border-2 border-black w-96 p-6">
         <div>
             <x-input name="name" type="text" >Nombre de tienda</x-input>
         </div>
