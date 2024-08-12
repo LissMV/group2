@@ -1,42 +1,41 @@
 <x-layout>
-    <div class="flex justify-center items-center h-screen">
-        <form class="space-y-4 rounded px-8 pt-6 mb-4">
-            <p class="text-3xl flex justify-center h-14 text-center" syle="font-size: 10px" style="color: #79401E;">
-                AGREGAR
-                PRODUCTOS</p>
-            <Form action="/Register" method="POST">
-                @csrf
-                <div class="flex border-4 border-black">
-                    <div>
-                        <img height="300px" width="300px"
-                            src="https://img.freepik.com/vector-gratis/ilustracion-papel_53876-5846.jpg?size=626&ext=jpg&ga=GA1.1.1788068356.1716508800&semt=ais_user"
-                            alt="">
-                    </div>
-                    <div >
-                        <div class="h-14">
-                            <x-input name="user" type="text">Esta disponible</x-input>
-                        </div>
-                        <div class="h-14">
-                            <x-input name="phone" type="tel">Precio</x-input>
-                        </div>
-                        <div class="h-14">
-                            <x-input name="email" type="email">Descuento</x-input>
-                        </div>
-                        <div class="h-14">
+
+    <div
+        style="background: url(https://img.freepik.com/fotos-premium/menta-hoja-verde-fresca-hierbabuena-concepto-hoja-menta-uso-hierbas-aromaticas-planta-menta-crecer-background-selectivea-a-a-focus_29059-628.jpg); font-family: montserrat">
+
+        <section class="flex justify-center items-center h-screen">
+            <div class="flex h-screen place-content-center bg-white">
+                <div class="w-96">
+                    <img class="h-screen w-96" src="{{ asset('https://img.freepik.com/foto-gratis/productos-limpieza-ecologicos-cepillos-e-hisopos-algodon_23-2148818494.jpg') }}" alt="">
+                </div>
+                    <div class="col-span-2 m-8 h-2" style="color: #283618">
+                        <h1 class="font-bold text-4xl m-8 h-2 text-center " style="color: #283618">Agregar Productos</h1>
+                        <form class="flex justify-center items-center " action="" method="POST">
+                    @csrf
+                        <div class="w-96 p-3">
+                        <div style="color: #283618 ">
                             <x-input name="name" type="text">Nombre</x-input>
                         </div>
-                        <div class="h-14">
-                            <x-input name="name" type="text">Subtitulo</x-input>
+                        <div>
+                            <x-input name="phone" type="tel">Precio</x-input>
                         </div>
                         <div>
-                            <div class="h-14">
-                                <x-input name="name" type="text">Descripción</x-input>
-                            </div>
-                            <div class="h-14">
+                            <x-input name="email" type="email">Disponible</x-input>
+                        </div>
+                        <div>
+                            <x-input name="address" type="text">Descuento</x-input>
+                        </div>
+                        <div>
+                            <x-input name="description" type="text">Subtitulo</x-input>
+                        </div>
+                        <div>
+                            <x-input name="social_media" type="text">Descripción</x-input>
+                            <div class="flex justify-center">
                                 <button
-                                    class=" border-double border-neutral-950 border rounded-xl px-4 py-1.5 bg-light-brown"
-                                    type="submit">Subir productos</button>
+                                    style="width: 150px; padding: 10px; margin: 10px 0;  cursor: pointer; color: #FEFAE0; background-color: #606c38;">Subir Producto</button>
                             </div>
-            </form>
-    </div>
+                </form>
+            </div>
+    </section>
 </x-layout>
+

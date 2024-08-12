@@ -11,24 +11,24 @@
             </button>
         </div>
         <div style="display: flex; align-items:center" class="h-15">
-            <img class="mx-[150px] transform: scale(1.1);" src="https://blog.oxfamintermon.org/wp-content/uploads/2016/06/bio.jpg"
-                style="width: 600px">
-            <div style="color: #283618" class="text-1.8xl">
+            <img class="mx-[100px] transform: scale(1.1);" src="https://blog.oxfamintermon.org/wp-content/uploads/2016/06/bio.jpg"
+                style="width: 700px">
+            <div style="color: #283618" class="text-1.8xl h-40">
                 <h1>BIODEGRADABLE</h1>
-                <p class="mr-[150px]">La biodegradabilidad es la capacidad de un material de ser biodegradado. Es un
+                <p class="mr-[150px] h-60" style="font-size: 16px";>La biodegradabilidad es la capacidad de un material de ser biodegradado. Es un
                     proceso natural en el que un material por acción biológica, cambia y en general pierde sus
                     propiedades originales y a nivel químico las moléculas que lo conforma se convierten en formas más
                     simples y estables.</p>
-                <button
-                    style="width: 150px; padding: 10px; margin: 10px 0;  cursor: pointer; color: #FEFAE0; background-color: #606c38;">Explorar
-                    más</button>
+                    <a class=" bg-light-green border p-1 px-6 py-2 h-2" href="{{ route('learning') }}" style="color: #FEFAE0; font-size: 18px">Explorar Más</a>
             </div>
         </div>
 
         <section style="color: #283618">
-            <p class="ml-[150px] text-2xl m-8">Categoría de productos:</p>
+            <p class="ml-[150px] text-2xl m-8 h-20">Categoría de productos:</p>
         </section>
+
         <section class="display: flex justify-content: center ml-[60px]">
+
             <div style="margin: 20px; border: 2px solid #BC6C25; border-radius: 8px; overflow: hidden; width: 200px; text-align: center;">
                 <img style="width: 120%; height: 250px; object-fit: cover;"
                     src="https://www.heraldo.mx/wp-content/uploads/2023/05/HeraldoAgs_Generate_a_close-up_photographic_image_of_homemade_c_ed67437a-a5a4-4a8c-bad5-2543080fcda3-696x696.png"
@@ -38,6 +38,7 @@
                 <button
                     style="margin-bottom: 10px; padding: 10px 20px; border-radius: 5px; background-color: #BC6C25; color: #FEFAE0; transition: background-color 0.2s;">Leer Más</button>
             </div>
+
             <div style="margin: 20px; border: 2px solid #BC6C25; border-radius: 8px; overflow: hidden; width: 200px; text-align: center;">
                 <img style="width: 120%; height: 250px; object-fit: cover;"
                     src="https://thehealinghappymethod.com/cdn/shop/files/SkinCareKitsquare_17aa1fd1-b3ad-4d25-b806-6f432f88a723.png?v=1698716619"
@@ -47,6 +48,7 @@
                 <button
                     style="margin-bottom: 10px; padding: 10px 20px; border-radius: 5px; background-color: #BC6C25; color: #FEFAE0; transition: background-color 0.2s;">Leer Más</button>
             </div>
+
             <div style="margin: 20px; border: 2px solid #BC6C25; border-radius: 8px; overflow: hidden; width: 200px; text-align: center;">
                 <img style="width: 120%; height: 250px; object-fit: cover;"
                     src="https://content.cuerpomente.com/medio/2019/07/03/agua-floral_22aedf65_900x900.jpg"
@@ -56,6 +58,7 @@
                 <button
                     style="margin-bottom: 10px; padding: 10px 20px; border-radius: 5px; background-color: #BC6C25; color: #FEFAE0; transition: background-color 0.2s;">Leer Más</button>
             </div>
+
             <div style="margin: 20px; border: 2px solid #BC6C25; border-radius: 8px; overflow: hidden; width: 200px; text-align: center;">
                 <img style="width: 120%; height: 250px; object-fit: cover;"
                     src="https://www.vivirbiencolmedica.com/wp-content/uploads/2023/08/beneficios-alimentos-naturales.jpg"
@@ -65,6 +68,7 @@
                 <button
                     style="margin-bottom: 10px; padding: 10px 20px; border-radius: 5px; background-color: #BC6C25; color: #FEFAE0; transition: background-color 0.2s;">Leer Más</button>
             </div>
+
             <div style="margin: 20px; border: 2px solid #BC6C25; border-radius: 8px; overflow: hidden; width: 200px; text-align: center;">
                 <img style="width: 120%; height: 250px; object-fit: cover;"
                     src="https://down-cl.img.susercontent.com/file/c2d78fc0a67986d2b13455290a72dd51"
@@ -76,24 +80,13 @@
             </div>
 
         </section>
-<<<<<<< Updated upstream:resources/views/body/welcome.blade.php
-        <div>
-            <a href="{{ route('register') }}">
-                <x-button>Registrarse</x-button>
-            </a>
-            <a href="{{ route('login') }}">
-                <x-button>Iniciar sesion</x-button>
-            </a>
-=======
-        <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
-            <button
-               style="width: 150px; padding: 10px; margin: 10px 0;  cursor: pointer; color: #FEFAE0; background-color: #606c38;">Registrarse</button>
-            <button
-                style="width: 150px; padding: 10px; margin: 10px 0;  cursor: pointer; color: #283618; background-color: white;">Iniciar
-                Sesión</button>
->>>>>>> Stashed changes:resources/views/welcome.blade.php
-        </div>
 
+        <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
+            <a class=" bg-light-green border p-1 px-8 py-3" href="{{ route('register') }}" style="color: #FEFAE0; font-size: 18px">Registrarse</a>
+               <a class="p-1 px-8 py-8" href="{{ route('login') }}" style="color: #283618; font-size: 18px">Iniciar Sesión</a>
+        </div>
+</section>
+<section class="">
 <footer style="background-color: #606c38">
     <div class="w-full mx-auto max-w-screen-xl p-6 md:flex md:items-center md:justify-between">
       <span style="color: #FEFAE0">© 2024 <a href="/learning" class="hover:underline">ECOMMUNITY</a>. TODOS LOS DERECHOS RESERVADOS
