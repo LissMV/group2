@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->string('password');
+            $table->string('image')->default('uploads/avatar.png');
             $table->boolean('is_seller')->default(false);
             $table->timestamps();
         });

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Store;
 use Illuminate\Support\Facades\Auth;
 
+
 class StoreController extends Controller
 {
     public function index() {
@@ -13,25 +14,25 @@ class StoreController extends Controller
     }
 
     public function create(Request $request) {
-        $store = $request->add([
-            'user_id' => Auth::user()->id
-        ])->validate([
-            'user_id' => 'required',
-            'name' => 'required',
-            'phone' => 'required',
-            'email'=> 'required|email',
-            'address' => 'required',
-            'description' => 'required',
-            'social_media'
-        ]);
+       $store = $request->dd([
+        'user_id' => Auth::user()->id
+       ])->validate([
+        'name' => 'required',
+        'phone' => 'required',
+        'email'=> 'required|email',
+        'address' => 'required',
+        'description' => 'required',
+        'social_media' => 'required',
+       ]);
 
-        dd($store);
+       dd($store);
 
-        $newStore = Store::create($store);
+       $newStore = store::create($store);
 
-        if($newStore) {
-            return redirect('/');
-        }
+       if($newStore) {
+        Auth::create($newStore);
+        return redirect('/home');
+       }
     }
 
     public function edit(Request $request) {

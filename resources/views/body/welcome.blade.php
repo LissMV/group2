@@ -11,7 +11,7 @@
             </button>
         </div>
         <div style="display: flex; align-items:center" class="h-15">
-            <img class="mx-[150px]" src="https://blog.oxfamintermon.org/wp-content/uploads/2016/06/bio.jpg"
+            <img class="mx-[150px] transform: scale(1.1);" src="https://blog.oxfamintermon.org/wp-content/uploads/2016/06/bio.jpg"
                 style="width: 600px">
             <div style="color: #283618" class="text-1.8xl">
                 <h1>BIODEGRADABLE</h1>
@@ -30,7 +30,7 @@
         </section>
         <section class="display: flex justify-content: center ml-[60px]">
             <div style="margin: 20px; border: 2px solid #BC6C25; border-radius: 8px; overflow: hidden; width: 200px; text-align: center;">
-                <img styel="width: 120%; height: 250px; object-fit: cover;"
+                <img style="width: 120%; height: 250px; object-fit: cover;"
                     src="https://www.heraldo.mx/wp-content/uploads/2023/05/HeraldoAgs_Generate_a_close-up_photographic_image_of_homemade_c_ed67437a-a5a4-4a8c-bad5-2543080fcda3-696x696.png"
                     alt="">
                 <h3 style="margin: 10px 0; font-size: 18px; color: #283618;">LIMPIEZA</h3>
@@ -39,7 +39,7 @@
                     style="margin-bottom: 10px; padding: 10px 20px; border-radius: 5px; background-color: #BC6C25; color: #FEFAE0; transition: background-color 0.2s;">Leer Más</button>
             </div>
             <div style="margin: 20px; border: 2px solid #BC6C25; border-radius: 8px; overflow: hidden; width: 200px; text-align: center;">
-                <img styel="width: 120%; height: 250px; object-fit: cover;"
+                <img style="width: 120%; height: 250px; object-fit: cover;"
                     src="https://thehealinghappymethod.com/cdn/shop/files/SkinCareKitsquare_17aa1fd1-b3ad-4d25-b806-6f432f88a723.png?v=1698716619"
                     alt="">
                 <h3 style="margin: 10px 0; font-size: 18px; color: #283618;">CUIDADO DE LA PIEL</h3>
@@ -48,7 +48,7 @@
                     style="margin-bottom: 10px; padding: 10px 20px; border-radius: 5px; background-color: #BC6C25; color: #FEFAE0; transition: background-color 0.2s;">Leer Más</button>
             </div>
             <div style="margin: 20px; border: 2px solid #BC6C25; border-radius: 8px; overflow: hidden; width: 200px; text-align: center;">
-                <img styel="width: 120%; height: 250px; object-fit: cover;"
+                <img style="width: 120%; height: 250px; object-fit: cover;"
                     src="https://content.cuerpomente.com/medio/2019/07/03/agua-floral_22aedf65_900x900.jpg"
                     alt="">
                 <h3 style="margin: 10px 0; font-size: 18px; color: #283618;">HIGIENE PERSONAL</h3>
@@ -57,7 +57,7 @@
                     style="margin-bottom: 10px; padding: 10px 20px; border-radius: 5px; background-color: #BC6C25; color: #FEFAE0; transition: background-color 0.2s;">Leer Más</button>
             </div>
             <div style="margin: 20px; border: 2px solid #BC6C25; border-radius: 8px; overflow: hidden; width: 200px; text-align: center;">
-                <img styel="width: 120%; height: 250px; object-fit: cover;"
+                <img style="width: 120%; height: 250px; object-fit: cover;"
                     src="https://www.vivirbiencolmedica.com/wp-content/uploads/2023/08/beneficios-alimentos-naturales.jpg"
                     alt="">
                 <h3 style="margin: 10px 0; font-size: 18px; color: #283618;">ALIMENTOS</h3>
@@ -66,7 +66,7 @@
                     style="margin-bottom: 10px; padding: 10px 20px; border-radius: 5px; background-color: #BC6C25; color: #FEFAE0; transition: background-color 0.2s;">Leer Más</button>
             </div>
             <div style="margin: 20px; border: 2px solid #BC6C25; border-radius: 8px; overflow: hidden; width: 200px; text-align: center;">
-                <img styel="width: 120%; height: 250px; object-fit: cover;"
+                <img style="width: 120%; height: 250px; object-fit: cover;"
                     src="https://down-cl.img.susercontent.com/file/c2d78fc0a67986d2b13455290a72dd51"
                     alt="">
                 <h3 style="margin: 10px 0; font-size: 18px; color: #283618;">MATERIALES ORGÁNICOS</h3>
@@ -76,18 +76,27 @@
             </div>
 
         </section>
+<<<<<<< Updated upstream:resources/views/body/welcome.blade.php
+        <div>
+            <a href="{{ route('register') }}">
+                <x-button>Registrarse</x-button>
+            </a>
+            <a href="{{ route('login') }}">
+                <x-button>Iniciar sesion</x-button>
+            </a>
+=======
         <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
             <button
-                style="width: 150px; padding: 10px; margin: 10px 0;  cursor: pointer; color: #FEFAE0; background-color: #606c38;">Registrarse</button>
+               style="width: 150px; padding: 10px; margin: 10px 0;  cursor: pointer; color: #FEFAE0; background-color: #606c38;">Registrarse</button>
             <button
                 style="width: 150px; padding: 10px; margin: 10px 0;  cursor: pointer; color: #283618; background-color: white;">Iniciar
                 Sesión</button>
+>>>>>>> Stashed changes:resources/views/welcome.blade.php
         </div>
-
 
 <footer style="background-color: #606c38">
     <div class="w-full mx-auto max-w-screen-xl p-6 md:flex md:items-center md:justify-between">
-      <span style="color: #FEFAE0">© 2024 <a href="https://flowbite.com/" class="hover:underline">ECOMMUNITY</a>. TODOS LOS DERECHOS RESERVADOS
+      <span style="color: #FEFAE0">© 2024 <a href="/learning" class="hover:underline">ECOMMUNITY</a>. TODOS LOS DERECHOS RESERVADOS
     </span>
     <ul style="color: #FEFAE0" class="flex flex-wrap items-center mt-3 text-sm font-medium;">
         <li>
