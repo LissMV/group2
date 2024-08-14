@@ -10,22 +10,20 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-        <link rel="shortcut icon" href="{{ asset('img/branding/circuloPrincipal.png') }}" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="{{ asset('img/branding/circuloPrincipal.png') }}" type="image/x-icon">
 </head>
 
-<body>
+<body class="font-lora">
     @auth
-    <section class="grid relative grid-cols-4">
-        <x-navbar class="fixed w-full col-span-4"/>
-        <div class="col-span-1">
-        <x-navertical class="fixed h-full w-56" />
-        </div>
-        <div class="col-span-3 overscroll-contain">
-            {{ $slot }}
-        </div>
+        <section class="w-full">
+            <x-navbar class="fixed w-full"/>
+            <x-navertical class="h-screen w-52 fixed" />
+
+            <div class="pt-[80px] ml-52">
+                {{ $slot }}
+            </div>
         </section>
     @endauth
 

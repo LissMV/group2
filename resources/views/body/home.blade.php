@@ -1,20 +1,22 @@
 <x-layout>
 
+    <div class="w-full flex flex-col justify-center">
+
     <div class="flex justify-center">
-        <img width="650px" src="{{ asset('img/Home 1.png') }}" alt="">
+        <img width="w-full" src="{{ asset('img/Home 1.png') }}" alt="">
     </div>
 
     <div class="flex justify-center">
-        <button
-            class="font-serif  text-2xl m-8 border-double border-neutral-950 border rounded-xl px-4 py-1.5  hover:bg-light-brown "
-            type="submit">Comunidad</button>
+        <a href="{{ route('learning') }}"
+            class="font-serif text-2xl m-8 border-double border-neutral-950 border rounded-xl px-4 py-1.5  hover:bg-light-brown "
+            type="submit">Comunidad</a>
 
-        <button
+        <a href="{{ route('learning') }}"
             class="font-serif text-2xl m-8 border-double border-neutral-950 border rounded-xl px-4 py-1.5  hover:bg-light-brown    "
-            type="submit">Aprende más</button>
+            type="submit">Aprende más</a>
     </div>
-    "
-    <div class="grid grid-cols-3">
+
+    <div class="grid grid-cols-3 mx-6">
         <div class="mx-8">
             <img height="100px" width="350px" src="{{ asset('img/Home 2.png') }}" alt="">
             <div class="mx-32 font-bold ">
@@ -95,6 +97,7 @@
         </div>
 
 
+    </div>
     </div>
 
 </x-layout>

@@ -3,17 +3,19 @@
         <div
             style="background-color: #606c38; padding: 20px 20px; display: flex; justify-content: space-between; align-items: center; color: white;">
             <input
-                class=" bg-white w-3/5 h-10 border-double border-neutral-950 border rounded-xl placeholder-black text-1.7xl font-serif ml-[230px]"
+                class="px-5 bg-white w-3/5 h-10 border-double border-neutral-950 border rounded-xl placeholder-black text-1.7xl font-serif ml-[230px]"
                 type="text" placeholder="Buscar">
 
-            <button type="submit"><img height="25px" width="25px"
+            <button type="submit">
+                <img height="25px" width="25px"
                     src="https://cdn-icons-png.flaticon.com/256/25/25313.png">
             </button>
         </div>
-        <div style="display: flex; align-items:center" class="h-15">
-            <img class="mx-[100px] transform: scale(1.1);" src="https://blog.oxfamintermon.org/wp-content/uploads/2016/06/bio.jpg"
-                style="width: 700px">
-            <div style="color: #283618" class="text-1.8xl h-40">
+
+        <div style="display: flex; align-items:center" class="h-15 mt-12">
+            <img class="mx-[150px] transform: scale(1.1);" src="https://blog.oxfamintermon.org/wp-content/uploads/2016/06/bio.jpg"
+                style="width: 600px">
+            <div style="color: #283618" class="text-1.8xl">
                 <h1>BIODEGRADABLE</h1>
                 <p class="mr-[150px] h-60" style="font-size: 16px";>La biodegradabilidad es la capacidad de un material de ser biodegradado. Es un
                     proceso natural en el que un material por acción biológica, cambia y en general pierde sus
@@ -27,8 +29,7 @@
             <p class="ml-[150px] text-2xl m-8 h-20">Categoría de productos:</p>
         </section>
 
-        <section class="display: flex justify-content: center ml-[60px]">
-
+        <section class="flex justify-content center ml-[60px]">
             <div style="margin: 20px; border: 2px solid #BC6C25; border-radius: 8px; overflow: hidden; width: 200px; text-align: center;">
                 <img style="width: 120%; height: 250px; object-fit: cover;"
                     src="https://www.heraldo.mx/wp-content/uploads/2023/05/HeraldoAgs_Generate_a_close-up_photographic_image_of_homemade_c_ed67437a-a5a4-4a8c-bad5-2543080fcda3-696x696.png"
@@ -80,34 +81,28 @@
             </div>
 
         </section>
+            <div>
+                <a href="{{ route('register') }}">
+                    <x-button>Registrarse</x-button>
+                </a>
+                <a href="{{ route('login') }}">
+                    <x-button>Iniciar sesión</x-button>
+                </a>
 
-        <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
-            <a class=" bg-light-green border p-1 px-8 py-3" href="{{ route('register') }}" style="color: #FEFAE0; font-size: 18px">Registrarse</a>
-               <a class="p-1 px-8 py-8" href="{{ route('login') }}" style="color: #283618; font-size: 18px">Iniciar Sesión</a>
-        </div>
-</section>
-<section class="">
-<footer style="background-color: #606c38">
-    <div class="w-full mx-auto max-w-screen-xl p-6 md:flex md:items-center md:justify-between">
-      <span style="color: #FEFAE0">© 2024 <a href="/learning" class="hover:underline">ECOMMUNITY</a>. TODOS LOS DERECHOS RESERVADOS
-    </span>
-    <ul style="color: #FEFAE0" class="flex flex-wrap items-center mt-3 text-sm font-medium;">
-        <li>
-            <a href="#" class="hover:underline me-4 md:me-6">SOBRE NOSOTROS</a>
-        </li>
-        <li>
-            <a href="#" class="hover:underline me-4 md:me-6">POLITÍCA</a>
-        </li>
-        <li>
-            <a href="#" class="hover:underline me-4 md:me-6">ECOMMUNITY</a>
-        </li>
-        <li>
-            <a href="#" class="hover:underline">CONTACTO</a>
-        </li>
-    </ul>
+                <footer style="background-color: #606c38">
+                    <div class="w-full mx-auto max-w-screen-xl p-6 md:flex md:items-center md:justify-between">
+                        <span style="color: #FEFAE0">© 2024 <a href="/learning" class="hover:underline">ECOMMUNITY</a>. TODOS LOS DERECHOS RESERVADOS</span>
+                        <ul style="color: #FEFAE0" class="flex flex-wrap items-center mt-3 text-sm font-medium;">
+                            <li>
+                                <a href="{{ route('about_us') }}" class="hover:underline me-4 md:me-6">SOBRE NOSOTROS</a>
+                            </li>
+                            <li>
+                                <a href="{{ route('welcome') }}" class="hover:underline me-4 md:me-6">ECOMMUNITY</a>
+                            </li>
+                        </ul>
+                    </div>
+                </footer>
+            </div>
+        </section>
     </div>
-</footer>
-
-    </div>
-    </section>
 </x-layout>
