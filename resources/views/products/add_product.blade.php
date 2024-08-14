@@ -17,10 +17,10 @@
                             <x-input name="name" type="text">Nombre</x-input>
                         </div>
                         <div>
-                            <x-input name="phone" type="tel">Precio</x-input>
+                            <x-input name="phone" type="text">Precio</x-input>
                         </div>
                         <div>
-                            <x-input name="email" type="email">Disponible</x-input>
+                            <x-input name="email" type="text">Disponible</x-input>
                         </div>
                         <div>
                             <x-input name="address" type="text">Descuento</x-input>
@@ -37,5 +37,6 @@
                 </form>
             </div>
     </section>
+    </div>
 </x-layout>
 

@@ -21,7 +21,7 @@
 
                 <div class="w-96 p-6">
 
-                    <x-input name="name" type="text">Name</x-input>
+                    <x-input name="name" type="text">Nombre</x-input>
 
                     <x-input name="email" type="text">Email</x-input>
 
