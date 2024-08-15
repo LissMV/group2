@@ -24,30 +24,12 @@ class UserFactory extends Factory
      * @return array<string, mixed>
      */
 
-    public function roles() {
-        return once( function () {
-            return Role::pluck('id');
-        });
-    }
-
     public function definition(): array
     {
         return [
             'name' => fake()->name(),
             'email' => fake()->unique()->safeEmail(),
             'password' => static::$password ??= Hash::make('password'),
-            'image' => fake(),
-            'role_id' => roles()->random(),
         ];
-    }
-
-    /**
-     * Indicate that the model's email address should be unverified.
-     */
-    public function unverified(): static
-    {
-        return $this->state(fn (array $attributes) => [
-            'email_verified_at' => null,
-        ]);
     }
 }

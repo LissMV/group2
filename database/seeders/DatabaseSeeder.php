@@ -15,9 +15,9 @@ class DatabaseSeeder extends Seeder
     {
         User::factory()->create([
             'name' => "Rodolfo Gustavito",
-            'email' => "user@example1.com",
+            'email' => "user@example.com",
             'password' => "password10",
-            'image' => "user 1.png",
+            'image' => "user1.png",
             'is_seller' => true,
         ]);
 
@@ -25,7 +25,7 @@ class DatabaseSeeder extends Seeder
             'name' => "EcoTrade",
             'email' => "seller@expample2.com",
             'password' => "password10",
-            'image' => "user 2.png",
+            'image' => "user2.png",
             'is_seller' => true,
         ]);
 
@@ -33,7 +33,7 @@ class DatabaseSeeder extends Seeder
             'name' => "BioMarket",
             'email' => "seller@example3.com",
             'password' => "password10",
-            'image' => "user 3.png",
+            'image' => "user3.png",
             'is_seller' => true,
         ]);
 
@@ -41,7 +41,7 @@ class DatabaseSeeder extends Seeder
             'name' => "GreenWave",
             'email' => "seller@exapmle4.com",
             'password' => "password10",
-            'image' => "user 4.png",
+            'image' => "user4.png",
             'is_seller' => true,
         ]);
 
@@ -49,7 +49,7 @@ class DatabaseSeeder extends Seeder
             'name' => "EcoConnect",
             'email' => "seller@example5.com",
             'password' => "password10",
-            'image' => "user 5.png",
+            'image' => "user5.png",
             'is_seller' => true,
         ]);
 
@@ -57,14 +57,9 @@ class DatabaseSeeder extends Seeder
             'name' => "BioBazar",
             'email' => "seller@example6.com",
             'password' => "password10",
-            'image' => "user 6.png",
+            'image' => "user6.png",
             'is_seller' => false,
         ]);
-
-
-
-
-
 
         $this->call([
            CategoriesSeeder::class,
