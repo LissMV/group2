@@ -194,6 +194,43 @@ class ProductsSeeder extends Seeder
                 'subtitle' => "facil degradación",
                 'description' => "Este papel está hecho de fibras de celulosa que provienen de otros materiales reciclados que al entrar en contacto con el agua se degrada facilmente, es suave y comodo de usar.",
             ],
+            [
+                'image' => "img/products/cleaning/cleaning1.png",
+                'is_available' => true,
+                'price' => "$4.00 c/u",
+                'discount' => "0",
+                'name' => "Mascon para trastes",
+                'subtitle' => "hecho de bambú",
+                'description' => "Este papel está hecho de fibras de celulosa que provienen de otros materiales reciclados que al entrar en contacto con el agua se degrada facilmente, es suave y comodo de usar.",
+            ],
+            [
+                'image' => "img/products/cleaning/cleaning2.png",
+                'is_available' => true,
+                'price' => "$3.00 c/u",
+                'discount' => "0",
+                'name' => "Jabón de platps",
+                'subtitle' => "hecho con zanahoria",
+                'description' => "Jabón libre de quimicos, con Zanahoria y limón para una mejor limpieza y desengrasante, cuida de tus manos con nuestros jabones.",
+            ],
+            [
+                'image' => "img/products/cleaning/cleaning3.png",
+                'is_available' => true,
+                'price' => "$7.59 c/u",
+                'discount' => "10%",
+                'name' => "Desinfectantes",
+                'subtitle' => "Libre de quimicos",
+                'description' => "Hecho de aceites naturales, romero y zumo de limon ya que es efectivo para la limpieza profunda, no genera reacciones alergicas ni irritación",
+            ],
+            [
+                'image' => "img/products/cleaning/cleaning4.png",
+                'is_available' => true,
+                'price' => "$8.00",
+                'discount' => "0",
+                'name' => "Detergente vegetal ",
+                'subtitle' => "Multiuso",
+                'description' => "Compuesto con ingredientes basados de origen vegetal, es facil de usar y sobre todo es respetuoso con el medio ambiente y la vida acuatica porque es libre de solfatos.",
+            ],
+
         ];
     }
 }
