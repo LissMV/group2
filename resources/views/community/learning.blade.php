@@ -1,5 +1,5 @@
 <x-layout>
-    <div class="flex justify-center my-8 mt-24">
+    <div class="flex justify-center my-8">
         <div class="background-color bg-brown px-32 py-2 rounded">
             <h1 class="text-white text-4xl font-lora font-black">Aprende más</h1>
         </div>
