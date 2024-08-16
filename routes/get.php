@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Models\Category;
 use App\Models\Product;
+use App\Models\Store;
 
 Route::get('/', function () {
     return view('body.welcome');
@@ -31,8 +32,10 @@ Route::get('/home', function () {
     ]);
 })->name('home');
 
-Route::get('/sellerHome', function () {
-    return view('stores.seller_home');
+Route::get('/sellerHome/{store}', function (Store $store) {
+    return view('stores.seller_home',[
+        'store' => $store->load('products')
+    ]);
 })->name('sellerHome');
 
 Route::get('/addProduct', function () {
@@ -56,8 +59,16 @@ Route::get('/shoppingCart', function () {
 })->name('shoppingCart');
 
 Route::get('/seeProducts', function () {
-    return view('products.see_products');
+    return view('products.see_products', [
+        'products' => Product::inRandomOrder()->get()
+    ]);
 });
+
+Route::get('/seeProducts/{category}', function (Category $category) {
+    return view('products.see_products_bycat', [
+        'category' => $category->load('products')
+    ]);
+})->name('byCategory');
 
 Route::get('/events', function () {
     return view('community.event');
@@ -66,9 +77,3 @@ Route::get('/events', function () {
 Route::get('/about_us', function () {
     return view('body.about_us');
 })->name('about_us');
-
-Route::get('/seeProducts/{id}', function (Category $id) {
-    return view('products.see_products', [
-        'products' => Category::with('products')->get()
-    ]);
-})->name('byCategory');

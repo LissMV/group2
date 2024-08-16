@@ -54,11 +54,13 @@
                 </svg>
 
                 <div class="ml-1" x-data="{ open: false }">
-                    <button @click="open = !open">Categorias</button>
+                    <button @click="open = !open">Categorías</button>
 
                     <div x-show="open">
                         @foreach ($categories as $categoria)
-                            <p>{{$categoria->name}}</p>
+                            <div class="ms-2">
+                                <a href="{{ route('byCategory', $categoria->id)}}">{{ $categoria->name }}</a>
+                            </div>
                         @endforeach
                     </div>
                 </div>

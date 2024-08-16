@@ -16,7 +16,7 @@
 
         <div class="grid grid-cols-3 mx-6">
             @foreach ($products as $product)
-                <x-card name="{{$product->name}}" price="{{$product->price}}" img="{{$product->image}}"/>
+                <x-mini-card name="{{$product->name}}" price="{{$product->price}}" img="{{$product->image}}"/>
             @endforeach
         </div>
 

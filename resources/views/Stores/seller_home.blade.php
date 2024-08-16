@@ -1,10 +1,14 @@
 <x-layout>
+    {{$store}}
 
+    @foreach ($store->products as $product)
+        <p class="mt-5">{{$product}}</p>
+    @endforeach
     <div class="flex flex-col justify-center items-center h-screen">
         <p class="text-3xl flex justify-center h-14 text-center" syle="font-size: 10px" style="color: #79401E;">PERFIL DE TIENDA</p>
         <Form action="/Register" method="POST">
             @csrf
-<div class="flex">
+        <div class="flex">
             <div>
                 <img height="300px" width="300px"
                     src="https://png.pngtree.com/png-vector/20191017/ourmid/pngtree-shop-icon-png-image_1820095.jpg"
