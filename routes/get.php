@@ -30,7 +30,7 @@ Route::get('/home', function () {
 
 Route::get('/sellerHome', function () {
     return view('stores.seller_home');
-});
+})->name('sellerHome');
 
 Route::get('/addProduct', function () {
     return view('products.add_product');

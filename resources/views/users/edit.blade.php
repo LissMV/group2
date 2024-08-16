@@ -1,5 +1,5 @@
 <x-layout>
-    <section class="flex justify-center ml-9 mt-24 border-2 border-double border-brown mr-24">
+    <section class="flex justify-center ml-24 my-3 border-2 border-double border-brown mr-24">
 
 
     <div class="card profile-widget">
@@ -39,7 +39,7 @@
     </div>
     </section>
 
-    <div class="p-2 bg-brown mr-24 ml-9">
+    <div class="p-2 bg-brown mr-24 ml-24">
     <a href="{{ route('store') }}">
         <h1 class="text-center font-montserrat text-white2">¿Quieres iniciar como vendedor?</h1>
     </a>

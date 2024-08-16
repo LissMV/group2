@@ -1,6 +1,6 @@
 <x-layout>
 
-    <div class="w-full flex flex-col justify-center">
+    <div class="w-full flex flex-col justify-center py-4">
 
     <div class="flex justify-center">
         <img width="w-full" src="{{ asset('img/Home 1.png') }}" alt="">
@@ -61,7 +61,7 @@
             </div>
         </div>
 
-        <div class="mx-8">
+        <div class="mx-8 my-4">
             <img height="100px" width="300px" class="-m-4" src="{{ asset('img/Home 7.png') }}" alt="">
 
             <div class="mx-28 font-bold">
@@ -70,12 +70,6 @@
             </div>
         </div>
     </div>
-
-    <div>
-        <h1 class=" my-8 mx-8 text-2xl font-bold ">Heading</h1>
-
-    </div>
-
     <div class="grid grid-cols-2 mx-28 m-4">
         <div>
             <img height="200px" width="400px" class="mx-8" src="{{ asset('img/Home 8.png') }}" alt="">

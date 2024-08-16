@@ -1,8 +1,8 @@
 <x-layout>
-
+<section class="ml-24 py-3">
     <div>
         <div>
-        <img class="mt-24 pe-24 h-72 w-full" src="{{ asset('https://lacamara.pe/wp-content/uploads/2023/02/IDEXCAM-1.jpg') }}" alt="">
+        <img class="pe-24 h-72 w-full" src="{{ asset('https://lacamara.pe/wp-content/uploads/2023/02/IDEXCAM-1.jpg') }}" alt="">
         </div>
 
         <div class="">
@@ -131,7 +131,9 @@
                     <p>Esmeralda Guzmán</p>
                     <p>Junior AM</p>
                 </div>
+               
             </div>
         </div>
     </section>
+</section>
 </x-layout>
