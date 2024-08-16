@@ -20,7 +20,8 @@
         </div>
 <section>
         <div>
-            <img class="background-size: cover;" style="margin: 30px; height:50%;" src="https://images.stockcake.com/public/6/5/8/65893be3-6710-4207-b526-cb3772197322_large/nurturing-young-plant-stockcake.jpg" alt="">
+            <img style="width: 500px"; height="300px"; src="https://images.stockcake.com/public/6/5/8/65893be3-6710-4207-b526-cb3772197322_large/nurturing-young-plant-stockcake.jpg" alt="">
+        <a href=""></a>
         </div>
 </section>
         <section style="color: #283618">
