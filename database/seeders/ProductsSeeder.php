@@ -23,7 +23,7 @@ class ProductsSeeder extends Seeder
     {
         $products = [
             [
-                'image' => "img/products/cleaning/skin care/skinCare1.png",
+                'image' => "img/products/ skin care/skinCare1.png",
                 'is_available' => true,
                 'price' => "$9.00",
                 'discount' => "0",
