@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('image');
             $table->boolean('is_available');
             $table->string('price');
-            $table->float('discount');
+            $table->string('discount');
             $table->string('name');
             $table->string('subtitle');
             $table->text('description');

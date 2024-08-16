@@ -15,7 +15,7 @@ class DatabaseSeeder extends Seeder
     {
         User::factory()->create([
             'name' => "Rodolfo Gustavito",
-            'email' => "user@example.com",
+            'email' => "seller@example.com",
             'password' => "password10",
             'image' => "user1.png",
             'is_seller' => true,
@@ -64,6 +64,7 @@ class DatabaseSeeder extends Seeder
         $this->call([
            CategoriesSeeder::class,
            StoresSeeder::class,
+           ProductsSeeder::class
         ]);
 
       /*  User::factory()->create([

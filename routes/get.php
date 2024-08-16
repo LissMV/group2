@@ -2,7 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
-
+use App\Models\Category;
+use App\Models\Product;
 
 Route::get('/', function () {
     return view('body.welcome');
@@ -25,7 +26,9 @@ Route::get('/users/edit', function () {
 })->name('usersEdit');
 
 Route::get('/home', function () {
-    return view('body.home');
+    return view('body.home', [
+        'products' => Product::inRandomOrder()->limit(9)->get()
+    ]);
 })->name('home');
 
 Route::get('/sellerHome', function () {
@@ -64,3 +67,8 @@ Route::get('/about_us', function () {
     return view('body.about_us');
 })->name('about_us');
 
+Route::get('/seeProducts/{id}', function (Category $id) {
+    return view('products.see_products', [
+        'products' => Category::with('products')->get()
+    ]);
+})->name('byCategory');

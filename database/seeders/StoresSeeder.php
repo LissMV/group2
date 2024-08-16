@@ -6,9 +6,17 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\Store;
 use App\Models\Product;
+use App\Models\User;
 
 class StoresSeeder extends Seeder
 {
+    public function users() {
+        return once( function ()
+        {
+            return User::where('is_seller', true)->pluck('id');
+        });
+    }
+
     /**
      * Run the database seeds.
      */
@@ -23,6 +31,7 @@ class StoresSeeder extends Seeder
                 'description' => "Desde 2017 empacando las mejores bolsas de El Salvador",
                 'social_media' => "seller@greenemporium.sv",
                 'is_verified' => true,
+                "user_id" => $this->users()->random()
             ],
             [
                 'name' => "EcoWise Essentials",
@@ -32,6 +41,7 @@ class StoresSeeder extends Seeder
                 'description' => "Tienda especializada en productos biodegradables para el hogar y cuidado personal.",
                 'social_media' => "seller@EcoVidaSV",
                 'is_verified' => true,
+                "user_id" => $this->users()->random(),
             ],
             [
                 'name' =>  "Sustainable Solutions Store",
@@ -39,8 +49,9 @@ class StoresSeeder extends Seeder
                 'email' => "store@example3.com",
                 'address' => " Avenida Central #45, Santa Tecla",
                 'description' => "Ofrecemos una amplia gama de productos biodegradables y eco-friendly.",
-                'social_media' => "@SustenibleSolutions.SV",
+                'social_media' => "store@SustenibleSolutions.SV",
                 'is_verified' => true,
+                "user_id" => $this->users()->random(),
             ],
             [
                 'name' =>  "GreenEco",
@@ -50,6 +61,7 @@ class StoresSeeder extends Seeder
                 'description' => "Productos biodegradables para una vida más verde y sostenible.",
                 'social_media' => "seller@GreenEcoSV",
                 'is_verified' => true,
+                "user_id" => $this->users()->random(),
             ],
             [
                 'name' =>  "EcoWorld",
@@ -59,6 +71,7 @@ class StoresSeeder extends Seeder
                 'description' => " Soluciones ecológicas y biodegradables para el hogar y la oficina.",
                 'social_media' => "seller@EcoWorldSV",
                 'is_verified' => true,
+                "user_id" => $this->users()->random(),
             ],
             [
                 'name' =>  "GreenWay",
@@ -68,6 +81,7 @@ class StoresSeeder extends Seeder
                 'description' => "Tienda de productos biodegradables para reducir tu huella ecológica.",
                 'social_media' => "seller@GreenWaySV ",
                 'is_verified' => true,
+                "user_id" => $this->users()->random(),
             ],
             [
                 'name' =>  "BioNature",
@@ -77,6 +91,7 @@ class StoresSeeder extends Seeder
                 'description' => " Productos naturales y biodegradables para un estilo de vida saludable.",
                 'social_media' => "seller@BioNatureSV ",
                 'is_verified' => true,
+                "user_id" => $this->users()->random(),
             ],
             [
                 'name' =>  "EcoLine",
@@ -86,6 +101,7 @@ class StoresSeeder extends Seeder
                 'description' => "Especialistas en productos biodegradables y reciclables.",
                 'social_media' => "seller@EcoLineElSalvador  ",
                 'is_verified' => true,
+                "user_id" => $this->users()->random(),
             ],
             [
                 'name' =>  "BioRoot",
@@ -95,6 +111,7 @@ class StoresSeeder extends Seeder
                 'description' => "Ofrecemos productos biodegradables hechos a partir de materiales naturales.",
                 'social_media' => "seller@BioRootSV",
                 'is_verified' => true,
+                "user_id" => $this->users()->random(),
             ],
             [
                 'name' =>  "GreenEarth",
@@ -104,9 +121,10 @@ class StoresSeeder extends Seeder
                 'description' => "Tu tienda de confianza en productos biodegradables y eco-friendly.",
                 'social_media' => "@GreenEarthSV",
                 'is_verified' => true,
+                "user_id" => $this->users()->random(),
             ]
         ];
 
-        Store::factory(count($stores))->sequence(fn ($sqn) => [ $stores[$sqn->index] ])->create();
+        Store::factory(count($stores))->sequence(fn ($sqn) => $stores[$sqn->index])->create();
     }
 }
