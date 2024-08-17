@@ -48,7 +48,7 @@ Route::get('/store', function () {
 
 Route::get('/community', function () {
     return view('community.community');
-});
+})->name('community');
 
 Route::get('/learning', function () {
     return view('community.learning');

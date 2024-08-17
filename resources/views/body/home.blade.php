@@ -20,27 +20,6 @@
             @endforeach
         </div>
 
-        <div class="grid grid-cols-4 m-2">
-            <h1 class="col-span-4 mb-4">Inicia sesión para ver otros productos como...</h1>
-
-            <div>
-                <img height="200px" width="400px" src="{{ asset('img/Home 8.png') }}" alt="">
-            </div>
-
-            <div>
-                <img height="200px" width="400px" src="{{ asset('img/Home 9.png') }}" alt="">
-            </div>
-
-            <div>
-                <img height="200px" width="400px" src="{{ asset('img/Home 10.png') }}"
-                    alt="">
-            </div>
-
-            <div>
-                <img height="200px" width="400px" src="{{ asset('img/Home 11.png') }}"
-                    alt="">
-            </div>
-        </div>
     </div>
 
 </x-layout>
