@@ -1,7 +1,7 @@
 <x-layout>
     <!-- Contenido principal -->
     @foreach ($products as $product)
-        <x-card nombre="{{ $product->name }}" price="{{ $product->price }}" subtitle="{{ $product->subtitle }}" description="{{ $product->description }}" image="{{ $product->image }}"/>
+        <x-card nombre="{{ $product->name }}" price="{{ $product->price }}" subtitle="{{ $product->subtitle }}" description="{{ $product->description }}" image="{{ $product->image }}" />
     @endforeach
 
     <div class="px-8 flex">
