@@ -32,7 +32,7 @@ class ProductsSeeder extends Seeder
                 'description' => "Para todo tipo de piel, hecho con aceites naturales del coco y como ingrediente especial tenemos el arroz.",
                 'store_id' => $this->stores()->random(),
                 'category_id' => 2
-            ],
+            ], 
             [
                 'image' => "img/products/skin care/skinCare2.png",
                 'is_available' => true,

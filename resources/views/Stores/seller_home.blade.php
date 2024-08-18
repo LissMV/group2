@@ -1,8 +1,14 @@
 <x-layout>
-    {{$store}}
+    <h1>{{$store->name}}</h1>
+    <h1>{{ $store->phone }}</h1>
+    <h1>{{ $store->email }}</h1>
+    <h1>{{ $store->address }}</h1>
+    <h1>{{ $store->description }}</h1>
+    <h1>{{ $store->social_media }}</h1>
+    <h1>{{ $store->store_id }}</h1>
 
     @foreach ($store->products as $product)
-        <p class="mt-5">{{$product}}</p>
+    <x-seller-cart store="{{ $product->store_id }}" nombre="{{ $product->name }}" price="{{ $product->price }}" subtitle="{{ $product->subtitle }}" description="{{ $product->description }}"
     @endforeach
     <div class="flex flex-col justify-center items-center h-screen">
         <p class="text-3xl flex justify-center h-14 text-center" syle="font-size: 10px" style="color: #79401E;">PERFIL DE TIENDA</p>
