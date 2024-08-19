@@ -2,8 +2,8 @@
 
 <div class="mx-8 my-3">
     <img class="h-52 w-72" src="{{ asset($img) }}"  alt="">
-    <div class="text-center">
-        <p class="font-bold">{{ $name }}</p>
+    <div class="text-center font-montserrat">
+        <p>{{ $name }}</p>
         <p>{{ $price }}</p>
     </div>
 </div>

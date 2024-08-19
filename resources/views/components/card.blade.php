@@ -3,7 +3,7 @@
 <section class="grid grid-cols-3 px-8 py-3">
     <!-- Imagen principal -->
     <div class="w-full col-span-1">
-        <img src="{{ asset($image) }}" class="w-full rounded-lg shadow-md">
+        <img src="{{ asset($image) }}" class="w-full h-72 rounded-lg shadow-md">
     </div>
     <div class="col-span-2 ml-12">
         <!-- Información de producto -->
@@ -20,9 +20,8 @@
                 href="{{ route('shoppingCart') }}">
                 Agregar a carrito
             </a>
-            <a class=" bg-light-green border p-1 px-6 text-white border-light-green"
-                href="{{ route('sellerHome', $store) }}">
-                Ir a Tienda
+            <a class=" bg-light-green border p-1 px-6 text-white border-light-green">
+            Ir a Tienda
             </a>
         </div>
     </div>

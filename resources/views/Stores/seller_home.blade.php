@@ -1,45 +1,42 @@
 <x-layout>
-    <h1>{{$store->name}}</h1>
-    <h1>{{ $store->phone }}</h1>
-    <h1>{{ $store->email }}</h1>
-    <h1>{{ $store->address }}</h1>
-    <h1>{{ $store->description }}</h1>
-    <h1>{{ $store->social_media }}</h1>
-    <h1>{{ $store->store_id }}</h1>
 
+<section class="grid grid-cols-3 bg-orange-200 pb-7 pt-2">
+    <div class="cols-span-1 ml-4 mt-4">
+        <img src="{{ asset($store->image) }}" class="rounded-full profile-widget-picture h-56 w-56 ml-16">
+    </div>
+
+    <div class=" items-center justify-center mr-4">
+        <h1 class="font-black text-2xl mt-10 text-brown">{{$store->name}}</h1>
+        <p class="mt-3 font-black text-brown">Descripción:</p>
+        <h1 class="">{{ $store->description }}</h1>
+    </div>
+
+    <div class="mt-5">
+        <div>
+            <p class="font-black text-brown">Número de telefono:</p>
+            <h1>{{ $store->phone }}</h1>
+        </div>
+        <div>
+            <p class="font-black text-brown">Email:</p>
+            <h1>{{ $store->email }}</h1>
+        </div>
+        <div>
+            <p class="font-black text-brown">Dirección:</p>
+            <h1>{{ $store->address }}</h1>
+        </div>
+        <div>
+            <p class="font-black text-brown">Redes Sociales:</p>
+            <h1>{{ $store->social_media }}</h1>
+        </div>
+    </div>
+</section>
+
+<div class="grid grid-cols-3 mx-6 mt-5">
     @foreach ($store->products as $product)
-    <x-seller-cart store="{{ $product->store_id }}" nombre="{{ $product->name }}" price="{{ $product->price }}" subtitle="{{ $product->subtitle }}" description="{{ $product->description }}"
+    <a href="{{ route('seeProduct', $product->id)}}">
+        <x-seller-cart name="{{$product->name}}" price="{{$product->price}}" image="{{$product->image}}" subtitle="{{$product->subtitle}}"/>
+    </a>
     @endforeach
-    <div class="flex flex-col justify-center items-center h-screen">
-        <p class="text-3xl flex justify-center h-14 text-center" syle="font-size: 10px" style="color: #79401E;">PERFIL DE TIENDA</p>
-        <Form action="/Register" method="POST">
-            @csrf
-        <div class="flex">
-            <div>
-                <img height="300px" width="300px"
-                    src="https://png.pngtree.com/png-vector/20191017/ourmid/pngtree-shop-icon-png-image_1820095.jpg"
-                    alt="">
-            </div>
-            <div>
-                <div class="h-14">
-                    <x-input name="user" type="text" >Nombre de tienda</x-input>
-                </div>
-                <div class="h-14">
-                    <x-input name="phone" type="tel" >Teléfono</x-input>
-                </div>
-                <div class="h-14">
-                    <x-input name="email" type="email">Email</x-input>
-                </div>
-                <div class="h-14">
-                    <x-input name="name" type="text" >Dirección</x-input>
-                </div>
-                <div class="h-14">
-                    <x-input name="name" type="text">Descripción de tienda</x-input>
-                </div>
-                <div class="h-20">
-                <button class=" border-double border-neutral-950 border rounded-xl px-4 py-1.5 bg-light-brown"
-                    type="submit" >Formulario para venta de productos</button>
-                </div>
-            </div>
-        </form>
+</div>
+
 </x-layout>

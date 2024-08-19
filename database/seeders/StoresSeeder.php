@@ -25,6 +25,7 @@ class StoresSeeder extends Seeder
         $stores = [
             [
                 'name' => "The Green Emporium",
+                'image' => "img/storeProfile/store1.png",
                 'phone' => "+503 7472-8384",
                 'email' => "store@example1.com",
                 'address' => "Santa Tecla local #300 segundo nivel ",
@@ -35,6 +36,7 @@ class StoresSeeder extends Seeder
             ],
             [
                 'name' => "EcoWise Essentials",
+                'image' => "img/storeProfile/store2.png",
                 'phone' => " +503 2245-6789",
                 'email' => "store@example2.com",
                 'address' => "Calle El Progreso #23, San Salvador",
@@ -45,6 +47,7 @@ class StoresSeeder extends Seeder
             ],
             [
                 'name' =>  "Sustainable Solutions Store",
+                'image' => "img/storeProfile/store3.png",
                 'phone' => "+503 2234-5678",
                 'email' => "store@example3.com",
                 'address' => " Avenida Central #45, Santa Tecla",
@@ -55,6 +58,7 @@ class StoresSeeder extends Seeder
             ],
             [
                 'name' =>  "GreenEco",
+                'image' => "img/storeProfile/store4.png",
                 'phone' => "+503 7056-7890",
                 'email' => "store@example4.com",
                 'address' => "Bulevar Los Héroes #100, San Salvador",
@@ -65,6 +69,7 @@ class StoresSeeder extends Seeder
             ],
             [
                 'name' =>  "EcoWorld",
+                'image' => "img/storeProfile/store5.png",
                 'phone' => "+503 7672-3344",
                 'email' => "store@example5.com",
                 'address' => "Calle del Sol #10, Antiguo Cuscatlán",
@@ -75,6 +80,7 @@ class StoresSeeder extends Seeder
             ],
             [
                 'name' =>  "GreenWay",
+                'image' => "img/storeProfile/store6.png",
                 'phone' => "+503 7267-8901",
                 'email' => "store@example6.com",
                 'address' => " Avenida Roosevelt #75, San Salvador",
@@ -85,6 +91,7 @@ class StoresSeeder extends Seeder
             ],
             [
                 'name' =>  "BioNature",
+                'image' => "img/storeProfile/store7.png",
                 'phone' => "+503 6279-1122",
                 'email' => "store@example7.com",
                 'address' => "Calle La Mascota #32, San Salvador",
@@ -95,6 +102,7 @@ class StoresSeeder extends Seeder
             ],
             [
                 'name' =>  "EcoLine",
+                'image' => "img/storeProfile/store8.png",
                 'phone' => "+503 6233-6475",
                 'email' => "store@example8.com",
                 'address' => "Calle La Reforma #60, Santa Ana",
@@ -105,6 +113,7 @@ class StoresSeeder extends Seeder
             ],
             [
                 'name' =>  "BioRoot",
+                'image' => "img/storeProfile/store9.png",
                 'phone' => "+503 7044-7568",
                 'email' => "store@example9.com",
                 'address' => "Avenida Escalón #20, San Salvador",
@@ -115,6 +124,7 @@ class StoresSeeder extends Seeder
             ],
             [
                 'name' =>  "GreenEarth",
+                'image' => "img/storeProfile/store10.png",
                 'phone' => "+503 7208-2234",
                 'email' => "store@example10.com",
                 'address' => "Avenida Las Flores #50, La Libertad",

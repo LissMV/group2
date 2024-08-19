@@ -1,9 +1,9 @@
 <div {{ $attributes->merge(['class' => '']) }}>
     <nav class="bg-light-green h-full  border-r-4 border-dark-green">
-        <img class="h-32 w-48" src="{{ asset('img/branding/blanco_verde.png') }}" alt="">
+        <img class="h-16 w-48 mt-2" src="{{ asset('img/branding/HomeLogo.png') }}" alt="">
 
 
-        <div class=" text-white2 ml-4 font-lora ">
+        <div class=" text-white2 ml-4 font-lora mt-5">
             <div class="flex">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
@@ -53,8 +53,9 @@
 
                     <div x-show="open">
                         @foreach ($stores as $tienda)
-                            <div class="ms-2"></div>
+                            <div class="ms-2">
                             <a href="{{ route('sellerHome', $tienda->id)}}">{{$tienda->name}}</a>
+                            </div>
                         @endforeach
                     </div>
                 </div>

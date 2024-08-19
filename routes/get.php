@@ -62,7 +62,7 @@ Route::get('/seeProducts', function () {
     return view('products.see_products', [
         'products' => Product::inRandomOrder()->get()
     ]);
-});
+})->name('seeProduct');
 
 Route::get('/seeProducts/{category}', function (Category $category) {
     return view('products.see_products_bycat', [

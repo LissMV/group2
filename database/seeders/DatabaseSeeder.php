@@ -17,7 +17,7 @@ class DatabaseSeeder extends Seeder
             'name' => "Rodolfo Gustavito",
             'email' => "seller@example.com",
             'password' => "password10",
-            'image' => "user1.png",
+            'image' => "img/users/user1.png",
             'is_seller' => true,
         ]);
 
@@ -25,7 +25,7 @@ class DatabaseSeeder extends Seeder
             'name' => "EcoTrade",
             'email' => "seller@expample2.com",
             'password' => "password10",
-            'image' => "user2.png",
+            'image' => "img/users/user2.png",
             'is_seller' => true,
         ]);
 
@@ -33,7 +33,7 @@ class DatabaseSeeder extends Seeder
             'name' => "BioMarket",
             'email' => "seller@example3.com",
             'password' => "password10",
-            'image' => "user3.png",
+            'image' => "img/users/user3.png",
             'is_seller' => true,
         ]);
 
@@ -41,7 +41,7 @@ class DatabaseSeeder extends Seeder
             'name' => "GreenWave",
             'email' => "seller@exapmle4.com",
             'password' => "password10",
-            'image' => "user4.png",
+            'image' => "img/usersuser4.png",
             'is_seller' => true,
         ]);
 
@@ -49,15 +49,15 @@ class DatabaseSeeder extends Seeder
             'name' => "EcoConnect",
             'email' => "seller@example5.com",
             'password' => "password10",
-            'image' => "user5.png",
+            'image' => "img/users/user5.png",
             'is_seller' => true,
         ]);
 
         User::factory()->create([
-            'name' => "BioBazar",
-            'email' => "seller@example6.com",
+            'name' => "Juan Juancito",
+            'email' => "user@example.com",
             'password' => "password10",
-            'image' => "user6.png",
+            'image' => "img/users/user6.png",
             'is_seller' => false,
         ]);
 
