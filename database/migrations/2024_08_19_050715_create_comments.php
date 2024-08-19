@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-use App\Models\Store;
+use App\Models\User;
 
 return new class extends Migration
 {
@@ -12,16 +12,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('events', function (Blueprint $table) {
+        Schema::create('comments', function (Blueprint $table) {
             $table->id();
-            $table->foreignIdFor(Store::class)->constrained();
-            $table->string('image');
-            $table->date('date');
-            $table->string('address');
-            $table->string('modalidad');
-            $table->string('title');
-            $table->string('subtitle');
             $table->timestamps();
+            $table->text('comment');
+            $table->foreignIdFor(User::class)->constrained();
         });
     }
 
@@ -30,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('events');
+        Schema::dropIfExists('comments');
     }
 };

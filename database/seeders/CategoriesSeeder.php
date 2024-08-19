@@ -8,6 +8,7 @@ use App\Models\Category;
 
 class CategoriesSeeder extends Seeder
 {
+    
     /**
      * Run the database seeds.
      */

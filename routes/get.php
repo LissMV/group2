@@ -5,6 +5,7 @@ use App\Http\Controllers\UserController;
 use App\Models\Category;
 use App\Models\Product;
 use App\Models\Store;
+use App\Models\User;
 
 Route::get('/', function () {
     return view('body.welcome');
@@ -71,8 +72,10 @@ Route::get('/seeProducts/{category}', function (Category $category) {
 })->name('byCategory');
 
 Route::get('/events', function () {
-    return view('community.event');
-});
+    return view('community.event', [
+        'products' => Product::inRandomOrder()->get()
+    ]);
+})->name('events');
 
 Route::get('/about_us', function () {
     return view('body.about_us');

@@ -65,6 +65,8 @@ class DatabaseSeeder extends Seeder
            CategoriesSeeder::class,
            StoresSeeder::class,
            ProductsSeeder::class
+
+
         ]);
 
       /*  User::factory()->create([

@@ -1,6 +1,6 @@
 <div {{ $attributes->merge(['class' => '']) }}>
     <nav class="bg-light-green h-full  border-r-4 border-dark-green">
-        <img class="h-16 w-48 mt-2" src="{{ asset('img/branding/HomeLogo.png') }}" alt="">
+        <img class="h-16 w-48 pt-2" src="{{ asset('img/branding/HomeLogo.png') }}" alt="">
 
 
         <div class=" text-white2 ml-4 font-lora mt-5">
