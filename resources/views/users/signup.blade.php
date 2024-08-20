@@ -27,7 +27,7 @@
 
                     <x-input name="password" type="password">Password</x-input>
 
-                    <x-button>Crear uenta</x-button>
+                    <x-button>Crear cuenta</x-button>
                 </div>
             </form>
         </div>
