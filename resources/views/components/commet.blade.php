@@ -1,3 +1,7 @@
 @props(['comment'])
 
-sec
+<section>
+    <div>
+        <p>{{$comment}}</p>
+    </div>
+</section>

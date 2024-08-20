@@ -16,7 +16,7 @@ return new class extends Migration
             $table->id();
             $table->foreignIdFor(Store::class)->constrained();
             $table->string('image');
-            $table->date('date');
+            $table->datetime('date');
             $table->string('address');
             $table->string('modalidad');
             $table->string('title');

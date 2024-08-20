@@ -5,6 +5,8 @@ namespace Database\Seeders;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\Event;
+use Carbon\Carbon;
 
 class DatabaseSeeder extends Seeder
 {
@@ -64,11 +66,20 @@ class DatabaseSeeder extends Seeder
         $this->call([
            CategoriesSeeder::class,
            StoresSeeder::class,
-           ProductsSeeder::class
-
+           ProductsSeeder::class,
+           //EventsSeeder::class,
 
         ]);
 
+        Event::factory()->create([
+            'image' => "img/events/event1.png",
+            'date' => Carbon::parse('2023-08-21'),
+            'address' => "Plaza futura: Calle el Mirador, Colonia Escalón, San Salvador",
+            'modalidad' => "Presencial",
+            'title' => "Mini mercado de productos sotenibles",
+            'subtitle' => "Más de 30 micro empresarios, encuentra toda clase de productos.",
+            "store_id" => 1
+        ]);
       /*  User::factory()->create([
             'name' => 'Test User',
             'email' => 'test@example.com',
