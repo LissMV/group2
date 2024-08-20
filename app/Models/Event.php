@@ -9,4 +9,13 @@ class Event extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'store_id',
+        'image',
+        'date',
+        'address',
+        'modalidad',
+        'title',
+        'subtitle'
+    ];
 }

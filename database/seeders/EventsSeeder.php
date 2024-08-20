@@ -7,6 +7,7 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\Event;
 use App\Models\Store;
+use Carbon\Carbon;
 
 class EventsSeeder extends Seeder
 {
@@ -25,12 +26,12 @@ class EventsSeeder extends Seeder
         $events = [
             [
                 'image' => "img/events/event1.png",
-                'date' => "04/08/2024",
+                'date' => Carbon::parse('2023-08-21'),
                 'address' => "Plaza futura: Calle el Mirador, Colonia Escalón, San Salvador",
                 'modalidad' => "Presencial",
                 'title' => "Mini mercado de productos sotenibles",
                 'subtitle' => "Más de 30 micro empresarios, encuentra toda clase de productos.",
-                "store_id" => $this->stores()->random()
+                "store_id" => 1
             ],
             [
                 'image' => "img/events/event2.png",

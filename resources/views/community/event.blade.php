@@ -1,5 +1,5 @@
 <x-layout>
     <section>
-        
-        </section>
+        {{$events}}
+    </section>
 </x-layout>
