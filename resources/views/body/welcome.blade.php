@@ -3,12 +3,12 @@
         <div
         <header style="background-color: #606c38">
             <div class="w-full mx-auto max-w-screen-xl p-6 md:flex md:items-center md:justify-between">
-                <img width="200px" height=""  src="{{ asset('img/branding/HomeLogo.png') }}">
+                <img class="h-16 w-36"  src="{{ asset('img/branding/HomeLogo.png') }}">
                 <ul style="color: #FEFAE0" class="flex flex-wrap items-center mt-3 text-sm font-medium;">
                     <li>
                         <a href="{{ route('about_us') }}" class="hover:underline me-4 md:me-6">SOBRE NOSOTROS</a>
                     </li>
-                    
+
                     <li>
                         <a href="{{ route('learning') }}" class="hover:underline me-4 md:me-6">APRENDER</a>
                     </li>

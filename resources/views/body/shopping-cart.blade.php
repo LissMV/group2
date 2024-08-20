@@ -1,5 +1,5 @@
 <x-layout>
-<div style="background-color: #606c38; padding: 20px 20px; display: flex; justify-content: space-between; align-items: center; color: white;">
+<div style="background-color: #606c38; padding: 10px 10px; display: flex; justify-content: space-between; align-items: center; color: white;">
     <strong class="ml-[150px] text-2xl m-8">Carrito de compras</strong>
 
     <hr class="my-5">
@@ -81,28 +81,7 @@
         </tbody>
     </table>
     </div>
-    <footer style="background-color: #606c38">
-        <div class="w-full mx-auto max-w-screen-xl p-6 md:flex md:items-center md:justify-between">
-            <span style="color: #FEFAE0">© 2024 <a href="https://flowbite.com/" class="hover:underline">ECOMMUNITY</a>.
-                TODOS LOS DERECHOS RESERVADOS
-            </span>
-            <ul style="color: #FEFAE0" class="flex flex-wrap items-center mt-3 text-sm font-medium;">
-                <li>
-                    <a href="#" class="hover:underline me-4 md:me-6">SOBRE NOSOTROS</a>
-                </li>
-                <li>
-                    <a href="#" class="hover:underline me-4 md:me-6">POLITÍCA</a>
-                </li>
-                <li>
-                    <a href="#" class="hover:underline me-4 md:me-6">ECOMMUNITY</a>
-                </li>
-                <li>
-                    <a href="#" class="hover:underline">CONTACTO</a>
-                </li>
-            </ul>
-        </div>
-    </footer>
 
-    </div>
+
     <section>
 </x-layout>
