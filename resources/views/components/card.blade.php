@@ -1,4 +1,4 @@
-@props(['store','nombre','price', 'subtitle', 'description', 'image'])
+@props(['id','store','nombre','price', 'subtitle', 'description', 'image',])
 
 <section class="grid grid-cols-3 px-8 py-3">
     <!-- Imagen principal -->
@@ -20,7 +20,9 @@
                 href="{{ route('shoppingCart') }}">
                 Agregar a carrito
             </a>
-            <a class=" bg-light-green border p-1 px-6 text-white border-light-green">
+            <a class="bg-light-green border p-1 px-6 text-white border-light-green"
+               href="{{ route('sellerHome', $id) }}"
+             >
             Ir a Tienda
             </a>
         </div>
