@@ -1,16 +1,14 @@
 <x-layout>
-<section class="ml-24 py-3">
+<section class="ml-12 py-3">
     <div>
-        <div>
-        <img class="pe-24 h-72 w-full" src="{{ asset('https://lacamara.pe/wp-content/uploads/2023/02/IDEXCAM-1.jpg') }}" alt="">
-        </div>
+        <h1 class="text-4xl font-lora font-black text-center">About us</h1>
 
-        <div class="">
-            <h1 class="text-4xl font-lora font-black">About us</h1>
+        <div class="pr-12 my-5">
+        <img src="{{ asset('img/nosotros/todos2.jpg') }}">
         </div>
     </div>
 
-    <section class="grid grid-cols-2 text-justify me-24 mt-12">
+    <section class="grid grid-cols-2 text-justify me-12 mt-12">
         <div class="border-r-4 border-brown col-span-1 font-montserrat">
             <h1 class="text-center font-black border p-3 bg-light-brown border-brown">Visión</h1>
             <h1 class="me-4 mt-4">Nuestra visión es ser el principal impulsor del mercado de productos biodegradables y
@@ -28,7 +26,7 @@
         </div>
     </section>
 
-    <section class="me-24 mt-16 font-montserrat">
+    <section class="me-12 mt-12 font-montserrat">
             <h1 class="font-black text-4xl font-lora">Valores:</h1>
 
         <div class="grid grid-cols-2 text-center mt-6">
@@ -48,11 +46,11 @@
     </section>
 
     <h1 class="font-black text-4xl font-lora mt-10">Integrantes:</h1>
-    <section class="mt-6 pe-24 grid grid-cols-4">
+    <section class="mt-6 grid grid-cols-4 ml-12">
         <div class="col-span-1">
-            <div class="mt-4 border p-2 border-black w-44">
-                <div class="h-64 w-40">
-                    <img src="{{ asset('img/nosotros/mujer.png') }}">
+            <div class="mt-4 border p-2 border-black w-48">
+                <div>
+                    <img class="h-60 w-48" src="{{ asset('img/nosotros/liss.jpg') }}">
                 </div>
                 <div class="font-lora">
                     <p>Lisseth Mejía</p>
@@ -60,9 +58,9 @@
                 </div>
             </div>
 
-            <div class="mt-4 border p-2 border-black w-44">
-                <div class="h-64 w-40">
-                    <img src="{{ asset('img/nosotros/mujer.png') }}">
+            <div class="mt-4 border p-2 border-black w-48">
+                <div>
+                    <img class="h-60 w-48" src="{{ asset('img/nosotros/hazel.jpg') }}">
                 </div>
                 <div class="font-lora">
                     <p>Hazel Peña</p>
@@ -71,9 +69,9 @@
             </div>
         </div>
         <div>
-            <div class="mt-4 border p-2 border-black w-44">
-                <div class="h-64 w-40">
-                    <img src="{{ asset('img/nosotros/hombre.png') }}">
+            <div class="mt-4 border p-2 border-black w-48">
+                <div>
+                    <img class="h-60 w-48" src="{{ asset('img/nosotros/josue.jpg') }}">
                 </div>
                 <div class="font-lora">
                     <p>Josué Ramírez</p>
@@ -81,20 +79,20 @@
                 </div>
             </div>
 
-            <div class="mt-4 border p-2 border-black w-44">
-                <div class="h-64 w-40">
-                    <img src="{{ asset('img/nosotros/mujer.png') }}">
+            <div class="mt-4 border p-2 border-black w-48">
+                <div>
+                    <img class="h-60 w-48" src="{{ asset('img/nosotros/karla.jpg') }}">
                 </div>
                 <div class="font-lora">
-                    <p>Carla Cardona</p>
+                    <p>Karla Cardona</p>
                     <p>Junior AM</p>
                 </div>
             </div>
         </div>
         <div>
-            <div class="mt-4 border p-2 border-black w-44">
-                <div class="h-64 w-40">
-                    <img src="{{ asset('img/nosotros/hombre.png') }}">
+            <div class="mt-4 border p-2 border-black w-48">
+                <div>
+                    <img class="h-60 w-48" src="{{ asset('img/nosotros/justin.jpg') }}">
                 </div>
                 <div class="font-lora">
                     <p>Justin Ramírez</p>
@@ -102,9 +100,9 @@
                 </div>
             </div>
 
-            <div class="mt-4 border p-2 border-black w-44">
-                <div class="h-64 w-40">
-                    <img src="{{ asset('img/nosotros/hombre.png') }}">
+            <div class="mt-4 border p-2 border-black w-48">
+                <div>
+                    <img class="h-60 w-48" src="{{ asset('img/nosotros/ricardo.jpg') }}">
                 </div>
                 <div class="font-lora">
                     <p>Ricardo Campos</p>
@@ -113,9 +111,9 @@
             </div>
         </div>
         <div>
-            <div class="mt-4 border p-2 border-black w-44">
-                <div class="h-64 w-40">
-                    <img src="{{ asset('img/nosotros/hombre.png') }}">
+            <div class="mt-4 border p-2 border-black w-48">
+                <div>
+                    <img class="h-60 w-48" src="{{ asset('img/nosotros/echeverria.jpg') }}">
                 </div>
                 <div class="font-lora">
                     <p>Josué Echeverria</p>
@@ -123,15 +121,15 @@
                 </div>
             </div>
 
-            <div class="mt-4 border p-2 border-black w-44">
-                <div class="h-64 w-40">
-                    <img src="{{ asset('img/nosotros/mujer.png') }}">
+            <div class="mt-4 border p-2 border-black w-48">
+                <div>
+                    <img class="h-60 w-48" src="{{ asset('img/nosotros/esmeralda.jpg') }}">
                 </div>
                 <div class="font-lora">
                     <p>Esmeralda Guzmán</p>
                     <p>Junior AM</p>
                 </div>
-               
+
             </div>
         </div>
     </section>
