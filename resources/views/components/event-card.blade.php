@@ -10,7 +10,7 @@
             <h1 class="font-lora text-center text-xl">{{ $title }}</h1>
         <div class="flex space-x-1">
             <h1>Dirección:</h1>
-            <p>{{$adress}}</p>
+            <p>{{$address}}</p>
         </div>
         <div class="flex space-x-1">
             <h1>Fecha:</h1>

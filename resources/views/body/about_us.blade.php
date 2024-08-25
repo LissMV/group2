@@ -54,7 +54,7 @@
                 </div>
                 <div class="font-lora">
                     <p>Lisseth Mejía</p>
-                    <p>Junior AM</p>
+                    <p>Pitch team</p>
                 </div>
             </div>
 
@@ -64,7 +64,7 @@
                 </div>
                 <div class="font-lora">
                     <p>Hazel Peña</p>
-                    <p>Junior AM</p>
+                    <p>fronted team</p>
                 </div>
             </div>
         </div>
@@ -75,7 +75,7 @@
                 </div>
                 <div class="font-lora">
                     <p>Josué Ramírez</p>
-                    <p>Junior AM</p>
+                    <p>branding team</p>
                 </div>
             </div>
 
@@ -85,7 +85,7 @@
                 </div>
                 <div class="font-lora">
                     <p>Karla Cardona</p>
-                    <p>Junior AM</p>
+                    <p>pitch team</p>
                 </div>
             </div>
         </div>
@@ -96,7 +96,7 @@
                 </div>
                 <div class="font-lora">
                     <p>Justin Ramírez</p>
-                    <p>Junior AM</p>
+                    <p>figma/UX</p>
                 </div>
             </div>
 
@@ -106,7 +106,7 @@
                 </div>
                 <div class="font-lora">
                     <p>Ricardo Campos</p>
-                    <p>Junior AM</p>
+                    <p>fronted team</p>
                 </div>
             </div>
         </div>
@@ -117,7 +117,7 @@
                 </div>
                 <div class="font-lora">
                     <p>Josué Echeverria</p>
-                    <p>Junior AM</p>
+                    <p>backend team</p>
                 </div>
             </div>
 
@@ -127,11 +127,44 @@
                 </div>
                 <div class="font-lora">
                     <p>Esmeralda Guzmán</p>
-                    <p>Junior AM</p>
+                    <p>branding team</p>
                 </div>
-
             </div>
         </div>
     </section>
-</section>
+
+    <h1 class="font-black text-4xl font-lora mt-10">Roles de presentación:</h1>
+    <section class="grid grid-cols-3 pl-10 bg-light-brown">
+
+        <div class="mt-4 border p-2 border-black w-64 h-96 col-span-1 bg-white">
+        <div>
+            <img class="h-72 w-72" src="{{ asset('img/nosotros/pitch_team.jpg') }}">
+        </div>
+        <div class="font-lora">
+            <p>Justin Ramiréz, Josué Ramiréz y Hazel Peña</p>
+            <p>-pitch presentation </p>
+        </div>
+        </div>
+        <div class="mt-4 border p-2 border-black w-64 h-96 bg-white">
+            <div>
+                <img class="h-72 w-72" src="{{ asset('img/nosotros/Q&A_team.jpg') }}">
+            </div>
+            <div class="font-lora">
+                <p>Lisseth Mejía y Josué Echeverria</p>
+                <p>-Q&A section</p>
+            </div>
+
+        </div>
+        <div class="mt-4 border p-2 border-black w-64 h-96 bg-white">
+            <div>
+                <img class="h-72 w-72" src="{{ asset('img/nosotros/networking_team.jpg') }}">
+            </div>
+            <div class="font-lora">
+                <p>Karla Cardona, Ricardo Campos y Esmeralda Guzmán</p>
+                <p>-Networking section</p>
+            </div>
+
+        </div>
+    </section>
+
 </x-layout>
