@@ -73,7 +73,7 @@
                                 <a href="{{ route('about_us') }}" class="hover:underline me-4 md:me-6">SOBRE NOSOTROS</a>
                             </li>
                             <li>
-                                <a href="{{ route('welcome') }}" class="hover:underline me-4 md:me-6">ECOMMUNITY</a>
+                                <a href="{{ route('learning') }}" class="hover:underline me-4 md:me-6">APRENDER</a>
                             </li>
                         </ul>
                     </div>
