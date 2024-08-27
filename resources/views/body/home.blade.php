@@ -16,7 +16,9 @@
 
         <div class="grid grid-cols-3 mx-6">
             @foreach ($products as $product)
-                <x-mini-card name="{{$product->name}}" price="{{$product->price}}" img="{{$product->image}}"/>
+                <a href="{{ route('seeDetails', $product->id) }}">
+                    <x-mini-card name="{{$product->name}}" price="{{$product->price}}" img="{{$product->image}}"/>
+                </a>
             @endforeach
         </div>
 

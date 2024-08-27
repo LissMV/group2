@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\Cart;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Models\Category;
@@ -56,7 +58,19 @@ Route::get('/learning', function () {
 })->name('learning');
 
 Route::get('/shoppingCart', function () {
-    return view('body.shopping-cart');
+    $shoppingCart = Cart::where('user_id', Auth::user()->id)->where('checkout', false)->get();
+
+    if ( !$shoppingCart->isEmpty() ) {
+        $shoppingCart = Cart::create([
+            'user_id' => Auth::user()->id,
+            'total' => 0.00,
+            'checkout' => false,
+        ]);
+    }
+
+    return view('body.shopping-cart', [
+        'shoppingCart' => $shoppingCart
+    ]);
 })->name('shoppingCart');
 
 Route::get('/seeProducts', function () {
@@ -70,6 +84,12 @@ Route::get('/seeProducts/{category}', function (Category $category) {
         'category' => $category->load('products')
     ]);
 })->name('byCategory');
+
+Route::get('/seeDetails/{product}', function (Product $product) {
+    return view('products.see_details', [
+        'producto' => $product
+    ]);
+})->name('seeDetails');
 
 Route::get('/events', function () {
     return view('community.event', [
