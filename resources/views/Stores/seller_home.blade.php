@@ -33,7 +33,7 @@
 
 <div class="grid grid-cols-3 mx-6 mt-5">
     @foreach ($store->products as $product)
-    <a href="{{ route('seeProduct', $product->id)}}">
+    <a href="{{ route('seeDetails', $product->id)}}">
         <x-seller-cart name="{{$product->name}}" price="{{$product->price}}" image="{{$product->image}}" subtitle="{{$product->subtitle}}"/>
     </a>
     @endforeach

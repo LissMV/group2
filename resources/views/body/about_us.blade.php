@@ -1,6 +1,6 @@
 <x-layout>
-<section class="ml-12 py-3">
-    <div>
+<section class="py-3">
+    <div class="ml-12">
         <h1 class="text-4xl font-lora font-black text-center">About us</h1>
 
         <div class="pr-12 my-5">
@@ -8,7 +8,7 @@
         </div>
     </div>
 
-    <section class="grid grid-cols-2 text-justify me-12 mt-12">
+    <section class="grid grid-cols-2 text-justify me-12 mt-12 ml-12">
         <div class="border-r-4 border-brown col-span-1 font-montserrat">
             <h1 class="text-center font-black border p-3 bg-light-brown border-brown">Visión</h1>
             <h1 class="me-4 mt-4">Nuestra visión es ser el principal impulsor del mercado de productos biodegradables y
@@ -26,7 +26,7 @@
         </div>
     </section>
 
-    <section class="me-12 mt-12 font-montserrat">
+    <section class="me-12 mt-12 font-montserrat ml-12">
             <h1 class="font-black text-4xl font-lora">Valores:</h1>
 
         <div class="grid grid-cols-2 text-center mt-6">
@@ -45,7 +45,7 @@
         </div>
     </section>
 
-    <h1 class="font-black text-4xl font-lora mt-10">Integrantes:</h1>
+    <h1 class="font-black text-4xl font-lora mt-10 ml-12">Integrantes:</h1>
     <section class="mt-6 grid grid-cols-4 ml-12">
         <div class="col-span-1">
             <div class="mt-4 border p-2 border-black w-48">
@@ -133,8 +133,8 @@
         </div>
     </section>
 
-    <h1 class="font-black text-4xl font-lora mt-10">Roles de presentación:</h1>
-    <section class="grid grid-cols-3 pl-10 bg-light-brown">
+    <h1 class="font-black text-4xl font-lora mt-10 text-center">Roles de presentación:</h1>
+    <section class="grid grid-cols-3 pl-10 bg-light-brown mt-3">
 
         <div class="mt-4 border p-2 border-black w-64 h-96 col-span-1 bg-white">
         <div>
