@@ -56,13 +56,18 @@
         @foreach ($stores as $tienda)
             <h1 class="text-center text-5xl pb-10 mt-5 font-lora">Actualizar datos de tienda {{ $tienda->name }}</h1>
             <section class="flex justify-center ">
-                <div class="h-72 w-72 pr-10">
-                    <img class="mt-24" src="{{ asset('img/forms/logoo.png') }}" alt="">
-                </div>
-                <form class="flex justify-center items-center pl-10" action="{{ route('users.edit.update') }}"
+                <form class="flex justify-center items-center pl-10" action="{{ route('stores.edit.update') }}"
                     method="POST">
                     @csrf
                     <div class="w-96 p-6">
+                        <div class="profile-widget-header flex items-center justify-center">
+                            <img alt="image" src="{{$tienda->image}}"
+                            class="rounded-full profile-widget-picture h-56 w-56">
+                        </div>
+                        <div class="form-group col-12">
+                            <label>Foto de tienda {{$tienda->name}} </label>
+                            <input type="File" name="image">
+                        </div>
                         <div>
                             <x-input name="name" type="text" value="{{ $tienda->name }}">Nombre</x-input>
                         </div>

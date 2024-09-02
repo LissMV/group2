@@ -40,6 +40,7 @@ class StoreController extends Controller
     public function edit(Request $request)
     {
         $store = $request->validate([
+            'image' =>'required',
             'name' => 'required',
             'phone' => 'required',
             'address' => 'required',

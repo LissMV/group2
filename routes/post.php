@@ -15,4 +15,6 @@ Route::post('/store', [StoreController::class, 'create']);
 
 Route::post('/users/edit/update', [UserProfileController::class, 'update'])->name('users.edit.update');
 
+Route::post('/stores/edit/update', [StoreController::class, 'edit'])->name('stores.edit.update');
+
 Route::post('/logout', [UserController::class, 'logout']);
