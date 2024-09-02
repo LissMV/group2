@@ -8,6 +8,7 @@ use App\Models\Category;
 use App\Models\Product;
 use App\Models\Store;
 use App\Models\Event;
+use App\Models\Review;
 
 Route::get('/', function () {
     return view('body.welcome');
@@ -25,7 +26,7 @@ Route::get('/users/edit', function () {
     return view('users.edit',
     [
         'user' => Auth::user(),
-        'store' => Auth::user()->stores,
+        'stores' => Auth::user()->stores,
     ]);
 })->name('usersEdit');
 
@@ -87,7 +88,7 @@ Route::get('/seeProducts/{category}', function (Category $category) {
 
 Route::get('/seeDetails/{product}', function (Product $product) {
     return view('products.see_details', [
-        'producto' => $product
+        'producto' => $product->load('reviews')
     ]);
 })->name('seeDetails');
 

@@ -44,6 +44,8 @@ class StoreController extends Controller
             'phone' => 'required',
             'address' => 'required',
             'description' => 'required',
+            'social_media' => 'required'
+
         ]);
 
     }

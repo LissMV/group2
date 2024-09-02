@@ -63,6 +63,51 @@ class DatabaseSeeder extends Seeder
             'is_seller' => false,
         ]);
 
+        User::factory()->create([
+            'name' => "Ann Cristina",
+            'email' => "user1@example.com",
+            'password' => "password10",
+            'image' => "img/users/user_1.png",
+            'is_seller' => false,
+        ]);
+
+        User::factory()->create([
+            'name' => "Marco Salazar",
+            'email' => "user2@example.com",
+            'password' => "password10",
+            'image' => "img/users/user_2.png",
+            'is_seller' => false,
+        ]);
+
+        User::factory()->create([
+            'name' => "Amelia Carolina",
+            'email' => "user3@example.com",
+            'password' => "password10",
+            'image' => "img/users/user_3.png",
+            'is_seller' => false,
+        ]);
+
+        User::factory()->create([
+            'name' => "Steve Sanchez",
+            'email' => "user4@example.com",
+            'password' => "password10",
+            'image' => "img/users/user_4.png",
+            'is_seller' => false,
+        ]);
+
+        User::factory()->create([
+            'name' => "Sarai Castillo",
+            'email' => "user5@example.com",
+            'password' => "password10",
+            'image' => "img/users/user_5.png",
+            'is_seller' => false,
+        ]);
+
+
+
+
+
+
         $this->call([
            CategoriesSeeder::class,
            StoresSeeder::class,

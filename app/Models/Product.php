@@ -8,4 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class Product extends Model
 {
     use HasFactory;
+
+    protected $guarded = [
+        'id',
+    ];
+
+    public function reviews() {
+        return $this->hasMany(Review::class);
+    }
 }
