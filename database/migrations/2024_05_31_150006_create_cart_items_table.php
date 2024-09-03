@@ -19,7 +19,7 @@ return new class extends Migration
             $table->foreignIdFor(Product::class)->constrained();
             $table->float('price');
             $table->integer('quantity');
-            $table->float('discount');
+            $table->float('discount')->default('0.0');
             $table->timestamps();
         });
     }

@@ -1,6 +1,8 @@
 <?php
 
 use App\Models\Cart;
+use App\Models\CartItem;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
@@ -59,9 +61,31 @@ Route::get('/learning', function () {
 })->name('learning');
 
 Route::get('/shoppingCart', function () {
-    $shoppingCart = Cart::where('user_id', Auth::user()->id)->where('checkout', false)->get();
+    return view('body.shopping-cart', [
+        'shoppingCart' => getShoppingCart()->load('cartItems')
+    ]);
+})->name('shoppingCart');
 
-    if ( !$shoppingCart->isEmpty() ) {
+Route::post('/shoppingCart/{product}', function (Request $request, Product $product) {
+    $request->validate([
+        'quantity' => 'required',
+    ]);
+
+    CartItem::create([
+        'cart_id' => getShoppingCart()->id,
+        'product_id' => $product->id,
+        'price' => $product->price,
+        'quantity' => $request->input('quantity')
+    ]);
+
+    return redirect()->route('shoppingCart');
+})->name('shoppingCartAdd');
+
+
+function getShoppingCart() {
+    $shoppingCart = Cart::where('user_id', Auth::user()->id)->where('checkout', false)->first();
+
+    if ( $shoppingCart == null ) {
         $shoppingCart = Cart::create([
             'user_id' => Auth::user()->id,
             'total' => 0.00,
@@ -69,10 +93,8 @@ Route::get('/shoppingCart', function () {
         ]);
     }
 
-    return view('body.shopping-cart', [
-        'shoppingCart' => $shoppingCart
-    ]);
-})->name('shoppingCart');
+    return $shoppingCart;
+}
 
 Route::get('/seeProducts', function () {
     return view('products.see_products', [

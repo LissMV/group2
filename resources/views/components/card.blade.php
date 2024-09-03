@@ -16,14 +16,20 @@
         </div>
 
         <div class="space-x-3 py-4">
-            <a class=" bg-light-green border p-1 px-6 text-white border-light-green"
-                href="{{ route('shoppingCart') }}">
-                Agregar a carrito
-            </a>
+            <form action="{{ route('shoppingCartAdd', $id) }}" method="POST" class="inline-block">
+                @csrf
+                <div class="mb-2">
+                    <label>Cantidad:</label>
+                    <input class="w-8" type="number" min="1" value="1" name="quantity">
+                </div>
+
+                <button class=" bg-light-green border p-1 px-6 text-white border-light-green" type="submit">
+                    Agregar a carrito
+                </button>
+            </form>
             <a class="bg-light-green border p-1 px-6 text-white border-light-green"
-               href="{{ route('sellerHome', $id) }}"
-             >
-            Ir a Tienda
+               href="{{ route('sellerHome', $id) }}">
+                Ir a Tienda
             </a>
         </div>
     </div>

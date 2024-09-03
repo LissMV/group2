@@ -25,7 +25,7 @@ class ProductsSeeder extends Seeder
             [
                 'image' => "img/products/skin care/skinCare1.png",
                 'is_available' => true,
-                'price' => "$9.00",
+                'price' => 9.00,
                 'discount' => "0",
                 'name' => "Crema facial",
                 'subtitle' => "con contenedor de vidrio",
@@ -36,7 +36,7 @@ class ProductsSeeder extends Seeder
             [
                 'image' => "img/products/skin care/skinCare2.png",
                 'is_available' => true,
-                'price' => "$15.00",
+                'price' => 15.00,
                 'discount' => "10%",
                 'name' => "Crema hidratante",
                 'subtitle' => "Especial para la noche",
@@ -47,7 +47,7 @@ class ProductsSeeder extends Seeder
             [
                 'image' => "img/products/skin care/skinCare3.png",
                 'is_available' => true,
-                'price' => "$20.00",
+                'price' => 20.00,
                 'discount' => "15%",
                 'name' => "Suero facial",
                 'subtitle' => "llevate 2!",
@@ -58,7 +58,7 @@ class ProductsSeeder extends Seeder
             [
                 'image' => "img/products/skin care/skinCare4.png",
                 'is_available' => true,
-                'price' => "$67.00",
+                'price' => 67.00,
                 'discount' => "0",
                 'name' => "Kit especial",
                 'subtitle' => "con todo incluido",
@@ -69,7 +69,7 @@ class ProductsSeeder extends Seeder
             [
                 'image' => "img/products/skin care/skinCare5.png",
                 'is_available' => true,
-                'price' => "$12.00",
+                'price' => 12.00,
                 'discount' => "0",
                 'name' => "Suero facial",
                 'subtitle' => "con aplicador incluido",
@@ -80,7 +80,7 @@ class ProductsSeeder extends Seeder
             [
                 'image' => "img/products/skin care/skinCare10.png",
                 'is_available' => true,
-                'price' => "$13.99",
+                'price' => 13.99,
                 'discount' => "0",
                 'name' => "Mist facial",
                 'subtitle' => "Hecho de coco",
@@ -91,7 +91,7 @@ class ProductsSeeder extends Seeder
             [
                 'image' => "img/products/skin care/skinCare6.png",
                 'is_available' => true,
-                'price' => "$22.00",
+                'price' => 22.00,
                 'discount' => "",
                 'name' => "Limpiador facial",
                 'subtitle' => "Especial para piel grasa",
@@ -102,7 +102,7 @@ class ProductsSeeder extends Seeder
             [
                 'image' => "img/products/skin care/skinCare7.png",
                 'is_available' => true,
-                'price' => "$20.99",
+                'price' => 20.99,
                 'discount' => "5%",
                 'name' => "Exfoliantes faciales",
                 'subtitle' => "Cafe y arroz",
@@ -113,7 +113,7 @@ class ProductsSeeder extends Seeder
             [
                 'image' => "img/products/skin care/skinCare8.png",
                 'is_available' => true,
-                'price' => "$16.89 c/u",
+                'price' => 16.89,
                 'discount' => "0",
                 'name' => "Protector solar",
                 'subtitle' => "para piel grasa o no grasosa",
@@ -124,7 +124,7 @@ class ProductsSeeder extends Seeder
             [
                 'image' => "img/products/skin care/skinCare9.png",
                 'is_available' => true,
-                'price' => "$18.79",
+                'price' => 18.79,
                 'discount' => "15%",
                 'name' => "Protector solar",
                 'subtitle' => "En barra",
@@ -135,7 +135,7 @@ class ProductsSeeder extends Seeder
             [
                 'image' => "img/products/personal Care/personalCare1.png",
                 'is_available' => true,
-                'price' => "$8.00",
+                'price' => 8.00,
                 'discount' => "5%",
                 'name' => "Cepillo capilar",
                 'subtitle' => "hecho de bambú",
@@ -146,7 +146,7 @@ class ProductsSeeder extends Seeder
             [
                 'image' => "img/products/personal Care/personalCare2.png",
                 'is_available' => true,
-                'price' => "$6.00 c/u",
+                'price' => 6.00,
                 'discount' => "0",
                 'name' => "Cepillo dental",
                 'subtitle' => "Hecho de bambú",
@@ -157,7 +157,7 @@ class ProductsSeeder extends Seeder
             [
                 'image' => "img/products/personal Care/personalCare3.png",
                 'is_available' => true,
-                'price' => "$3.00 c/u",
+                'price' => 3.00,
                 'discount' => "0",
                 'name' => "Jabón de cuerpo",
                 'subtitle' => "Jabones hechos de frutas",
@@ -168,7 +168,7 @@ class ProductsSeeder extends Seeder
             [
                 'image' => "img/products/personal Care/personalCare4.png",
                 'is_available' => true,
-                'price' => "$11.99",
+                'price' => 11.99,
                 'discount' => "0",
                 'name' => "Jabón y Champú en barra",
                 'subtitle' => "Especial para niños y bebés",
@@ -179,7 +179,7 @@ class ProductsSeeder extends Seeder
             [
                 'image' => "img/products/personal Care/personalCare5.png",
                 'is_available' => true,
-                'price' => "$6.99",
+                'price' => 6.99,
                 'discount' => "0",
                 'name' => "Desodorante",
                 'subtitle' => "Hecho artesanalmente",
@@ -190,7 +190,7 @@ class ProductsSeeder extends Seeder
             [
                 'image' => "img/products/personal Care/personalCare6.png",
                 'is_available' => true,
-                'price' => "$67.89",
+                'price' => 67.89,
                 'discount' => "0",
                 'name' => "Kit de ducha",
                 'subtitle' => "Productos veganos",
@@ -201,7 +201,7 @@ class ProductsSeeder extends Seeder
             [
                 'image' => "img/products/personal Care/personalCare7.png",
                 'is_available' => true,
-                'price' => "$11.99",
+                'price' => 11.99,
                 'discount' => "0",
                 'name' => "Tónico capilar",
                 'subtitle' => "Especial para el crecimiento",
@@ -212,7 +212,7 @@ class ProductsSeeder extends Seeder
             [
                 'image' => "img/products/personal Care/personalCare8.png",
                 'is_available' => true,
-                'price' => "$5.99",
+                'price' => 5.99,
                 'discount' => "0",
                 'name' => "Toallitas",
                 'subtitle' => "Para todo uso",
@@ -223,7 +223,7 @@ class ProductsSeeder extends Seeder
             [
                 'image' => "img/products/personal Care/personalCare9.png",
                 'is_available' => true,
-                'price' => "$3.99 c/u",
+                'price' => 3.99,
                 'discount' => "0",
                 'name' => "Toallas femeninas",
                 'subtitle' => "Hechas de tela de algodón",
@@ -234,7 +234,7 @@ class ProductsSeeder extends Seeder
             [
                 'image' => "img/products/personal Care/personalCare10.png",
                 'is_available' => true,
-                'price' => "$1.50 c/u",
+                'price' => 1.50,
                 'discount' => "0",
                 'name' => "Papel higienico",
                 'subtitle' => "facil degradación",
@@ -245,7 +245,7 @@ class ProductsSeeder extends Seeder
             [
                 'image' => "img/products/cleaning/cleaning1.png",
                 'is_available' => true,
-                'price' => "$4.00 c/u",
+                'price' => 4.00,
                 'discount' => "0",
                 'name' => "Mascón para trastes",
                 'subtitle' => "hecho de bambú",
@@ -256,7 +256,7 @@ class ProductsSeeder extends Seeder
             [
                 'image' => "img/products/cleaning/cleaning2.png",
                 'is_available' => true,
-                'price' => "$3.00 c/u",
+                'price' => 3.00,
                 'discount' => "0",
                 'name' => "Jabón de platos",
                 'subtitle' => "hecho con zanahoria",
@@ -267,7 +267,7 @@ class ProductsSeeder extends Seeder
             [
                 'image' => "img/products/cleaning/cleaning3.png",
                 'is_available' => true,
-                'price' => "$7.59 c/u",
+                'price' => 7.59,
                 'discount' => "10%",
                 'name' => "Desinfectantes",
                 'subtitle' => "Libre de quimicos",
@@ -278,7 +278,7 @@ class ProductsSeeder extends Seeder
             [
                 'image' => "img/products/cleaning/cleaning4.png",
                 'is_available' => true,
-                'price' => "$8.00",
+                'price' => 8.00,
                 'discount' => "0",
                 'name' => "Detergente vegetal ",
                 'subtitle' => "Multiuso",
