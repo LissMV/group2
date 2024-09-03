@@ -19,7 +19,7 @@
     @auth
         <section class="w-full">
             <x-navbar class="fixed w-full"/>
-            <x-navertical class="h-screen w-52 fixed" />
+            <x-navertical class="h-screen w-52 fixed overflow-y-auto" />
 
             <div class="pt-[80px] ml-52">
                 {{ $slot }}

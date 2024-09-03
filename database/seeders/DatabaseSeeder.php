@@ -125,6 +125,36 @@ class DatabaseSeeder extends Seeder
             'subtitle' => "Más de 30 micro empresarios, encuentra toda clase de productos.",
             "store_id" => 1
         ]);
+
+        Event::factory()->create([
+            'image' => "img/events/event2.png",
+            'date' => Carbon::parse('2024-08-16'),
+            'address' => "Plaseo del Carmen, Santa Tecla ",
+            'modalidad' => "Presencial",
+            'title' => "Apertura de nuevos emprendedores sostenibles",
+            'subtitle' => "Conoce las nuevas 5 tiendas con nuevos productos cosmeticos",
+            "store_id" => 2
+        ]);
+
+        Event::factory()->create([
+            'image' => "img/events/event3.png",
+            'date' => Carbon::parse('2024-08-21'),
+            'address' => "Plaza el Cafetalón, Santa Tecla",
+            'modalidad' => "Presencial",
+            'title' => "Carrera de nuevos Consumidores",
+            'subtitle' => "Inscribete y concursa para ganar muchos regalos, conoce nuestros productos y disfruta de un regrigerio gratis",
+            "store_id" => 3
+        ]);
+
+        Event::factory()->create([
+            'image' => "img/events/event4.png",
+            'date' => Carbon::parse('2024-09-10'),
+            'address' => "Centro comercial Plaza merliot, Santa Tecla",
+            'modalidad' => "Presencial",
+            'title' => "50% de descuento a las primeras 80 presonas que compren",
+            'subtitle' => "Para nuestro primer cliente le daremos un jabón de avena completamente gratis",
+            "store_id" => 4
+        ]);
       /*  User::factory()->create([
             'name' => 'Test User',
             'email' => 'test@example.com',

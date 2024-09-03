@@ -1,8 +1,8 @@
 @props(['image','title','address', 'date', 'modalidad', 'subtitle'])
 
-<section class="px-3 py-3 bg-light-brown w-1/2 ml-64">
+<section class="px-3 py-3 bg-light-brown w-1/2 ml-64 mb-10">
     <!-- Imagen principal -->
-    <div>
+    <div class="h-96">
         <img src="{{ asset($image) }}" class="h-full w-full">
     </div>
     <div class="space-y-1 mb-3 border-b">
