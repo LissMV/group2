@@ -106,7 +106,7 @@ class ProductsSeeder extends Seeder
                 'discount' => "5%",
                 'name' => "Exfoliantes faciales",
                 'subtitle' => "Cafe y arroz",
-                'description' => "LLevate dos exfoliantes que te ayudaran a eliminar las celulas muertas, desincrustar poros y regenera la piel.",
+                'description' => "Llevate dos exfoliantes que te ayudaran a eliminar las celulas muertas, desincrustar poros y regenera la piel.",
                 'store_id' => $this->stores()->random(),
                 'category_id' => 2
             ],
@@ -236,8 +236,8 @@ class ProductsSeeder extends Seeder
                 'is_available' => true,
                 'price' => 1.50,
                 'discount' => "0",
-                'name' => "Papel higienico",
-                'subtitle' => "facil degradación",
+                'name' => "Papel higiénico",
+                'subtitle' => "Fácil degradación",
                 'description' => "Este papel está hecho de fibras de celulosa que provienen de otros materiales reciclados que al entrar en contacto con el agua se degrada facilmente, es suave y comodo de usar.",
                 'store_id' => $this->stores()->random(),
                 'category_id' => 3

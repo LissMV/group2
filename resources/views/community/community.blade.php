@@ -8,7 +8,9 @@
         </a>
     </section>
 
-    <h1 class="text-center">Foro:</h1>
+    <div class="mx-56 my-8">
+        <h1 class="text-3xl text-center m-4 font-black text-dark-green border py-3 bg-light-brown">Foro</h1>
+    </div>
 
     <section class="mx-24 space-y-6">
         <div>

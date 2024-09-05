@@ -1,12 +1,10 @@
 <x-layout>
 <section class="py-3">
-    <div class="ml-12">
-        <h1 class="text-4xl font-lora font-black text-center">About us</h1>
-
-        <div class="pr-12 my-5">
-        <img src="{{ asset('img/nosotros/todos2.jpg') }}">
-        </div>
+    <div class="mx-56 my-10">
+        <h1 class="text-3xl text-center m-4 font-black text-dark-green border py-3 bg-light-brown">Acerca de nosotros</h1>
     </div>
+
+    <img src="{{ asset('img/nosotros/todos2.jpg') }}" class="w-11/12 mx-auto">
 
     <section class="grid grid-cols-2 text-justify me-12 mt-12 ml-12">
         <div class="border-r-4 border-brown col-span-1 font-montserrat">
@@ -18,7 +16,7 @@
         </div>
         <div class="font-montserrat ">
             <h1 class="text-center font-black border p-3 bg-light-brown border-brown">Misión</h1>
-            <h1 class="ps-4 mt-4">Nuestra mision es empoderar a los pequeños empresarios que producen bienes
+            <h1 class="ps-4 mt-4">Nuestra misión es empoderar a los pequeños empresarios que producen bienes
                 biodegradables y ecológicos, proporcionándoles una plataforma que amplifique su alcance
                 y promueva el consumo sostenible. Nos comprometemos a conectar a los consumidores
                 conscientes con productos que respeten y protejan el medio ambiente, fomentando una
@@ -166,5 +164,5 @@
 
         </div>
     </section>
-
+</section>
 </x-layout>

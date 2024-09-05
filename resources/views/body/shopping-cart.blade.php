@@ -1,7 +1,6 @@
 <x-layout>
-    <div class="p-2.5 flex justify-between items-center text-white bg-[#606c38]">
-        <strong class="ml-[150px] text-2xl m-8 ">Carrito de compras</strong>
-        <hr class="my-5">
+    <div class="mx-56 my-12">
+        <h1 class="text-3xl text-center m-4 font-black text-dark-green border py-3 bg-light-brown">Carrito de compras</h1>
     </div>
 
     @if($shoppingCart->cartItems->isEmpty())
@@ -21,25 +20,24 @@
                     <tr class="w-full">
                         <td class="flex">
                             <div class="m-5 flex items-center">
-                                <img src="https://www.sephora.com/productimages/sku/s1754548-av-8-zoom.jpg?imwidth=315"
+                                <img src="{{ asset($item->product->image) }}"
                                     alt="Coco Rose" class="product-image w-48 border-2 border-[#BC6C25] rounded-lg">
                                 <div class="mx-5">
-                                    <strong>Coco Rose</strong><br>
-                                    Exfoliante<br>
-                                    Remover
+                                    <strong>{{ $item->product->name }}</strong>
+                                    <p>
+                                        {{ $item->product->description }}
+                                    </p>
                                 </div>
                             </div>
                         </td>
 
                         <td class="">
                             <div class="quantity-controls mx-10">
-                                <button>-</button>
-                                <input type="text" value="1" class="text-center">
-                                <button>+</button>
+                                <input type="text" value="{{$item->quantity}}" class="text-center" disabled>
                             </div>
                         </td>
 
-                        <td class="text-center px-10">$8.50</td>
+                        <td class="text-center px-10">$ {{$item->price}}</td>
                     </tr>
                 @endforeach
             </tbody>

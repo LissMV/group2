@@ -28,25 +28,34 @@ class ReviewsSeeder extends Seeder
 
     public function run(): void
     {
-        $review = [
+        $reviews = [
             [
                 'comment' => "Me encanto esta crema facial, por su olor, sus efectos y también por su bajo precio,
-        recomendad para el que guste comprarla.",
+        recomendada para el que guste comprarla.",
                 'user_id' => $this->users()->random(),
                 'product_id' => 1,
             ],
-
             [
-                'comment' => "Cumple con su funión de hidratación, todo perfecto, además quiero resaltar que deja un efecto
+                'comment' => "Excelente crema. Recomiendo toda la línea de productos.",
+                'user_id' => $this->users()->random(),
+                'product_id' => 1,
+            ],
+            [
+                'comment' => "Cumple con su función de hidratación, todo perfecto, además quiero resaltar que deja un efecto
         aclarante y también deja la piel muy lisa.",
                 'user_id' => $this->users()->random(),
                 'product_id' => 2,
             ],
 
             [
-                'comment' => "Buen producto, me gusto!",
+                'comment' => "Buen producto, ¡me gusto!",
                 'user_id' => $this->users()->random(),
                 'product_id' => 3,
+            ],
+            [
+                'comment' => "Buen producto, ¡me gusto!",
+                'user_id' => $this->users()->random(),
+                'product_id' => 4,
             ],
 
             [
@@ -56,7 +65,13 @@ class ReviewsSeeder extends Seeder
             ],
 
             [
-                'comment' => "Este suero es increible, cumple con su funcionalidad y para tener ingredientes naturales y ser cruelty-free
+                'comment' => "Considero que es un buen precio por su calidad y la cantidad de productos que trae, lo recomiendo",
+                'user_id' => $this->users()->random(),
+                'product_id' => 6,
+            ],
+
+            [
+                'comment' => "Este suero es increíble, cumple con su funcionalidad y para tener ingredientes naturales y ser cruelty-free
         es super bueno, mi piel agradece que aplique este suero todas las noches!",
                 'user_id' => $this->users()->random(),
                 'product_id' => 5,
@@ -70,13 +85,18 @@ class ReviewsSeeder extends Seeder
             ],
 
             [
-                'comment' => "Desde que empece a utilizarlo me ha mejorado mi problema del acné, es bastante bueno, muchas gracias!!",
+                'comment' => "Desde que empece a utilizarlo me ha mejorado mi problema del acné, es bastante bueno, ¡muchas gracias!",
                 'user_id' => $this->users()->random(),
                 'product_id' => 7,
             ],
+            [
+                'comment' => "Desde que empece a utilizarlo me ha mejorado mi problema del acné, es bastante bueno, ¡muchas gracias!",
+                'user_id' => $this->users()->random(),
+                'product_id' => 1,
+            ],
 
             [
-                'comment' => "Muy buenaoferta, me encanta este exfoliante, además de huele muy rico!",
+                'comment' => "Muy buena oferta, me encanta este exfoliante, además de huele muy rico!",
                 'user_id' => $this->users()->random(),
                 'product_id' => 8,
             ],
@@ -101,7 +121,7 @@ class ReviewsSeeder extends Seeder
                 'product_id' => 11,
             ],
             [
-                'comment' => "Es un buen cepillo porque tiene propiedades antibacteriales y dura más que uno normal",
+                'comment' => "Es un buen cepillo porque tiene propiedades anti-bacteriales y dura más que uno normal",
                 'user_id' => $this->users()->random(),
                 'product_id' => 12,
             ],
@@ -158,13 +178,13 @@ class ReviewsSeeder extends Seeder
 
             [
                 'comment' => "A comparación de mascones tradicionales, dura un poco menos pero gaantizo su utilidad, no deja malos oleres
-                 y se puede lavar muy facil, además que no desprende fibras como los mascones de plasticos que desprenden microplasticos",
+                 y se puede lavar muy fácil, además que no desprende fibras como los mascones de plásticos que desprenden microplasticos",
                  'user_id' => $this->users()->random(),
                  'product_id' => 21,
             ],
 
             [
-                'comment' => "Excelente jabón de platos, limpia bien la supercifie de los cacerolas y ollas",
+                'comment' => "Excelente jabón de platos, limpia bien la superficie de los cacerolas y ollas",
                 'user_id' => $this->users()->random(),
                 'product_id' => 22,
             ],
@@ -183,7 +203,7 @@ class ReviewsSeeder extends Seeder
             ],
         ];
 
-        Review::factory(count($review))->sequence(fn ($sqn) => $reviews[$sqn->index])->create();
+        Review::factory(count($reviews))->sequence(fn ($sqn) => $reviews[$sqn->index])->create();
     }
 }
 

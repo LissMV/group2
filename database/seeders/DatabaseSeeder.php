@@ -103,17 +103,12 @@ class DatabaseSeeder extends Seeder
             'is_seller' => false,
         ]);
 
-
-
-
-
-
         $this->call([
            CategoriesSeeder::class,
            StoresSeeder::class,
            ProductsSeeder::class,
            //EventsSeeder::class,
-
+            ReviewsSeeder::class,
         ]);
 
         Event::factory()->create([
@@ -121,7 +116,7 @@ class DatabaseSeeder extends Seeder
             'date' => Carbon::parse('2023-08-21'),
             'address' => "Plaza futura: Calle el Mirador, Colonia Escalón, San Salvador",
             'modalidad' => "Presencial",
-            'title' => "Mini mercado de productos sotenibles",
+            'title' => "Mini mercado de productos sostenibles",
             'subtitle' => "Más de 30 micro empresarios, encuentra toda clase de productos.",
             "store_id" => 1
         ]);
@@ -129,7 +124,7 @@ class DatabaseSeeder extends Seeder
         Event::factory()->create([
             'image' => "img/events/event2.png",
             'date' => Carbon::parse('2024-08-16'),
-            'address' => "Plaseo del Carmen, Santa Tecla ",
+            'address' => "Paseo del Carmen, Santa Tecla ",
             'modalidad' => "Presencial",
             'title' => "Apertura de nuevos emprendedores sostenibles",
             'subtitle' => "Conoce las nuevas 5 tiendas con nuevos productos cosmeticos",

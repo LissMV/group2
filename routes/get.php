@@ -5,7 +5,6 @@ use App\Models\CartItem;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\UserController;
 use App\Models\Category;
 use App\Models\Product;
 use App\Models\Store;
@@ -62,7 +61,7 @@ Route::get('/learning', function () {
 
 Route::get('/shoppingCart', function () {
     return view('body.shopping-cart', [
-        'shoppingCart' => getShoppingCart()->load('cartItems')
+        'shoppingCart' => getShoppingCart()->load('cartItems', 'cartItems.product')
     ]);
 })->name('shoppingCart');
 
@@ -110,7 +109,7 @@ Route::get('/seeProducts/{category}', function (Category $category) {
 
 Route::get('/seeDetails/{product}', function (Product $product) {
     return view('products.see_details', [
-        'producto' => $product->load('reviews')
+        'producto' => $product->load('reviews', 'reviews.user')
     ]);
 })->name('seeDetails');
 
