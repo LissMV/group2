@@ -37,8 +37,7 @@
             <div class="ml-14">
                 <h1 class="border p-3 bg-white2 border-dark-green border-md mr-24 mb-4 rounded-lg"
                 >Compromiso</h1>
-                <h1 class="border p-3 bg-white2 border-dark-green border-md mr-24 rounded-lg
-                ">Equidad</h1>
+               
             </div>
         </div>
     </section>
