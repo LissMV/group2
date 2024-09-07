@@ -20,8 +20,10 @@
                     <tr class="w-full">
                         <td class="flex">
                             <div class="m-5 flex items-center">
+                                <div>
                                 <img src="{{ asset($item->product->image) }}"
-                                    alt="Coco Rose" class="product-image w-48 border-2 border-[#BC6C25] rounded-lg">
+                                    alt="Coco Rose" class="product-image border-2 border-[#BC6C25] rounded-lg w-48">
+                                </div>
                                 <div class="mx-5">
                                     <strong>{{ $item->product->name }}</strong>
                                     <p>
