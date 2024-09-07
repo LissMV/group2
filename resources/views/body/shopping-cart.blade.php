@@ -45,7 +45,7 @@
             </tbody>
         </table>
         <div class="itmes-center  justify-center space-x-5 flex">
-            <h1 class="bg-light-green border p-1 px-6 text-white border-light-green">Pagar con targeta</h1>
+            <h1 class="bg-light-green border p-1 px-6 text-white border-light-green">Pagar con tarjeta</h1>
             <h1 class="bg-light-green border p-1 px-6 text-white border-light-green">Pagar con efectivo</h1>
         </div>
     @endif
