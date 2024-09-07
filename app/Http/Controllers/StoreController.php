@@ -26,7 +26,7 @@ class StoreController extends Controller
             'social_media' => 'required',
         ]);
 
-        $store['image'] = '<uploads>avatar_store.png';
+        $store['image'] = 'uploads/avatar_store.png';
         $store['user_id'] = Auth::user()->id;
 
         $newStore = Store::create($store);
