@@ -23,9 +23,9 @@
 
                     <x-input name="name" type="text">Nombre</x-input>
 
-                    <x-input name="email" type="text">Email</x-input>
+                    <x-input name="email" type="text">Correo</x-input>
 
-                    <x-input name="password" type="password">Password</x-input>
+                    <x-input name="password" type="password">Contraseña</x-input>
 
                     <x-button>Crear cuenta</x-button>
                 </div>

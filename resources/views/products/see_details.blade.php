@@ -20,7 +20,9 @@
                 @if($producto->reviews->isEmpty())
                     <p class="text-center">No hay reseñas disponibles</p>
                 @else
-                    <div class="mx-8 border-gray-400 border-b-2">
+                
+
+                    <div class="mx-8 border-gray-400 border-b-2 mt-5">
                         @foreach($producto->reviews as $review)
                         <div class="flex space-x-2">
                             <img class="h-10 rounded-full w-10"

@@ -122,3 +122,8 @@ Route::get('/events', function () {
 Route::get('/about_us', function () {
     return view('body.about_us');
 })->name('about_us');
+
+Route::get('/search', function () {
+    return view('body.search');
+})->name('search');
+

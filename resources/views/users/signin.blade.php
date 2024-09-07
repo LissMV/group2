@@ -20,10 +20,10 @@
                 @csrf
                 <div class="w-96 p-6">
                     <div class="pb-8" style="color: #283618">
-                        <x-input name="email" type="text">Email</x-input>
+                        <x-input name="email" type="text">Correo</x-input>
                     </div>
                     <div class="pb-6">
-                        <x-input name="password" type="password">Password</x-input>
+                        <x-input name="password" type="password">Contraseña</x-input>
                     </div>
 
                     <x-button>Iniciar Sesión</x-button>

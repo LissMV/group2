@@ -5,7 +5,7 @@
         </div>
 
         <div class="flex justify-center">
-            <a href="{{ route('learning') }}"
+            <a href="{{ route('community') }}"
                 class="font-serif text-2xl m-8 border-double border-neutral-950 border rounded-xl px-4 py-1.5 hover:bg-light-brown hover:text-white"
                 type="submit">Comunidad</a>
 

@@ -37,7 +37,7 @@
             <div class="ml-14">
                 <h1 class="border p-3 bg-white2 border-dark-green border-md mr-24 mb-4 rounded-lg"
                 >Compromiso</h1>
-               
+
             </div>
         </div>
     </section>
@@ -51,7 +51,7 @@
                 </div>
                 <div class="font-lora">
                     <p>Lisseth Mejía</p>
-                    <p>Pitch team</p>
+                    <p>Equipo: Pitch</p>
                 </div>
             </div>
 
@@ -61,7 +61,7 @@
                 </div>
                 <div class="font-lora">
                     <p>Hazel Peña</p>
-                    <p>fronted team</p>
+                    <p>Equipo: Frontend</p>
                 </div>
             </div>
         </div>
@@ -72,7 +72,7 @@
                 </div>
                 <div class="font-lora">
                     <p>Josué Ramírez</p>
-                    <p>branding team</p>
+                    <p>Equipo: Branding</p>
                 </div>
             </div>
 
@@ -82,7 +82,7 @@
                 </div>
                 <div class="font-lora">
                     <p>Karla Cardona</p>
-                    <p>pitch team</p>
+                    <p>Equipo: Pitch</p>
                 </div>
             </div>
         </div>
@@ -103,7 +103,7 @@
                 </div>
                 <div class="font-lora">
                     <p>Ricardo Campos</p>
-                    <p>fronted team</p>
+                    <p>Equipo: Frontend</p>
                 </div>
             </div>
         </div>
@@ -114,7 +114,7 @@
                 </div>
                 <div class="font-lora">
                     <p>Josué Echeverria</p>
-                    <p>backend team</p>
+                    <p>Equipo: Backend</p>
                 </div>
             </div>
 
@@ -124,7 +124,7 @@
                 </div>
                 <div class="font-lora">
                     <p>Esmeralda Guzmán</p>
-                    <p>branding team</p>
+                    <p>Equipo: Branding</p>
                 </div>
             </div>
         </div>
@@ -139,7 +139,7 @@
         </div>
         <div class="font-lora">
             <p>Justin Ramiréz, Josué Ramiréz y Hazel Peña</p>
-            <p>-pitch presentation </p>
+            <p>-Presentación </p>
         </div>
         </div>
         <div class="mt-4 border p-2 border-black w-64 h-96 bg-white">
@@ -148,7 +148,7 @@
             </div>
             <div class="font-lora">
                 <p>Lisseth Mejía y Josué Echeverria</p>
-                <p>-Q&A section</p>
+                <p>-Sección de Q&A</p>
             </div>
 
         </div>
@@ -158,7 +158,7 @@
             </div>
             <div class="font-lora">
                 <p>Karla Cardona, Ricardo Campos y Esmeralda Guzmán</p>
-                <p>-Networking section</p>
+                <p>-Sección de networking</p>
             </div>
 
         </div>

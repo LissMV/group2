@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+
 use Illuminate\Http\Request;
 use App\Models\Store;
 use Illuminate\Support\Facades\Auth;
@@ -25,7 +26,7 @@ class StoreController extends Controller
             'social_media' => 'required',
         ]);
 
-        $store['image'] = 'avatar_store.png';
+        $store['image'] = '<uploads>avatar_store.png';
         $store['user_id'] = Auth::user()->id;
 
         $newStore = Store::create($store);
@@ -49,6 +50,12 @@ class StoreController extends Controller
 
         ]);
 
+        $store['image'] = '<uploads>avatar_store.png';
+        $editStore = Store::update($store);
+
+        if ($editStore) {
+            return redirect('users.edit');
+        }
     }
 
     public function destroy(Store $store)
@@ -56,4 +63,6 @@ class StoreController extends Controller
         $store->delete();
         return redirect('/');
     }
+
+
 }

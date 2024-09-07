@@ -26,9 +26,9 @@
         </div>
     </div>
     <div class="flex space-x-2">
-        <img src="{{asset('img/products/cleaning/cleaning1.png')}}" class="h-10 rounded-full">
-        <img src="{{asset('img/products/cleaning/cleaning1.png')}}" class="h-10 rounded-full">
-        <img src="{{asset('img/products/cleaning/cleaning1.png')}}" class="h-10 rounded-full">
-        <img src="{{asset('img/products/cleaning/cleaning1.png')}}" class="h-10 rounded-full">
+        <img src="{{asset('img/branding/Aplausos.png')}}" class="h-10 rounded-full">
+        <img src="{{asset('img/branding/Me interesa.png')}}" class="h-10 rounded-full">
+        <img src="{{asset('img/branding/No asistire.png')}}" class="h-10 rounded-full">
+        <img src="{{asset('img/branding/Si asistire.png')}}" class="h-10 rounded-full">
     </div>
 </section>

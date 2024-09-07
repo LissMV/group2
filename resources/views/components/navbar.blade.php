@@ -3,7 +3,7 @@
 
 
         <div class="w-full rounded-full bg-white py-2 px-7 border border-dark-green flex">
-            <input type="search" name="search" id="search" placeholder="search" class="w-full focus:ring-0 focus:outline-none">
+            <input type="search" name="search" id="search" placeholder="Búsqueda" class="w-full focus:ring-0 focus:outline-none">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="size-7">
                 <path stroke-linecap="round" stroke-linejoin="round"

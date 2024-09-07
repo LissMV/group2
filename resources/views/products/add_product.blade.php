@@ -10,32 +10,40 @@
                 </div>
                     <div class="col-span-2 m-8 h-2" style="color: #283618">
                         <h1 class="font-bold text-4xl m-8 h-2 text-center " style="color: #283618">Agregar Productos</h1>
-                        <form class="flex justify-center items-center " action="" method="POST">
+                        <form class="flex justify-center items-center " action="product" method="POST">
                     @csrf
-                        <div class="w-96 p-3">
+                    <div class="w-96 p-3">
+                        <div>
+                            <label>Foto del producto </label>
+                            <input type="File" name="image">
+                        </div>
                         <div style="color: #283618 ">
                             <x-input name="name" type="text">Nombre</x-input>
                         </div>
                         <div>
-                            <x-input name="phone" type="text">Precio</x-input>
+                            <x-input name="price" type="number">Precio</x-input>
                         </div>
                         <div>
-                            <x-input name="email" type="text">Disponible</x-input>
+                            <x-input name="discount" type="text">Descuento</x-input>
                         </div>
                         <div>
-                            <x-input name="address" type="text">Descuento</x-input>
+                            <x-input name="subtitle" type="text">Subtitulo</x-input>
                         </div>
                         <div>
-                            <x-input name="description" type="text">Subtitulo</x-input>
+                            <x-input name="description" type="text">Descripción</x-input>
                         </div>
                         <div>
-                            <x-input name="social_media" type="text">Descripción</x-input>
+                            <x-input name="social_media" type="text">Redes sociales</x-input>
                             <div class="flex justify-center">
                                 <button
                                     style="width: 150px; padding: 10px; margin: 10px 0;  cursor: pointer; color: #FEFAE0; background-color: #606c38;">Subir Producto</button>
                             </div>
+                    </div>
                 </form>
+                </div>
             </div>
+        </div>
+    </div>
     </section>
     </div>
 </x-layout>

@@ -44,14 +44,7 @@
     </div>
 
     @if ($user->is_seller)
-        <section class="text-center mb-8">
-            <h1 class="font-black">Esperando por la verificación</h1>
-            <div>
-                Por favor espera hasta que nosotros verifiquemos tu perfil y asi darte acceso para que puedas unirte
-                como vendedor
-                ¡Gracias por confiar en nosotros!
-            </div>
-        </section>
+
 
         @foreach ($stores as $tienda)
             <h1 class="text-center text-5xl pb-10 mt-5 font-lora">Actualizar datos de tienda {{ $tienda->name }}</h1>
@@ -61,10 +54,10 @@
                     @csrf
                     <div class="w-96 p-6">
                         <div class="profile-widget-header flex items-center justify-center">
-                            <img alt="image" src="{{$tienda->image}}"
+                            <img alt="image" src="{{asset($tienda->image)}}"
                             class="rounded-full profile-widget-picture h-56 w-56">
                         </div>
-                        <div class="form-group col-12">
+                        <div class=" col-12">
                             <label>Foto de tienda {{$tienda->name}} </label>
                             <input type="File" name="image">
                         </div>
