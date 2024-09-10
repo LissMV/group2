@@ -1,16 +1,18 @@
 <section {{ $attributes->merge(['class' => "bg-light-green py-4"])}}>
     <nav class="mx-36 flex justify-center items-center space-x-8 ps-32">
-
-
-        <div class="w-full rounded-full bg-white py-2 px-7 border border-dark-green flex">
-            <input type="search" name="search" id="search" placeholder="Búsqueda" class="w-full focus:ring-0 focus:outline-none">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="size-7">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-            </svg>
-
-        </div>
+        <form action="{{ route('search') }}" method="get" class="w-full">
+            @csrf
+            <div class="w-full rounded-full bg-white py-2 px-7 border border-dark-green flex">
+                <input type="search" name="search" id="search" placeholder="Búsqueda" class="w-full focus:ring-0 focus:outline-none">
+                <button type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-7">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                    </svg>
+                </button>
+            </div>
+        </form>
 
         <a href="{{ route('shoppingCart') }}">
             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
@@ -22,7 +24,5 @@
         <a class="" href="{{ route('usersEdit') }}">
            <img class="w-16 h-12 rounded-full  items-center justify-center" src="{{ asset(Auth::user()->image) }}" alt="">
         </a>
-
-
     </nav>
 </section>

@@ -1,5 +1,5 @@
 <x-layout>
-<section class="py-3">
+<section class="pt-3">
     <div class="mx-56 my-10">
         <h1 class="text-3xl text-center m-4 font-black text-dark-green border py-3 bg-light-brown">Acerca de nosotros</h1>
     </div>
@@ -24,9 +24,8 @@
         </div>
     </section>
 
+    <h1 class="font-black text-4xl font-lora mt-16 mb-10 text-center">Valores</h1>
     <section class="me-12 mt-12 font-montserrat ml-12">
-            <h1 class="font-black text-4xl font-lora">Valores:</h1>
-
         <div class="grid grid-cols-2 text-center mt-6">
             <div class="col-span-1 ml-24">
                 <h1 class="border p-3 bg-white2 border-dark-green border-md mr-12 mb-4 rounded-lg"
@@ -42,10 +41,10 @@
         </div>
     </section>
 
-    <h1 class="font-black text-4xl font-lora mt-10 ml-12">Integrantes:</h1>
+    <h1 class="font-black text-4xl font-lora mt-16 mb-10 ml-12 text-center">Integrantes</h1>
     <section class="mt-6 grid grid-cols-4 ml-12">
         <div class="col-span-1">
-            <div class="mt-4 border p-2 border-black w-48">
+            <div class="mt-4 border p-2 border-black w-48 mx-auto">
                 <div>
                     <img class="h-60 w-48" src="{{ asset('img/nosotros/liss.jpg') }}">
                 </div>
@@ -55,7 +54,7 @@
                 </div>
             </div>
 
-            <div class="mt-4 border p-2 border-black w-48">
+            <div class="mt-4 border p-2 border-black w-48 mx-auto">
                 <div>
                     <img class="h-60 w-48" src="{{ asset('img/nosotros/hazel.jpg') }}">
                 </div>
@@ -66,7 +65,7 @@
             </div>
         </div>
         <div>
-            <div class="mt-4 border p-2 border-black w-48">
+            <div class="mt-4 border p-2 border-black w-48 mx-auto">
                 <div>
                     <img class="h-60 w-48" src="{{ asset('img/nosotros/josue.jpg') }}">
                 </div>
@@ -76,7 +75,7 @@
                 </div>
             </div>
 
-            <div class="mt-4 border p-2 border-black w-48">
+            <div class="mt-4 border p-2 border-black w-48 mx-auto">
                 <div>
                     <img class="h-60 w-48" src="{{ asset('img/nosotros/karla.jpg') }}">
                 </div>
@@ -86,8 +85,9 @@
                 </div>
             </div>
         </div>
+
         <div>
-            <div class="mt-4 border p-2 border-black w-48">
+            <div class="mt-4 border p-2 border-black w-48 mx-auto">
                 <div>
                     <img class="h-60 w-48" src="{{ asset('img/nosotros/justin.jpg') }}">
                 </div>
@@ -97,7 +97,7 @@
                 </div>
             </div>
 
-            <div class="mt-4 border p-2 border-black w-48">
+            <div class="mt-4 border p-2 border-black w-48 mx-auto">
                 <div>
                     <img class="h-60 w-48" src="{{ asset('img/nosotros/ricardo.jpg') }}">
                 </div>
@@ -108,7 +108,7 @@
             </div>
         </div>
         <div>
-            <div class="mt-4 border p-2 border-black w-48">
+            <div class="mt-4 border p-2 border-black w-48 mx-auto">
                 <div>
                     <img class="h-60 w-48" src="{{ asset('img/nosotros/echeverria.jpg') }}">
                 </div>
@@ -118,7 +118,7 @@
                 </div>
             </div>
 
-            <div class="mt-4 border p-2 border-black w-48">
+            <div class="mt-4 border p-2 border-black w-48 mx-auto">
                 <div>
                     <img class="h-60 w-48" src="{{ asset('img/nosotros/esmeralda.jpg') }}">
                 </div>
@@ -130,19 +130,19 @@
         </div>
     </section>
 
-    <h1 class="font-black text-4xl font-lora mt-10 text-center">Roles de presentación:</h1>
-    <section class="grid grid-cols-3 pl-10 bg-light-brown mt-3">
+    <h1 class="font-black text-4xl font-lora mt-16 mb-10 text-center">Roles de presentación</h1>
+    <section class="grid grid-cols-3 pl-10 bg-light-brown mt-3 py-6">
+        <div class="my-4 border p-2 border-black w-64 h-96 bg-white mx-auto">
+            <div>
+                <img class="h-72 w-72" src="{{ asset('img/nosotros/pitch_team.jpg') }}">
+            </div>
+            <div class="font-lora">
+                <p>Justin Ramiréz, Josué Ramiréz y Hazel Peña</p>
+                <p>-Presentación </p>
+            </div>
+        </div>
 
-        <div class="mt-4 border p-2 border-black w-64 h-96 col-span-1 bg-white">
-        <div>
-            <img class="h-72 w-72" src="{{ asset('img/nosotros/pitch_team.jpg') }}">
-        </div>
-        <div class="font-lora">
-            <p>Justin Ramiréz, Josué Ramiréz y Hazel Peña</p>
-            <p>-Presentación </p>
-        </div>
-        </div>
-        <div class="mt-4 border p-2 border-black w-64 h-96 bg-white">
+        <div class="my-4 border p-2 border-black w-64 h-96 bg-white mx-auto">
             <div>
                 <img class="h-72 w-72" src="{{ asset('img/nosotros/Q&A_team.jpg') }}">
             </div>
@@ -150,9 +150,9 @@
                 <p>Lisseth Mejía y Josué Echeverria</p>
                 <p>-Sección de Q&A</p>
             </div>
-
         </div>
-        <div class="mt-4 border p-2 border-black w-64 h-96 bg-white">
+
+        <div class="my-4 border p-2 border-black w-64 h-96 bg-white mx-auto">
             <div>
                 <img class="h-72 w-72" src="{{ asset('img/nosotros/networking_team.jpg') }}">
             </div>
@@ -160,7 +160,6 @@
                 <p>Karla Cardona, Ricardo Campos y Esmeralda Guzmán</p>
                 <p>-Sección de networking</p>
             </div>
-
         </div>
     </section>
 </section>

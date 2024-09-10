@@ -7,7 +7,7 @@
             subtitle="{{ $producto->subtitle }}" description="{{ $producto->description }}" image="{{ $producto->image }}" id="{{ $producto->store_id }}" />
 
 
-    <div class="ml-1" x-data="{ open: false }">
+    <div class="ml-1" x-data="{ open: true }">
         <div class="flex">
         <button class="ml-8 text-2xl font-black" @click="open = !open">Reseñas</button>
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 mt-1">
@@ -20,7 +20,7 @@
                 @if($producto->reviews->isEmpty())
                     <p class="text-center">No hay reseñas disponibles</p>
                 @else
-                
+
 
                     <div class="mx-8 border-gray-400 border-b-2 mt-5">
                         @foreach($producto->reviews as $review)

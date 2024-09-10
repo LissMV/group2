@@ -2,6 +2,7 @@
 
 use App\Models\Cart;
 use App\Models\CartItem;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -9,7 +10,6 @@ use App\Models\Category;
 use App\Models\Product;
 use App\Models\Store;
 use App\Models\Event;
-use App\Models\Review;
 
 Route::get('/', function () {
     return view('body.welcome');
@@ -123,7 +123,29 @@ Route::get('/about_us', function () {
     return view('body.about_us');
 })->name('about_us');
 
-Route::get('/search', function () {
-    return view('body.search');
+Route::get('/search', function (Request $request) {
+    $request->validate([
+        'search' => 'string|nullable'
+    ]);
+
+    $products = Product::when($request->search, function (Builder $query, $search) {
+        $query->where('name', 'like', '%' . $search . '%');
+    })->when(!$request->search, fn (Builder $query) => $query->where('id', 0) )->get();
+
+    $stores = Store::when($request->search, function (Builder $query, $search) {
+        $query->where('name', 'like', '%' . $search . '%');
+    })->when(!$request->search, fn (Builder $query) => $query->where('id', 0) )->get();
+
+    return view('body.search', [
+        'productsSearch' => $products,
+        'storesSearch' => $stores
+    ]);
 })->name('search');
 
+//Route::post('/search', function () {
+//
+//    return redirect()->route('search', [
+//        'productsSearch' => $products,
+//        'storesSearch' => $stores
+//    ]);
+//})->name('search');

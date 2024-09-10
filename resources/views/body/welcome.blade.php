@@ -19,7 +19,7 @@
 <section>
     <div style="display: flex; align-items: center;">
         <img style="width: 800px; margin-right:50px;" class="ml-[100px] py-5" src="https://images.stockcake.com/public/b/b/3/bb317e86-9e61-4671-ac14-c427b404e7a1_large/nurturing-new-growth-stockcake.jpg" alt="" style="width: 50%; height: 300px; object-fit: cover;">
-        <div style="margin-left:; margin-right: 100px">
+        <div style="margin-right: 100px">
           <h2 style="font-size: 24px; color: #283618;" class="text-left h-16">Biodegradable</h2>
           <p style="font-size: 16px; color: #606c38;">La biodegradabilidad es la capacidad de un material de ser biodegradado. Es un proceso natural en el que un material por acción biológica, cambia y en general pierde sus propiedades originales y a nivel químico las moléculas que lo conforma se convierten en formas más simples y estables.
             No es algo que normalmente asociemos con los plásticos, ya que generalmente se crean para resistir estas fuerzas.
@@ -31,7 +31,7 @@
             <p class="ml-[150px] text-2xl m-8 py-5">Categoría de productos:</p>
         </section>
 
-        <section class="flex justify-content center ml-[150px]">
+        <section class="flex justify-center">
             <div style="margin: 20px; border: 2px solid #606c38; border-radius: 8px; overflow: hidden; width: 300px; text-align: center;">
                 <img style="width: 120%; height: 250px; object-fit: cover;"
                     src="https://www.heraldo.mx/wp-content/uploads/2023/05/HeraldoAgs_Generate_a_close-up_photographic_image_of_homemade_c_ed67437a-a5a4-4a8c-bad5-2543080fcda3-696x696.png"
