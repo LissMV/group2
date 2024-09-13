@@ -93,7 +93,7 @@
                 </div>
                 <div class="font-lora">
                     <p>Justin Ramírez</p>
-                    <p>figma/UX</p>
+                    <p>figma/UXI</p>
                 </div>
             </div>
 

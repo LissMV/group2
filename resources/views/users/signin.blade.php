@@ -8,14 +8,14 @@
         <div class="w-100">
             <img class="h-screen w-96" src="{{ asset('https://i.pinimg.com/564x/4c/20/51/4c2051ac09ca76ec676e65cdef776a6f.jpg') }}" alt="">
             <div class="absolute top-20 px-4 pt-32 text-center w-96">
-                <h1 class="text-3xl" style="color: #FEFAE0">¡CREA UNA CUENTA!</h1>
-                <p class="text-2xl pt-5 mb-4" style="color: #FEFAE0">Forma parte de esta comunidad</p>
-                <a class=" bg-light-green border p-1 px-6 text-white border-light-green" href="{{ route('register') }}">Registrarse</a>
+                <h1 class="text-3xl font-lora font-black" style="color: #FEFAE0">¡CREA UNA CUENTA!</h1>
+                <p class="text-2xl pt-5 mb-4 font-montserrat" style="color: #FEFAE0">Forma parte de esta comunidad</p>
+                <a class=" bg-light-green border p-1 px-6 text-white border-light-green font-lora" href="{{ route('register') }}">Registrarse</a>
             </div>
          </div>
 
         <div class="col-span-2 m-24">
-            <h1 class="font-bold text-4xl m-8 text-center pb-8" style="color: #283618">Iniciar Sesión</h1>
+            <h1 class="font-lora font-black text-4xl m-8 text-center pb-8" style="color: #283618">Iniciar Sesión</h1>
             <form class="flex justify-center items-center " action="login" method="POST">
                 @csrf
                 <div class="w-96 p-6">
