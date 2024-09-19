@@ -31,7 +31,7 @@
                 @csrf
                 <a href="#" onclick="this.closest('form').submit()"
                     class=" bg-light-green border p-1 px-6 text-white border-light-green">
-                    cerrar sessión
+                    Cerrar sesión
                 </a>
             </form>
         </div>
