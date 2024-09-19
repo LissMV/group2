@@ -42,7 +42,7 @@
 
             <div style="margin: 20px; border: 2px solid #606c38; border-radius: 8px; overflow: hidden; width: 300px; text-align: center;">
                 <img style="width: 120%; height: 250px; object-fit: cover;"
-                    src="https://thehealinghappymethod.com/cdn/shop/files/SkinCareKitsquare_17aa1fd1-b3ad-4d25-b806-6f432f88a723.png?v=1698716619"
+                    src="{{asset('img/welcome1.jpg')}}"
                     alt="">
                 <h3 style="margin: 10px 0; font-size: 18px; color: #606c38;" class="font-montserrat">CUIDADO DE LA PIEL</h3>
                 <p style="margin: 0 10px 10px; font-size: 15px; color: #606c38";>Crema facial, loción corporal, shampoo, exfoliante, crema para la piel, protector solar, entre otros.</p>
@@ -54,6 +54,7 @@
                     alt="">
                 <h3 style="margin: 10px 0; font-size: 18px; color: #606c38;" class="font-montserrat">HIGIENE PERSONAL</h3>
                 <p style="margin: 0 10px 10px; font-size: 15px; color: #606c38";>Jabón, shampoo, pasta dental, cepillo dental, desodorante, crema hidratante, lociones, acondicionadores, entre otros</p>
+
             </div>
         </section>
 
