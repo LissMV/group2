@@ -1,13 +1,14 @@
 <x-layout>
-    <div class="flex justify-center my-8">
+    <div class="flex justify-center mt-4">
         <div class="background-color bg-brown px-32 py-2 rounded">
             <h1 class="text-white text-4xl font-lora font-black">Aprende más</h1>
         </div>
     </div>
 
  <div class="flex justify-center">
-    <img class="h-150 w-250 mr-12 ml-12" src="{{ asset('img/community/comunidad1.jpeg') }}" alt="">
+    <img class="h-150 w-250 mr-12 ml-12" src="{{ asset('img/community/sostenibleMini.png') }}" alt="">
  </div>
+ 
 
 <section>
     <h1 class="text-center text-2xl m-4 mb-8 font-lora font-black">¿Cómo se diferencian los productos orgánicos de los productos agrícolas e industriales?</h1>

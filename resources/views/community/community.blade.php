@@ -45,7 +45,7 @@
             <div class="flex space-x-3">
                 <img src="{{ asset('https://th.bing.com/th/id/OIP.W-ug7vUxgXNbvRcWN1wkRwHaHa?rs=1&pid=ImgDetMain') }}"
                     class="h-10 rounded-full">
-                <h1 class="font-montserrat mt-2">Lucia Calorina</h1>
+                <h1 class="font-montserrat mt-2">Lucia Carolina</h1>
             </div>
             <p class="text-justify mt-1">Desde que empecé a usar productos eco-friendly, he notado una gran diferencia
                 en mi piel y en mi conciencia.

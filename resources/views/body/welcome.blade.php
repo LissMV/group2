@@ -36,7 +36,7 @@
                 <img style="width: 120%; height: 250px; object-fit: cover;"
                     src="https://www.heraldo.mx/wp-content/uploads/2023/05/HeraldoAgs_Generate_a_close-up_photographic_image_of_homemade_c_ed67437a-a5a4-4a8c-bad5-2543080fcda3-696x696.png"
                     alt="">
-                <h3 style="margin: 10px 0; font-size: 18px; color: #283618;" class="font-montserrat">LIMPIEZA</h3>
+                <h3 style="margin: 10px 0; font-size: 18px; color: #606c38;" class="font-montserrat">LIMPIEZA</h3>
                 <p style="margin: 0 10px 10px; font-size: 15px; color: #606c38";>Desinfectantes, papel higiénico, jabón líquido, limpiadores, desengrasantes, entre otros.</p>
             </div>
 
@@ -52,14 +52,14 @@
                 <img style="width: 120%; height: 250px; object-fit: cover;"
                     src="https://content.cuerpomente.com/medio/2019/07/03/agua-floral_22aedf65_900x900.jpg"
                     alt="">
-                <h3 style="margin: 10px 0; font-size: 18px; color: #283618;" class="font-montserrat">HIGIENE PERSONAL</h3>
+                <h3 style="margin: 10px 0; font-size: 18px; color: #606c38;" class="font-montserrat">HIGIENE PERSONAL</h3>
                 <p style="margin: 0 10px 10px; font-size: 15px; color: #606c38";>Jabón, shampoo, pasta dental, cepillo dental, desodorante, crema hidratante, lociones, acondicionadores, entre otros</p>
             </div>
         </section>
 
             <div>
                 <a href="{{ route('register') }}">
-                    <x-button >Registrarse</x-button>
+                    <x-button>Registrarse</x-button>
                 </a>
                 <a href="{{ route('login') }}">
                     <x-button>Iniciar sesión</x-button>
