@@ -53,7 +53,7 @@
                 </div>
                 <div class="font-lora">
                     <p>Lisseth Mejía</p>
-                    <p>Equipo: Pitch</p>
+                    <p>Programador backend</p>
                 </div>
             </div>
 
@@ -63,7 +63,7 @@
                 </div>
                 <div class="font-lora">
                     <p>Hazel Peña</p>
-                    <p>Equipo: Frontend</p>
+                    <p>Programador Frontend</p>
                 </div>
             </div>
         </div>
@@ -74,7 +74,7 @@
                 </div>
                 <div class="font-lora">
                     <p>Josué Ramírez</p>
-                    <p>Equipo: Branding</p>
+                    <p>Diseñador de marca</p>
                 </div>
             </div>
 
@@ -84,7 +84,7 @@
                 </div>
                 <div class="font-lora">
                     <p>Karla Cardona</p>
-                    <p>Equipo: Pitch</p>
+                    <p>Diseñador de marca</p>
                 </div>
             </div>
         </div>
@@ -96,7 +96,7 @@
                 </div>
                 <div class="font-lora">
                     <p>Justin Ramírez</p>
-                    <p>figma/UXI</p>
+                    <p>Diseñador UX/UI</p>
                 </div>
             </div>
 
@@ -106,7 +106,7 @@
                 </div>
                 <div class="font-lora">
                     <p>Ricardo Campos</p>
-                    <p>Equipo: Frontend</p>
+                    <p>Programador Frontend</p>
                 </div>
             </div>
         </div>
@@ -117,7 +117,7 @@
                 </div>
                 <div class="font-lora">
                     <p>Josué Echeverria</p>
-                    <p>Equipo: Backend</p>
+                    <p>Programador Backend</p>
                 </div>
             </div>
 
@@ -127,7 +127,7 @@
                 </div>
                 <div class="font-lora">
                     <p>Esmeralda Guzmán</p>
-                    <p>Equipo: Branding</p>
+                    <p>Diseñador de marca</p>
                 </div>
             </div>
         </div>
