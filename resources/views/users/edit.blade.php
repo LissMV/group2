@@ -1,5 +1,5 @@
 <x-layout>
-    <section class="flex justify-center ml-24 my-3 border-2 border-double border-brown mr-24">
+    <section class="flex justify-center ml-24 my-3 border-2 border-double border-azul mr-24">
         <div class="card profile-widget">
             <h1 class="font-bold text-6xl text-center m-4">Editar perfil</h1>
             <form class="flex justify-center items-center needs-validation" action="{{ route('users.edit.update') }}"
@@ -30,7 +30,7 @@
             <form action="/logout" method="POST">
                 @csrf
                 <a href="#" onclick="this.closest('form').submit()"
-                    class=" bg-light-green border p-1 px-6 text-white border-light-green">
+                    class=" bg-verde border p-1 px-6 text-white border-verde_azul">
                     Cerrar sesión
                 </a>
             </form>
@@ -84,10 +84,10 @@
                     </div>
                 </form>
             </section>
-            <div class="border rounded-lg drop-shadow-2xl p-6 mx-40 mb-10 bg-dark-green text-center">
+            <div class="border rounded-lg-2xl p-6 mx-40 mb-10 bg-verde_azul border-azul text-center">
                 <h1 class="text-center text-2xl mb-4 text-white"> ¿Quieres agregar productos a la tienda?, presiona el
                     siguiente botón</h1>
-                <a class=" bg-light-green border p-1 px-6 text-white border-light-green"
+                <a class=" bg-verde_menta border p-1 px-6 text-azul border-verde_menta"
                     href="http://127.0.0.1:8000/addProduct">Agregar productos</a>
             </div>
         @endforeach

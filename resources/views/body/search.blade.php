@@ -1,6 +1,6 @@
 <x-layout>
     <div class="mx-56 my-10">
-        <h1 class="text-3xl text-center m-4 font-black text-dark-green border py-3 bg-light-brown">Resultados para esta búsqueda</h1>
+        <h1 class="text-3xl text-center m-4 font-black text-verde_menta border py-3 bg-verde">Resultados para esta búsqueda</h1>
     </div>
 
     @if($storesSearch->count() != 0)

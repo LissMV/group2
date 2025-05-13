@@ -9,7 +9,7 @@
     </section>
 
     <div class="mx-56 my-8">
-        <h1 class="text-3xl text-center m-4 font-black text-dark-green border py-3 bg-light-brown">Foro</h1>
+        <h1 class="text-3xl text-center m-4 font-black text-verde border py-3 bg-verde_menta">Foro</h1>
     </div>
 
     <section class="mx-24 space-y-6">

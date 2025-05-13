@@ -1,9 +1,25 @@
-<section {{ $attributes->merge(['class' => "bg-light-green py-4"])}}>
-    <nav class="mx-36 flex justify-center items-center space-x-8 ps-32">
+<section {{ $attributes->merge(['class' => 'bg-azul py-2']) }}>
+    <nav class="flex  items-center space-x-8 ps-2 mr-10">
+        <div x-data="{ open: false }">
+            <button @click="$dispatch('toggle-sidebar')">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-7">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                        class="bi bi-cart4 text-white" />
+                </svg>
+            </button>
+
+        </div>
+
+
+        <a href="{{ route('home') }}">
+            <img class="h-16 w-40" src="{{ asset('img/branding/blanco.png') }}">
+        </a>
         <form action="{{ route('search') }}" method="get" class="w-full">
             @csrf
-            <div class="w-full rounded-full bg-white py-2 px-7 border border-dark-green flex">
-                <input type="search" name="search" id="search" placeholder="Búsqueda" class="w-full focus:ring-0 focus:outline-none">
+            <div class="rounded-full bg-white py-2 px-7 border border-dark-green flex ms-12 mr-12">
+                <input type="search" name="search" id="search" placeholder="Búsqueda"
+                    class="w-full focus:ring-0 focus:outline-none">
                 <button type="submit">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="size-7">
@@ -22,7 +38,8 @@
             </svg>
         </a>
         <a class="" href="{{ route('usersEdit') }}">
-           <img class="w-16 h-12 rounded-full  items-center justify-center" src="{{ asset(Auth::user()->image) }}" alt="">
+            <img class="w-16 h-12 rounded-full  items-center justify-center" src="{{ asset(Auth::user()->image) }}"
+                alt="">
         </a>
     </nav>
 </section>

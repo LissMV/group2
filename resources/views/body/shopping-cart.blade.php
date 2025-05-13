@@ -1,6 +1,6 @@
 <x-layout>
     <div class="mx-56 my-12">
-        <h1 class="text-3xl text-center m-4 font-black text-dark-green border py-3 bg-light-brown">Carrito de compras</h1>
+        <h1 class="text-3xl text-center m-4 font-black text-verde border py-3 bg-verde_menta">Carrito de compras</h1>
     </div>
 
     @if($shoppingCart->cartItems->isEmpty())
@@ -8,7 +8,7 @@
     @else
         <table class="cart-table mt-5 mx-auto">
             <thead>
-                <tr class="text-[#283618]">
+                <tr>
                     <th>Detalles de productos</th>
                     <th>Cantidad</th>
                     <th>Precio</th>
@@ -22,7 +22,7 @@
                             <div class="m-5 flex items-center">
                                 <div>
                                 <img src="{{ asset($item->product->image) }}"
-                                    alt="Coco Rose" class="product-image border-2 border-[#BC6C25] rounded-lg w-48">
+                                    alt="Coco Rose" class="product-image border-2 border-verde rounded-lg w-48">
                                 </div>
                                 <div class="mx-5">
                                     <strong>{{ $item->product->name }}</strong>
@@ -45,8 +45,8 @@
             </tbody>
         </table>
         <div class="itmes-center  justify-center space-x-5 flex">
-            <h1 class="bg-light-green border p-1 px-6 text-white border-light-green">Pagar con tarjeta</h1>
-            <h1 class="bg-light-green border p-1 px-6 text-white border-light-green">Pagar con efectivo</h1>
+            <h1 class="bg-verde border p-1 px-6 text-white border-verde_azul">Pagar con tarjeta</h1>
+            <h1 class="bg-verde border p-1 px-6 text-white border-verde_azul">Pagar con efectivo</h1>
         </div>
     @endif
 </x-layout>

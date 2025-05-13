@@ -15,16 +15,19 @@
     <link rel="shortcut icon" href="{{ asset('img/branding/circuloPrincipal.png') }}" type="image/x-icon">
 </head>
 
-<body class="font-lora">
+<body class="font-lora bg-celeste">
     @auth
         <section class="w-full">
             <x-navbar class="fixed w-full"/>
-            <x-navertical class="h-screen w-52 fixed overflow-y-auto" />
+            <div>
+                <x-navertical class="h-screen w-52 fixed overflow-y-auto mt-16" />
+            </div>
 
-            <div class="pt-[80px] ml-52">
+            <div class="pt-[80px] ">
                 {{ $slot }}
             </div>
         </section>
+
     @endauth
 
     @guest

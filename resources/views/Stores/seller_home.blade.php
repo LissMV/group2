@@ -1,31 +1,31 @@
 <x-layout>
 
-<section class="grid grid-cols-3 bg-orange-200 pb-7 pt-2">
+<section class="grid grid-cols-3 bg-verde_menta pb-7 pt-2">
     <div class="cols-span-1 ml-4 mt-4">
         <img src="{{ asset($store->image) }}" class="rounded-full profile-widget-picture h-56 w-56 ml-16">
     </div>
 
     <div class=" items-center justify-center mr-4">
-        <h1 class="font-black text-2xl mt-10 text-brown">{{$store->name}}</h1>
-        <p class="mt-3 font-black text-brown">Descripción:</p>
+        <h1 class="font-black text-3xl mt-10 text-verde">{{$store->name}}</h1>
+        <p class="mt-3 font-black text-verde">Descripción:</p>
         <h1 class="">{{ $store->description }}</h1>
     </div>
 
     <div class="mt-5">
         <div>
-            <p class="font-black text-brown">Número de telefono:</p>
+            <p class="font-black text-verde">Número de telefono:</p>
             <h1>{{ $store->phone }}</h1>
         </div>
         <div>
-            <p class="font-black text-brown">Email:</p>
+            <p class="font-black text-verde">Email:</p>
             <h1>{{ $store->email }}</h1>
         </div>
         <div>
-            <p class="font-black text-brown">Dirección:</p>
+            <p class="font-black text-verde">Dirección:</p>
             <h1>{{ $store->address }}</h1>
         </div>
         <div>
-            <p class="font-black text-brown">Redes Sociales:</p>
+            <p class="font-black text-verde">Redes Sociales:</p>
             <h1>{{ $store->social_media }}</h1>
         </div>
     </div>

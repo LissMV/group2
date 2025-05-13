@@ -1,7 +1,7 @@
 <x-layout>
     <!-- Contenido principal -->
     <div class="mx-56 mt-12">
-        <h1 class="text-3xl text-center m-4 font-black text-dark-green border py-3 bg-light-brown">Detalles de producto</h1>
+        <h1 class="text-3xl text-center m-4 font-black text-verde border py-3 bg-verde_menta border-verde">Detalles de producto</h1>
     </div>
     <x-card store="{{ $producto->store_id }}" nombre="{{ $producto->name }}" price="{{ $producto->price }}" discount="{{ $producto->discount }}"
             subtitle="{{ $producto->subtitle }}" description="{{ $producto->description }}" image="{{ $producto->image }}" id="{{ $producto->store_id }}" />

@@ -1,6 +1,6 @@
 <x-layout>
     <div class="mx-56 mt-12 mb-10">
-        <h1 class="text-3xl text-center m-4 font-black text-dark-green border py-3 bg-light-brown">Eventos</h1>
+        <h1 class="text-3xl text-center m-4 font-black text-white border py-3 bg-azul">Eventos</h1>
     </div>
     <div class="mt-6 mx-12 grid grid-cols-2 gap-6">
         @foreach ($events as $event)

@@ -1,21 +1,21 @@
 <x-layout>
 <section class="pt-3">
     <div class="mx-56 my-10">
-        <h1 class="text-3xl text-center m-4 font-black text-dark-green border py-3 bg-light-brown">Acerca de nosotros</h1>
+        <h1 class="text-3xl text-center m-4 font-black text-green border py-3 bg-verde_menta">Acerca de nosotros</h1>
     </div>
 
     <img src="{{ asset('img/nosotros/todos2.jpg') }}" class="w-11/12 mx-auto">
 
     <section class="grid grid-cols-2 text-justify me-12 mt-12 ml-12">
-        <div class="border-r-4 border-brown col-span-1 font-montserrat">
-            <h1 class="text-center font-black border p-3 bg-light-brown border-brown">Visión</h1>
+        <div class="border-r-4 border-azul col-span-1 font-montserrat">
+            <h1 class="text-center border p-3 bg-verde border-azul text-white">Visión</h1>
             <h1 class="me-4 mt-4">Nuestra visión es ser el principal impulsor del mercado de productos biodegradables y
                 ecológicos, transformando la manera en que los consumidores comprenden y acceden a
                 productos sostenibles. Aspiramos a crear un futuro donde los productos ecológicos sean la
                 norma, y donde los pequeños empresarios prosperen en una economía verde y equitativa.</h1>
         </div>
         <div class="font-montserrat ">
-            <h1 class="text-center font-black border p-3 bg-light-brown border-brown">Misión</h1>
+            <h1 class="text-center border p-3 bg-verde border-azul text-white">Misión</h1>
             <h1 class="ps-4 mt-4">Nuestra misión es empoderar a los pequeños empresarios que producen bienes
                 biodegradables y ecológicos, proporcionándoles una plataforma que amplifique su alcance
                 y promueva el consumo sostenible. Nos comprometemos a conectar a los consumidores
@@ -134,7 +134,7 @@
     </section>
 
     <h1 class="font-black text-4xl font-lora mt-16 mb-10 text-center">Roles de presentación</h1>
-    <section class="grid grid-cols-3 pl-10 bg-light-brown mt-3 py-6">
+    <section class="grid grid-cols-3 pl-10 bg-verde_menta mt-3 py-6">
         <div class="my-4 border p-2 border-black w-64 h-96 bg-white mx-auto">
             <div>
                 <img class="h-72 w-72" src="{{ asset('img/nosotros/pitch_team.jpg') }}">

@@ -10,7 +10,7 @@
         <div class="col-span-2 ml-12">
             <!-- Información de producto -->
             <div class="text-justify font-montserrat space-y-1">
-                <h1 class="font-lora text-4xl">{{ $nombre }}</h1>
+                <h1 class="font-lora text-4xl text-azul">{{ $nombre }}</h1>
                 <p>{{ $subtitle }}</p>
                 <p class="text-xl">$ {{ $price }}</p>
                 @if($discount == 0)
@@ -29,11 +29,11 @@
                         <input class="w-8" type="number" min="1" value="1" name="quantity">
                     </div>
 
-                    <button class="bg-light-green border p-1 px-6 text-white border-light-green" type="submit">
+                    <button class="bg-azul border p-1 px-6 text-white border-azul hover:bg-verde_azul" type="submit">
                         Agregar a carrito
                     </button>
                 </form>
-                <a class="bg-light-green border p-1 px-6 text-white border-light-green"
+                <a class="bg-azul border p-1 px-6 text-white border-azul hover:bg-verde_azul"
                    href="{{ route('sellerHome', $store) }}">
                     Ir a Tienda
                 </a>
