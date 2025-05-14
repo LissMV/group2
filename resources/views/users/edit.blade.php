@@ -37,9 +37,9 @@
         </div>
     </section>
 
-    <div class="p-2 bg-brown mr-24 ml-24">
+    <div class="p-2 bg-verde_menta mr-24 ml-24">
         <a href="{{ route('store') }}">
-            <h1 class="text-center font-montserrat text-white2">¿Quieres iniciar como vendedor?</h1>
+            <h1 class="text-center font-montserrat text-verde_azul font-bold">¿Quieres iniciar como vendedor?</h1>
         </a>
     </div>
 

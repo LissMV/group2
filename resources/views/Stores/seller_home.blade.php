@@ -1,4 +1,12 @@
 <x-layout>
+<section class="items-center justify-center space-x-4">
+    <div class="flex">
+        <img src="{{ asset('img/products/personal care/personalCare3.png')}}" class="w-56 h-56" alt="">
+        <img src="{{ asset('img/products/personal care/personalCare3.png')}}" class="w-56 h-56" alt="">
+        <img src="{{ asset('img/products/personal care/personalCare3.png')}}" class="w-56 h-56" alt="">
+    </div>
+</section>
+
 
 <section class="grid grid-cols-3 bg-verde_menta pb-7 pt-2">
     <div class="cols-span-1 ml-4 mt-4">
