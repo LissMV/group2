@@ -5,8 +5,8 @@
                 <img width="w-full" src="{{ asset('img/storeProfile/store7.png') }}" alt="">
             </div>
             <div>
-                <p class="text-center text-2xl mt-5 ml-10 text-white font-black">¡Con muchos más despuentos disponibles!</p>
-                <p class="ml-10 mt-5 text-white text-">productos con 20% hasta un 30% de descuento solo en:</p>
+                <p class="text-center text-2xl mt-5 ml-10 text-white font-black">¡Con muchos más descuentos disponibles!</p>
+                <p class="ml-10 mt-5 text-white text-">Productos con 20% hasta un 30% de descuento solo en:</p>
                 <p class="ml-10 mb-24 text-white text-2xl">BioNature</p>
                 <a class="ml-72 text-white hover:text-verde_menta"
                  href="http://127.0.0.1:8000/sellerHome/7">click para visitar la tienda</a>
